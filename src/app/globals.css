@@ -29,7 +29,7 @@ body {
 @layer base{
   @font-face {
     font-family: 'Palette Mosaic';
-    src: url('/public/PaletteMosaic-Regular.ttf');
+    src: url('/PaletteMosaic-Regular.ttf');
     font-weight: normal;
     font-style: normal;
   }
