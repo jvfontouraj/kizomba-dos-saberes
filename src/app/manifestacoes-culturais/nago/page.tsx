@@ -32,7 +32,7 @@ export default function Nago() {
             alt="Bandeiras"
             className="absolute -left-20 top-4 z-0"
           />
-          <h1 className="font-paletteMosaic text-6xl uppercase leading-none text-[#e7c102] [word-spacing:-20px] [grid-area:title]">
+          <h1 className="font-paletteMosaic text-6xl uppercase leading-none text-[#e7c102] [grid-area:title] [word-spacing:-20px]">
             Nago
           </h1>
           <div className="flex w-full flex-col gap-5 text-justify [grid-area:text]">
