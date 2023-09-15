@@ -36,25 +36,30 @@ export default function Home() {
         <Image
           src={HeroBg}
           alt=""
+          priority
           className="absolute -z-50 h-screen object-cover brightness-50"
         />
-        <div className="relative flex flex-col text-center font-paletteMosaic text-[#ef7b00ff]">
-          <h1 className="text-[13rem] leading-none">KIZOMBA</h1>
-          <h2 className="text-[9rem] leading-none">DOS SABERES</h2>
+        <div className="relative flex flex-col">
+          <div className="relative mb-20 text-center font-paletteMosaic text-[#ef7b00ff] [text-shadow:_0_0_15px_rgba(0,_0,_0,_0.5)]">
+            <h1 className="text-[13rem] leading-tight">KIZOMBA</h1>
+            <h2 className="text-[9rem] leading-none [word-spacing:-100px]">
+              DOS SABERES
+            </h2>
+          </div>
           <Image
             src={Cacumbi}
             alt=""
-            className="absolute left-28 top-10 w-20"
+            className="absolute left-[160px] top-12 w-[90px]"
           />
           <Image
             src={Parafuso}
             alt=""
-            className="absolute left-64 top-10 w-60"
+            className="absolute left-96 top-24 w-60"
           />
           <Image
             src={Rendeira}
             alt=""
-            className="absolute bottom-0 left-64 w-28"
+            className="absolute bottom-20 left-[300px] w-32"
           />
         </div>
         <Image src={BandeirasHero} alt="" className="absolute bottom-10 z-10" />
@@ -78,7 +83,7 @@ export default function Home() {
 
           <div className="flex flex-col gap-2">
             <Image src={Piramides} alt="" className="h-auto w-36" />
-            <div className="flex max-w-[60ch] flex-col gap-3 text-white">
+            <div className="flex max-w-[60ch] flex-col gap-3 text-justify text-white">
               <p>
                 O portal <span className="font-bold">Kizomba dos Saberes</span>{' '}
                 é uma ferramenta de educação sobre as culturas afro,
@@ -128,7 +133,7 @@ export default function Home() {
             Onde tem cultura?
           </h2>
           <div className="text-sm leading-none text-white ">
-            <p>Passe o mouse por cima dos municípios de Sergipe</p>
+            <span>Passe o mouse por cima dos municípios de Sergipe</span>
             <p>
               e descubra as manifestações culturais exisitentes em cada região.
             </p>
@@ -210,7 +215,7 @@ export default function Home() {
                 <h2>Baixe Aqui</h2>
                 <h2>Nosso Livro</h2>
               </div>
-              <div className="flex max-w-[60ch] flex-col gap-3 text-white">
+              <div className="flex max-w-[60ch] flex-col gap-3 text-justify text-white">
                 <p>
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                   diam nonummy nibh euismod tincidunt ut laoreet dolore magna
@@ -240,7 +245,7 @@ export default function Home() {
               <Link
                 href=""
                 download={' '}
-                className="w-fit rounded-lg bg-[#2185BA] p-3 text-xl font-bold uppercase tracking-wide text-[#e7c102]"
+                className="w-fit rounded-lg bg-[#2185BA] px-5 py-3 font-paletteMosaic text-2xl uppercase text-[#e7c102]"
               >
                 Baixar
               </Link>

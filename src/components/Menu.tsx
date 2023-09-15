@@ -10,18 +10,20 @@ export function Menu() {
         <Image
           alt=""
           src={MenuBar}
-          className="absolute -z-10 h-24 w-screen opacity-90 drop-shadow-2xl"
+          className="absolute -z-10 h-24 w-screen opacity-90 drop-shadow-[0_25px_25px_rgb(0_0_0_/_0.4)]"
         />
         <div>
-          <Image
-            src={Logo}
-            className="w-20"
-            alt={'Logo do Kizomba dos Saberes'}
-          />
+          <Link href={'/'}>
+            <Image
+              src={Logo}
+              className="w-20"
+              alt={'Logo do Kizomba dos Saberes'}
+            />
+          </Link>
         </div>
         <nav className="flex gap-9 text-sm font-bold uppercase text-[#0073a8ff]">
           <Link href={'/'}>Página Inicial</Link>
-          <Link href={'/manifetacoes-culturais'}>Manifestações Culturais</Link>
+          <Link href={'/manifestacoes-culturais'}>Manifestações Culturais</Link>
           <Link href={'/atividades-educativas'}>Atividades Educativas</Link>
           <Link href={'/afropedia-sergipana'}>Afropedia Sergipana</Link>
           <Link href={'/calendafro'}>Calendafro</Link>
