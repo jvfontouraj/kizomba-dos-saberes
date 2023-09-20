@@ -49,25 +49,23 @@ export default function Home() {
           <Image
             src={Cacumbi}
             alt=""
-            className="absolute left-[160px] top-12 w-[90px]"
+            className="absolute left-[160px] top-12 w-[90px] duration-300 hover:scale-105"
           />
           <Image
             src={Parafuso}
             alt=""
-            className="absolute left-96 top-24 w-60"
+            className="absolute left-96 top-24 w-60 duration-300 hover:scale-105"
           />
           <Image
             src={Rendeira}
             alt=""
-            className="absolute bottom-20 left-[300px] w-32"
+            className="absolute bottom-20 left-[300px] w-32 duration-300 hover:scale-105"
           />
         </div>
         <Image src={BandeirasHero} alt="" className="absolute bottom-10 z-10" />
-        <Image
-          src={HeroArow}
-          alt=""
-          className="absolute bottom-3 z-10 w-[70px]"
-        />
+        <button className="absolute bottom-3 z-10 duration-300 hover:translate-y-1">
+          <Image src={HeroArow} alt="" className="w-[70px]" />
+        </button>
       </section>
       <section className="relative flex h-[calc(100vh-5.2rem)] w-full items-center justify-center bg-[#ac9378]">
         <Image
