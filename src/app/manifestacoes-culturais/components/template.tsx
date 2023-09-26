@@ -1,7 +1,98 @@
-export default function Template() {
+import Image from 'next/image'
+import Link from 'next/link'
+import WoodBackground from '@/assets/wood-background.png'
+import Bandeiras1 from '@/assets/bandeiras1.png'
+import Bandeiras2 from '@/assets/bandeiras2.png'
+import ChevronDown from '@/assets/chevron-down.svg'
+import Piramides from '@/assets/piramides.png'
+import RealezaNago from '@/assets/realeza-nago.png'
+
+interface TemplateProps {
+  title: string
+  text: string[]
+  details: {
+    locais: string
+    festas: string
+    sedes: string
+  }
+  refs: string[]
+}
+
+export function Template({ content }: { content: TemplateProps }) {
   return (
-    <div>
-      <h1>Template</h1>
-    </div>
+    <main className="relative flex flex-col items-center bg-[#ac9378] text-white">
+      <Image
+        src={WoodBackground}
+        alt=""
+        className="absolute  h-full object-cover opacity-20 brightness-50"
+      />
+      <Image src={Bandeiras2} alt="" className="absolute top-28 z-10" />
+      <Image src={Bandeiras2} alt="" className="absolute bottom-5 z-10" />
+
+      <div className="z-10 mt-32 flex w-full max-w-6xl flex-col items-center gap-20 pb-40 pt-24">
+        <Link
+          href="/manifestacoes-culturais"
+          className="flex items-center self-start font-bold uppercase text-neutral-200"
+        >
+          <ChevronDown className=" mr-5 w-5 rotate-90 fill-[#e7c102]" />
+          Voltar para manifestações culturais
+        </Link>
+        <div className="relative grid w-full max-w-6xl grid-cols-2 gap-x-10 gap-y-20 [grid-template-areas:_'title_title'_'text_images'_'details_images'_'refs_images']">
+          <Image
+            src={Bandeiras1}
+            alt="Bandeiras"
+            className="absolute -left-20 top-4 z-0"
+          />
+          <h1 className="font-londrinaSolid text-6xl uppercase leading-none text-[#e7c102] [grid-area:title]">
+            {content.title}
+          </h1>
+          <div className="flex w-full flex-col gap-5 text-justify [grid-area:text]">
+            {content.text.map((text, index) => (
+              <p key={index}>{text}</p>
+            ))}
+            <Image
+              src={Piramides}
+              alt=""
+              className="mt-5 h-6 w-fit self-center"
+            />
+          </div>
+          <div className="flex h-full w-full [grid-area:images]">
+            <div className="relative mx-auto h-[666px] w-[500px] rounded-md bg-[#e7c102] shadow-md">
+              <button className="absolute -left-5 top-1/2 flex aspect-square h-10 -translate-y-1/2 items-center rounded-full bg-neutral-100 p-3 shadow-md">
+                <ChevronDown className="w-full rotate-90 fill-[#e7c102]" />
+              </button>
+              <Image
+                src={RealezaNago}
+                alt=""
+                className="h-full rounded-md object-cover"
+              />
+              <button className="absolute -right-5 top-1/2 flex aspect-square h-10 -translate-y-1/2 items-center rounded-full bg-neutral-100 p-3 shadow-md">
+                <ChevronDown className="w-full -rotate-90 fill-[#e7c102]" />
+              </button>
+            </div>
+          </div>
+          <div className="flex h-fit flex-col gap-5 border-l-2 border-[#efa300] pl-3 [grid-area:details]">
+            <div>
+              <h3 className="font-bold">Localizam-se em:</h3>
+              <span>{content.details.locais}</span>
+            </div>
+            <div>
+              <h3 className="font-bold">Festas Principais:</h3>
+              <span>{content.details.festas}</span>
+            </div>
+            <div>
+              <h3 className="font-bold">Sedes:</h3>
+              <span>{content.details.sedes}</span>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2 text-sm [grid-area:refs]">
+            <h4 className="font-bold">Referências:</h4>
+            {content.refs.map((ref, index) => (
+              <p key={index}>{ref}</p>
+            ))}
+          </div>
+        </div>
+      </div>
+    </main>
   )
 }

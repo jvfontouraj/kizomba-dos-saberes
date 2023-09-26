@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -30,6 +31,13 @@ body {
   @font-face {
     font-family: 'Palette Mosaic';
     src: url('/PaletteMosaic-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Londrina Solid';
+    src: url('/LondrinaSolid-Regular.otf');
     font-weight: normal;
     font-style: normal;
   }

@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         paletteMosaic: ['Palette Mosaic', 'cursive'],
+        londrinaSolid: ['Londrina Solid', 'cursive'],
       },
     },
   },

@@ -63,11 +63,17 @@ export default function Home() {
           />
         </div>
         <Image src={BandeirasHero} alt="" className="absolute bottom-10 z-10" />
-        <button className="absolute bottom-3 z-10 duration-300 hover:translate-y-1">
+        <a
+          href="#sobre"
+          className="absolute bottom-3 z-10 duration-300 hover:translate-y-1"
+        >
           <Image src={HeroArow} alt="" className="w-[70px]" />
-        </button>
+        </a>
       </section>
-      <section className="relative flex h-[calc(100vh-5.2rem)] w-full items-center justify-center bg-[#ac9378]">
+      <section
+        id="sobre"
+        className="relative flex h-[calc(100vh-5.2rem)] w-full items-center justify-center bg-[#ac9378]"
+      >
         <Image
           src={WoodBackground}
           alt=""
@@ -198,7 +204,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="relative flex h-[calc(100vh-5.2rem)] w-full items-center justify-center bg-green-600">
+      <section className="relative flex h-[calc(100vh-5.2rem)] w-full items-center justify-center bg-[#008045]">
         <Image
           src={WoodBackground}
           alt=""

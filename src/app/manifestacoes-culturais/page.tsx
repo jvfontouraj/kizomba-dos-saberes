@@ -40,8 +40,8 @@ export default function ManifestacoesCulturais() {
 
       <div className="z-10 flex flex-col items-center gap-20 pb-40 pt-24">
         <div className="relative">
-          <h1 className="mt-20 font-paletteMosaic text-5xl uppercase leading-normal text-[#e7c102] [word-spacing:-20px]">
-            Manifestacoes Culturais
+          <h1 className="mt-20 font-londrinaSolid text-6xl uppercase leading-normal text-[#e7c102] [word-spacing:10px]">
+            Manifestações Culturais
           </h1>
           <Image
             src={PaiJuaTransp}

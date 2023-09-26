@@ -4,7 +4,7 @@ import BandeirasHero from '@/assets/bandeirashero.png'
 
 export default function NotFound() {
   return (
-    <>
+    <main>
       <section className="relative flex h-screen w-full items-center justify-center overflow-hidden">
         <Image src={BandeirasHero} alt="" className="absolute top-10 z-10" />
         <Image
@@ -18,6 +18,6 @@ export default function NotFound() {
         </div>
         <Image src={BandeirasHero} alt="" className="absolute bottom-10 z-10" />
       </section>
-    </>
+    </main>
   )
 }
