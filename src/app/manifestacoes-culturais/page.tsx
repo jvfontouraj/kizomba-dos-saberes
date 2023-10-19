@@ -19,6 +19,11 @@ import PaiJua from '@/assets/ilustracoes/com-fundo/pai-jua.png'
 import Parafuso from '@/assets/ilustracoes/com-fundo/parafuso.png'
 import Reisado from '@/assets/ilustracoes/com-fundo/reisado.png'
 import Zabumba from '@/assets/ilustracoes/com-fundo/zabumba.png'
+import BarcoDeFogo from '@/assets/ilustracoes/com-fundo/barco-de-fogo.png'
+import Maracatu from '@/assets/ilustracoes/com-fundo/maracatu.png'
+import SambaDeAboio from '@/assets/ilustracoes/com-fundo/samba-de-aboio.png'
+import Sambadeira from '@/assets/ilustracoes/com-fundo/sambadeira.png'
+import Taieiras from '@/assets/ilustracoes/com-fundo/taieiras.png'
 
 export default function ManifestacoesCulturais() {
   const [inputValue, setInputValue] = useState('')
@@ -78,7 +83,13 @@ export default function ManifestacoesCulturais() {
           {'barco de fogo'.includes(inputValue.toLowerCase()) && (
             <Link href="/manifestacoes-culturais/barco-de-fogo">
               <div className="flex flex-col items-center gap-2">
-                <div className="aspect-square w-36 rounded-full bg-[#e7c102] shadow-md" />
+                <div className="aspect-square w-36 overflow-hidden rounded-full bg-[#e7c102] shadow-md">
+                  <Image
+                    src={BarcoDeFogo}
+                    alt="ilustração de bacamarteiros"
+                    className="h-full object-cover"
+                  />
+                </div>
                 <h2 className="uppercase text-white">BARCO DE FOGO</h2>
               </div>
             </Link>
@@ -167,7 +178,13 @@ export default function ManifestacoesCulturais() {
           {'lambe sujo'.includes(inputValue.toLowerCase()) && (
             <Link href="/manifestacoes-culturais/lambe-sujo">
               <div className="flex flex-col items-center gap-2">
-                <div className="aspect-square w-36 rounded-full bg-[#e7c102] shadow-md" />
+                <div className="aspect-square w-36 overflow-hidden rounded-full bg-[#e7c102] shadow-md">
+                  <Image
+                    src={PaiJua}
+                    alt="ilustração de guerreiro"
+                    className="h-full object-cover"
+                  />
+                </div>{' '}
                 <h2 className="uppercase text-white">LAMBE-SUJO</h2>
               </div>
             </Link>
@@ -183,7 +200,13 @@ export default function ManifestacoesCulturais() {
           {'maracatu'.includes(inputValue.toLowerCase()) && (
             <Link href="/manifestacoes-culturais/maracatu">
               <div className="flex flex-col items-center gap-2">
-                <div className="aspect-square w-36 rounded-full bg-[#e7c102] shadow-md" />
+                <div className="flex aspect-square w-36 items-center overflow-hidden rounded-full bg-[#BA9446] shadow-md">
+                  <Image
+                    src={Maracatu}
+                    alt="ilustração de guerreiro"
+                    className="w-full object-cover"
+                  />
+                </div>{' '}
                 <h2 className="uppercase text-white">MARACATU</h2>
               </div>
             </Link>
@@ -193,7 +216,7 @@ export default function ManifestacoesCulturais() {
               <div className="flex flex-col items-center gap-2">
                 <div className="aspect-square w-36 overflow-hidden rounded-full bg-[#e7c102] shadow-md">
                   <Image
-                    src={RealezaNago}
+                    src={Nago}
                     alt="ilustração de nago"
                     className="h-full object-cover"
                   />
@@ -227,7 +250,13 @@ export default function ManifestacoesCulturais() {
           {'pífano'.includes(inputValue.toLowerCase()) && (
             <Link href="/manifestacoes-culturais/pifano">
               <div className="flex flex-col items-center gap-2">
-                <div className="aspect-square w-36 rounded-full bg-[#e7c102] shadow-md" />
+                <div className="aspect-square w-36 overflow-hidden rounded-full bg-[#e7c102] shadow-md">
+                  <Image
+                    src={Zabumba}
+                    alt="ilustração de parafuso"
+                    className="h-full object-cover"
+                  />
+                </div>
                 <h2 className="uppercase text-white">PÍFANO</h2>
               </div>
             </Link>
@@ -258,7 +287,13 @@ export default function ManifestacoesCulturais() {
           {'samba de aboio'.includes(inputValue.toLowerCase()) && (
             <Link href="/manifestacoes-culturais/samba-de-aboio">
               <div className="flex flex-col items-center gap-2">
-                <div className="aspect-square w-36 rounded-full bg-[#e7c102] shadow-md" />
+                <div className="aspect-square w-36 overflow-hidden rounded-full bg-[#BE3C45] shadow-md">
+                  <Image
+                    src={SambaDeAboio}
+                    alt="ilustração de parafuso"
+                    className="-mt-1 h-full object-cover"
+                  />
+                </div>
                 <h2 className="uppercase text-white">SAMBA DE ABOIO</h2>
               </div>
             </Link>
@@ -274,7 +309,13 @@ export default function ManifestacoesCulturais() {
           {'samba de pareia'.includes(inputValue.toLowerCase()) && (
             <Link href="/manifestacoes-culturais/samba-de-pareia">
               <div className="flex flex-col items-center gap-2">
-                <div className="aspect-square w-36 rounded-full bg-[#e7c102] shadow-md" />
+                <div className="aspect-square w-36 overflow-hidden rounded-full bg-[#e7c102] shadow-md">
+                  <Image
+                    src={Sambadeira}
+                    alt="ilustração de parafuso"
+                    className="h-full object-cover"
+                  />
+                </div>
                 <h2 className="uppercase text-white">SAMBA DE PAREIA</h2>
               </div>
             </Link>
@@ -290,7 +331,13 @@ export default function ManifestacoesCulturais() {
           {'taieiras'.includes(inputValue.toLowerCase()) && (
             <Link href="/manifestacoes-culturais/taieiras">
               <div className="flex flex-col items-center gap-2">
-                <div className="aspect-square w-36 rounded-full bg-[#e7c102] shadow-md" />
+                <div className="aspect-square w-36 overflow-hidden rounded-full bg-[#e7c102] shadow-md">
+                  <Image
+                    src={Taieiras}
+                    alt="ilustração de parafuso"
+                    className="h-full object-cover"
+                  />
+                </div>{' '}
                 <h2 className="uppercase text-white">TAIEIRAS</h2>
               </div>
             </Link>

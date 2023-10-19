@@ -1,8 +1,16 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from '@/app/components/ui/select'
 
 // Hero
-import HeroBg from '@/assets/herobg.png'
 import BandeirasHero from '@/assets/bandeirashero.png'
 import HeroArow from '@/assets/hero-arow.png'
 import Parafuso from '@/assets/parafuso.png'
@@ -15,7 +23,7 @@ import LogoKizomba from '@/assets/logo-home.png'
 import Piramides from '@/assets/piramides.png'
 import WoodBackground from '@/assets/wood-background.png'
 
-// Aonde tem cultura
+// Mapa
 import Bandeiras1 from '@/assets/bandeiras1.png'
 import Cheganca from '@/assets/cheganca.png'
 import LambeSujo from '@/assets/lambe-sujo.png'
@@ -23,24 +31,21 @@ import Bacamarteiro from '@/assets/bacamarteiro.png'
 import RealezaNago from '@/assets/realeza-nago.png'
 import PaiJua from '@/assets/pai-jua.png'
 import Mapa from '@/assets/mapa.png'
+import FundoMapa from '@/assets/fundo-mapa.png'
 
 // Livro
 import Bandeiras2 from '@/assets/bandeiras2.png'
 import Livro from '@/assets/livro.png'
+import { HeroGallery } from './components/HeroGallery'
 
 export default function Home() {
   return (
     <main className="w-screen">
       <section className="relative flex h-screen w-full items-center justify-center overflow-hidden">
         <Image src={BandeirasHero} alt="" className="absolute top-10 z-10" />
-        <Image
-          src={HeroBg}
-          alt=""
-          priority
-          className="absolute -z-50 h-screen object-cover brightness-50"
-        />
+        <HeroGallery />
         <div className="relative flex flex-col">
-          <div className="relative mb-20 text-center font-paletteMosaic text-[#ef7b00ff] [text-shadow:_0_0_15px_rgba(0,_0,_0,_0.5)]">
+          <div className="relative mb-20 cursor-default text-center font-paletteMosaic text-[#ef7b00ff] [text-shadow:_0_0_15px_rgba(0,_0,_0,_0.5)]">
             <h1 className="text-[13rem] leading-tight">KIZOMBA</h1>
             <h2 className="text-[9rem] leading-none [word-spacing:-100px]">
               DOS SABERES
@@ -131,16 +136,129 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex h-[calc(100vh-5.5rem)] w-screen flex-col items-center justify-center gap-5 bg-[#2185BA]">
+      <section className="relative flex h-[calc(100vh-5.5rem)] w-screen flex-col items-center justify-center gap-5 overflow-hidden bg-[#2185BA]">
+        <Image
+          src={FundoMapa}
+          alt={'fundo'}
+          className="absolute top-0 opacity-30"
+        />
         <div className="relative flex flex-col gap-3">
-          <h2 className="font-paletteMosaic text-7xl  uppercase text-[#e7c102]">
-            Onde tem cultura?
+          <h2 className="font-londrinaSolid text-7xl uppercase text-[#e7c102]">
+            MAPA DA CULTURA AFRO-SERGIPANA
           </h2>
-          <div className="text-sm leading-none text-white ">
-            <span>Passe o mouse por cima dos municípios de Sergipe</span>
-            <p>
-              e descubra as manifestações culturais exisitentes em cada região.
-            </p>
+          <div className="flex gap-3 text-[#2185BA] ">
+            <Select>
+              <SelectTrigger className="w-80">
+                <SelectValue placeholder="Pesquise por município" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectGroup className="h-full max-h-80 overflow-x-scroll text-[#2185BA]">
+                  <SelectItem value="Amparo do São Francisco">
+                    Amparo do São Francisco
+                  </SelectItem>
+                  <SelectItem value="Aquidabã">Aquidabã</SelectItem>
+                  <SelectItem value="Aracaju">Aracaju</SelectItem>
+                  <SelectItem value="Arauá">Arauá</SelectItem>
+                  <SelectItem value="Barra dos Coqueiros">
+                    Barra dos Coqueiros
+                  </SelectItem>
+                  <SelectItem value="Boquim">Boquim</SelectItem>
+                  <SelectItem value="Brejo Grande">Brejo Grande</SelectItem>
+                  <SelectItem value="Canoa">Canoa</SelectItem>
+                  <SelectItem value="Canhoba">Canhoba</SelectItem>
+                  <SelectItem value="Canidé de São Francisco">
+                    Canidé de São Francisco
+                  </SelectItem>
+                  <SelectItem value="Capela">Capela</SelectItem>
+                  <SelectItem value="Carira">Carira</SelectItem>
+                  <SelectItem value="Cedro de São João">
+                    Cedro de São João
+                  </SelectItem>
+                  <SelectItem value="Cristinápolis">Cristinápolis</SelectItem>
+                  <SelectItem value="Divina Pastora">Divina Pastora</SelectItem>
+                  <SelectItem value="Gararu">Gararu</SelectItem>
+                  <SelectItem value="General Maynard">
+                    General Maynard
+                  </SelectItem>
+                  <SelectItem value="Graccho Cardoso">
+                    Graccho Cardoso
+                  </SelectItem>
+                  <SelectItem value="Ilha das Flores">
+                    Ilha das Flores
+                  </SelectItem>
+                  <SelectItem value="Itabaiana">Itabaiana</SelectItem>
+                  <SelectItem value="Itaporanga">Itaporanga</SelectItem>
+                  <SelectItem value="Japaratuba">Japaratuba</SelectItem>
+                  <SelectItem value="Lagarto">Lagarto</SelectItem>
+                  <SelectItem value="Laranjeiras">Laranjeiras</SelectItem>
+                  <SelectItem value="Macambira">Macambira</SelectItem>
+                  <SelectItem value="Malhador">Malhador</SelectItem>
+                  <SelectItem value="Moita Bonita">Moita Bonita</SelectItem>
+                  <SelectItem value="Monte Alegre">Monte Alegre</SelectItem>
+                  <SelectItem value="Mussuca- Laranjeiras">
+                    Mussuca- Laranjeiras
+                  </SelectItem>
+                  <SelectItem value="Neópolis">Neópolis</SelectItem>
+                  <SelectItem value="Pacatuba">Pacatuba</SelectItem>
+                  <SelectItem value="Pedrinhas">Pedrinhas</SelectItem>
+                  <SelectItem value="Propriá">Propriá</SelectItem>
+                  <SelectItem value="Ribeirópolis">Ribeirópolis</SelectItem>
+                  <SelectItem value="Riachuelo">Riachuelo</SelectItem>
+                  <SelectItem value="Rosário do Catete">
+                    Rosário do Catete
+                  </SelectItem>
+                  <SelectItem value="Santana de São Francisco">
+                    Santana de São Francisco
+                  </SelectItem>
+                  <SelectItem value="Santo Amaro">Santo Amaro</SelectItem>
+                  <SelectItem value="Santo Amaro das Brotas">
+                    Santo Amaro das Brotas
+                  </SelectItem>
+                  <SelectItem value="São Cristóvão">São Cristóvão</SelectItem>
+                  <SelectItem value="São Domingos">São Domingos</SelectItem>
+                  <SelectItem value="São Miguel do Aleixo">
+                    São Miguel do Aleixo
+                  </SelectItem>
+                  <SelectItem value="Simão Dias">Simão Dias</SelectItem>
+                  <SelectItem value="Tobias Barreto">Tobias Barreto</SelectItem>
+                </SelectGroup>
+              </SelectContent>
+            </Select>
+            <Select>
+              <SelectTrigger className="w-80">
+                <SelectValue placeholder="Pesquise por manifestação cultural" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectGroup className="h-full max-h-80 overflow-x-scroll text-[#2185BA]">
+                  <SelectItem value="Bacamarteiros">Bacamarteiros</SelectItem>
+                  <SelectItem value="Barco de fogo">Barco de fogo</SelectItem>
+                  <SelectItem value="Batalhão">Batalhão</SelectItem>
+                  <SelectItem value="Batucada">Batucada</SelectItem>
+                  <SelectItem value="Caceteira">Caceteira</SelectItem>
+                  <SelectItem value="Cacumbi">Cacumbi</SelectItem>
+                  <SelectItem value="Capoeira">Capoeira</SelectItem>
+                  <SelectItem value="Chegança">Chegança</SelectItem>
+                  <SelectItem value="Guerreiro">Guerreiro</SelectItem>
+                  <SelectItem value="Lambe-sujo">Lambe-sujo</SelectItem>
+                  <SelectItem value="Literatura">Literatura</SelectItem>
+                  <SelectItem value="Maracatu">Maracatu</SelectItem>
+                  <SelectItem value="Nagô">Nagô</SelectItem>
+                  <SelectItem value="Parafusos">Parafusos</SelectItem>
+                  <SelectItem value="Pífano">Pífano</SelectItem>
+                  <SelectItem value="Reisado">Reisado</SelectItem>
+                  <SelectItem value="Renda irlandesa">
+                    Renda irlandesa
+                  </SelectItem>
+                  <SelectItem value="Samba de aboio">Samba de aboio</SelectItem>
+                  <SelectItem value="Samba de coco"> Samba de coco </SelectItem>
+                  <SelectItem value="Samba de pareia">
+                    Samba de pareia
+                  </SelectItem>
+                  <SelectItem value="São Gonçalo"> São Gonçalo </SelectItem>
+                  <SelectItem value="Taieiras"> Taieiras </SelectItem>
+                </SelectGroup>
+              </SelectContent>
+            </Select>
           </div>
           <Image
             src={Bandeiras1}
@@ -175,31 +293,19 @@ export default function Home() {
             alt=""
             className="absolute -bottom-20 right-36 z-20 w-36"
           />
-          <div className="absolute left-[600px] top-32 flex w-max flex-col gap-3 border border-[#e7c102] px-3 py-5">
+          <div className="absolute bottom-0 left-[400px] flex w-max flex-col gap-3 border border-[#e7c102] bg-[#2185BA] px-3 py-5">
             <div className="flex items-start gap-2">
               <Image src={Bandeiras1} alt="" className="w-5" />
-              <h3 className="font-paletteMosaic text-2xl uppercase text-[#e7c102]">
+              <h3 className="font-londrinaSolid text-2xl uppercase text-[#e7c102]">
                 ARACAJU
               </h3>
             </div>
-            <ul className="ml-2 border-l border-[#e7c102] pl-2 text-sm text-white">
-              <li>· Reisado Estrelinha do Nordeste</li>
-              <li>· Samba de Côco de Seu Diô</li>
-              <li>· Guerreiro da Mocidade</li>
-              <li>· Guerreiro Vitória da Mocidade</li>
-              <li>· Abassá São Jorge</li>
-              <li>· Abassá Oxóssi Kacilecy</li>
-              <li>· Abassá Axé Ilê Pilão de Oxaguian</li>
-              <li>· Ilê Axé Dematá Ni Sahara</li>
-              <li>· Abassá Ogum Megê</li>
-              <li>· Ilê Axé Nisahara Ojú Ifá</li>
-              <li>· Ilê Yátassitaô Ifá Enibalé</li>
-              <li>· Ilê Axé Omin Dandá Onirê</li>
-              <li>· Nzo Mavongiro e Delezô Pai Joaquim de Angola</li>
-              <li>· Nzo Águas da Penha</li>
-              <li>· Ilê Axé Rundê Elegbédé Já Alakorôdejê</li>
-              <li>· Ilê Axé Iyá Oxum</li>
-              <li>· Maloca</li>
+            <ul className="ml-2 w-80 pl-2 text-sm text-white">
+              <li>• Reisado</li>
+              <li>• Samba de Côco</li>
+              <li>• Guerreiro</li>
+              <li>• Candomblé</li>
+              <li>• Comunidade Quilombola</li>
             </ul>
           </div>
         </div>
@@ -215,7 +321,7 @@ export default function Home() {
         <div className="z-10 mx-auto flex h-full w-screen items-center justify-center">
           <div className="flex w-1/2 justify-end">
             <div className="flex w-fit  flex-col justify-end gap-10">
-              <div className="flex flex-col gap-5 font-paletteMosaic text-7xl uppercase text-[#e7c102]">
+              <div className="flex flex-col gap-5 font-londrinaSolid text-7xl uppercase text-[#e7c102]">
                 <h2>Baixe Aqui</h2>
                 <h2>Nosso Livro</h2>
               </div>
@@ -249,7 +355,7 @@ export default function Home() {
               <Link
                 href=""
                 download={' '}
-                className="w-fit rounded-lg bg-[#2185BA] px-5 py-3 font-paletteMosaic text-2xl uppercase text-[#e7c102]"
+                className="w-fit rounded-lg bg-[#2185BA] px-5 py-3 font-londrinaSolid text-2xl uppercase text-[#e7c102]"
               >
                 Baixar
               </Link>
