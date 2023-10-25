@@ -9,9 +9,9 @@ const content = {
     'Além do Mestre e do Índio Peri, outros personagens importantes fazem parte do Guerreiro, como o Embaixador, a Rainha, Lira, o Palhaço e os Vassalos, cada um contribuindo para a diversidade e riqueza cultural da manifestação. O grupo é acompanhado por instrumentos tradicionais, como sanfona, pandeiro, triângulo e tambor, que proporcionam o ritmo e a melodia que embalam as danças e os cantos. Visualmente, os trajes coloridos e brilhantes são destaque, os palhaços ou vassalos usando macacões, penachos nos braços e cabeça, além de colares. O Contramestre e o Embaixador utilizam grandes chapéus em formato de igreja, conhecidos como capelas ou matriz, adornados com espelhos e fitas. A Rainha, por sua vez, além de usar vestido e coroa, requer “jogo de cinutra” para as danças e responsabilidade ao carregar o estandarte do grupo.',
   ],
   details: {
-    locais: '...',
-    festas: '...',
-    sedes: '...',
+    locais: '',
+    festas: '',
+    sedes: '',
   },
   refs: [
     'FERREIRA, Mariano Antonio. Guerreiro. Aracaju: Secretaria de Estado da Educação e Cultura / FUNDESC, [s.d.].',

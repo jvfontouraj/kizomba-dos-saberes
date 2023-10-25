@@ -11,7 +11,7 @@ const content = {
     locais:
       'Riachuelo, General Maynard, Santo Amaro das Brotas, Japoatã, São Cristóvão, Barra dos Coqueiros, Nossa Senhora do Socorro e Aracaju.',
     festas: 'Ciclo de festejos juninos. ',
-    sedes: '...',
+    sedes: '',
   },
   refs: [
     'tv.brasil.ebc.com.br – Mulheres de Sergipe mantém tradição do Samba de Coco',

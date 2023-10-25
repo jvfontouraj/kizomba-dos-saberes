@@ -13,8 +13,8 @@ const content = {
   ],
   details: {
     locais: 'Laranjeiras, Lagarto, Japaratuba e São Cristóvão.',
-    festas: '...',
-    sedes: '...',
+    festas: '',
+    sedes: '',
   },
   refs: [
     'ALENCAR, Aglaé D’Ávila Fontes. Danças e Folguedos; iniciação ao Folclore Sergipano Desenhos de Cláudia Endlein, Fotos de Marcel Nauer. Aracaju. 2003. 320p.',

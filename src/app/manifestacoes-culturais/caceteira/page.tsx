@@ -10,7 +10,7 @@ const content = {
   details: {
     locais: 'São Cristóvão ',
     festas: 'Período Junino',
-    sedes: '...',
+    sedes: '',
   },
   refs: [
     'Entrevista do Mestre Rindú para o Guia Divirta-SE, da Secretaria de Estado da Cultura, à jornalista Díjna Torres, em 2010.',

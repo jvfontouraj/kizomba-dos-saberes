@@ -10,7 +10,7 @@ const content = {
   details: {
     locais: 'Aracaju, Brejo Grande e Japaratuba',
     festas: 'Carnaval',
-    sedes: '...',
+    sedes: '',
   },
   refs: [
     'ALMEIDA, Marina Kerolyn Lima. “Viva o Rei, a Rainha e o povo do lgar”: histórias do maracatu nação Pavão Dourado de Japaratuba. Práxis Pedagógica, v. 2, nº. 3, 2015.',

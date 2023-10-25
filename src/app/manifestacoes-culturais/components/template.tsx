@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 import WoodBackground from '@/assets/wood-background.png'
@@ -6,6 +7,8 @@ import Bandeiras2 from '@/assets/bandeiras2.png'
 import ChevronDown from '@/assets/chevron-down.svg'
 import Piramides from '@/assets/piramides.png'
 import RealezaNago from '@/assets/realeza-nago.png'
+import { Splide, SplideSlide } from '@splidejs/react-splide'
+import '@splidejs/react-splide/css'
 
 interface TemplateProps {
   title: string
@@ -16,6 +19,7 @@ interface TemplateProps {
     sedes: string
   }
   refs: string[]
+  imagesUrl: string[]
 }
 
 export function Template({ content }: { content: TemplateProps }) {
@@ -57,40 +61,50 @@ export function Template({ content }: { content: TemplateProps }) {
             />
           </div>
           <div className="flex h-full w-full [grid-area:images]">
-            <div className="relative mx-auto h-[666px] w-[500px] rounded-md bg-[#e7c102] shadow-md">
-              <button className="absolute -left-5 top-1/2 flex aspect-square h-10 -translate-y-1/2 items-center rounded-full bg-neutral-100 p-3 shadow-md">
-                <ChevronDown className="w-full rotate-90 fill-[#e7c102]" />
-              </button>
-              <Image
-                src={RealezaNago}
-                alt=""
-                className="h-full rounded-md object-cover"
-              />
-              <button className="absolute -right-5 top-1/2 flex aspect-square h-10 -translate-y-1/2 items-center rounded-full bg-neutral-100 p-3 shadow-md">
-                <ChevronDown className="w-full -rotate-90 fill-[#e7c102]" />
-              </button>
-            </div>
+            <Splide
+              options={{
+                perPage: 1,
+                height: '10rem',
+                rewind: true,
+                gap: '1rem',
+              }}
+              aria-labelledby="basic-example-heading"
+            >
+              {content.imagesUrl.map((image, index) => (
+                <SplideSlide key={index}>
+                  <img src={image} alt="imagem da manifestação" />
+                </SplideSlide>
+              ))}
+            </Splide>
           </div>
           <div className="flex h-fit flex-col gap-5 border-l-2 border-[#efa300] pl-3 [grid-area:details]">
-            <div>
-              <h3 className="font-bold">Localizam-se em:</h3>
-              <span>{content.details.locais}</span>
-            </div>
-            <div>
-              <h3 className="font-bold">Festas Principais:</h3>
-              <span>{content.details.festas}</span>
-            </div>
-            <div>
-              <h3 className="font-bold">Sedes:</h3>
-              <span>{content.details.sedes}</span>
-            </div>
+            {content.details.locais && (
+              <div>
+                <h3 className="font-bold">Localizam-se em:</h3>
+                <span>{content.details.locais}</span>
+              </div>
+            )}
+            {content.details.festas && (
+              <div>
+                <h3 className="font-bold">Festas Principais:</h3>
+                <span>{content.details.festas}</span>
+              </div>
+            )}
+            {content.details.sedes && (
+              <div>
+                <h3 className="font-bold">Sedes:</h3>
+                <span>{content.details.sedes}</span>
+              </div>
+            )}
           </div>
-          <div className="flex flex-col gap-2 text-sm [grid-area:refs]">
-            <h4 className="font-bold">Referências:</h4>
-            {content.refs.map((ref, index) => (
-              <p key={index}>{ref}</p>
-            ))}
-          </div>
+          {content.refs.length > 0 && (
+            <div className="flex flex-col gap-2 text-sm [grid-area:refs]">
+              <h4 className="font-bold">Referências:</h4>
+              {content.refs.map((ref, index) => (
+                <p key={index}>{ref}</p>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </main>

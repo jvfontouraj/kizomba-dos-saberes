@@ -9,7 +9,7 @@ const content = {
   ],
   details: {
     locais: 'Divina Pastora, Laranjeiras e Aracaju',
-    festas: '...',
+    festas: '',
     sedes:
       'ASDEREN - Associação para o Desenvolvimento de Renda de Divina Pastora; Associação das Rendeiras Independentes de Divina Pastora (ASDRIN); Associação de Costureiras e Artesãs do Município de Laranjeiras.',
   },

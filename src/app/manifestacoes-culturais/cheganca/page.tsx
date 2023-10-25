@@ -10,8 +10,8 @@ const content = {
   details: {
     locais:
       'Divina Pastora, Laranjeiras, Itabaiana , Lagarto, Japaratuba, Carmópolis, Santo Amaro das Brotas e São Cristóvão.',
-    festas: '...',
-    sedes: '...',
+    festas: '',
+    sedes: '',
   },
   refs: [
     'DANTAS, Beatriz Góis. Chegança: Cadernos do Folclore. vol. 14. Rio de Janeiro: FUNARTE, 1976.',

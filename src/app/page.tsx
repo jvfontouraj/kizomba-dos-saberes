@@ -5,10 +5,10 @@ import {
   SelectContent,
   SelectGroup,
   SelectItem,
-  SelectLabel,
   SelectTrigger,
   SelectValue,
 } from '@/app/components/ui/select'
+import { cidades, manifestacoes } from '@/assets/mapContent'
 
 // Hero
 import BandeirasHero from '@/assets/bandeirashero.png'
@@ -153,74 +153,11 @@ export default function Home() {
               </SelectTrigger>
               <SelectContent>
                 <SelectGroup className="h-full max-h-80 overflow-x-scroll text-[#2185BA]">
-                  <SelectItem value="Amparo do São Francisco">
-                    Amparo do São Francisco
-                  </SelectItem>
-                  <SelectItem value="Aquidabã">Aquidabã</SelectItem>
-                  <SelectItem value="Aracaju">Aracaju</SelectItem>
-                  <SelectItem value="Arauá">Arauá</SelectItem>
-                  <SelectItem value="Barra dos Coqueiros">
-                    Barra dos Coqueiros
-                  </SelectItem>
-                  <SelectItem value="Boquim">Boquim</SelectItem>
-                  <SelectItem value="Brejo Grande">Brejo Grande</SelectItem>
-                  <SelectItem value="Canoa">Canoa</SelectItem>
-                  <SelectItem value="Canhoba">Canhoba</SelectItem>
-                  <SelectItem value="Canidé de São Francisco">
-                    Canidé de São Francisco
-                  </SelectItem>
-                  <SelectItem value="Capela">Capela</SelectItem>
-                  <SelectItem value="Carira">Carira</SelectItem>
-                  <SelectItem value="Cedro de São João">
-                    Cedro de São João
-                  </SelectItem>
-                  <SelectItem value="Cristinápolis">Cristinápolis</SelectItem>
-                  <SelectItem value="Divina Pastora">Divina Pastora</SelectItem>
-                  <SelectItem value="Gararu">Gararu</SelectItem>
-                  <SelectItem value="General Maynard">
-                    General Maynard
-                  </SelectItem>
-                  <SelectItem value="Graccho Cardoso">
-                    Graccho Cardoso
-                  </SelectItem>
-                  <SelectItem value="Ilha das Flores">
-                    Ilha das Flores
-                  </SelectItem>
-                  <SelectItem value="Itabaiana">Itabaiana</SelectItem>
-                  <SelectItem value="Itaporanga">Itaporanga</SelectItem>
-                  <SelectItem value="Japaratuba">Japaratuba</SelectItem>
-                  <SelectItem value="Lagarto">Lagarto</SelectItem>
-                  <SelectItem value="Laranjeiras">Laranjeiras</SelectItem>
-                  <SelectItem value="Macambira">Macambira</SelectItem>
-                  <SelectItem value="Malhador">Malhador</SelectItem>
-                  <SelectItem value="Moita Bonita">Moita Bonita</SelectItem>
-                  <SelectItem value="Monte Alegre">Monte Alegre</SelectItem>
-                  <SelectItem value="Mussuca- Laranjeiras">
-                    Mussuca- Laranjeiras
-                  </SelectItem>
-                  <SelectItem value="Neópolis">Neópolis</SelectItem>
-                  <SelectItem value="Pacatuba">Pacatuba</SelectItem>
-                  <SelectItem value="Pedrinhas">Pedrinhas</SelectItem>
-                  <SelectItem value="Propriá">Propriá</SelectItem>
-                  <SelectItem value="Ribeirópolis">Ribeirópolis</SelectItem>
-                  <SelectItem value="Riachuelo">Riachuelo</SelectItem>
-                  <SelectItem value="Rosário do Catete">
-                    Rosário do Catete
-                  </SelectItem>
-                  <SelectItem value="Santana de São Francisco">
-                    Santana de São Francisco
-                  </SelectItem>
-                  <SelectItem value="Santo Amaro">Santo Amaro</SelectItem>
-                  <SelectItem value="Santo Amaro das Brotas">
-                    Santo Amaro das Brotas
-                  </SelectItem>
-                  <SelectItem value="São Cristóvão">São Cristóvão</SelectItem>
-                  <SelectItem value="São Domingos">São Domingos</SelectItem>
-                  <SelectItem value="São Miguel do Aleixo">
-                    São Miguel do Aleixo
-                  </SelectItem>
-                  <SelectItem value="Simão Dias">Simão Dias</SelectItem>
-                  <SelectItem value="Tobias Barreto">Tobias Barreto</SelectItem>
+                  {cidades.map((cidade) => (
+                    <SelectItem value={cidade} key={cidade}>
+                      {cidade}
+                    </SelectItem>
+                  ))}
                 </SelectGroup>
               </SelectContent>
             </Select>
@@ -230,32 +167,11 @@ export default function Home() {
               </SelectTrigger>
               <SelectContent>
                 <SelectGroup className="h-full max-h-80 overflow-x-scroll text-[#2185BA]">
-                  <SelectItem value="Bacamarteiros">Bacamarteiros</SelectItem>
-                  <SelectItem value="Barco de fogo">Barco de fogo</SelectItem>
-                  <SelectItem value="Batalhão">Batalhão</SelectItem>
-                  <SelectItem value="Batucada">Batucada</SelectItem>
-                  <SelectItem value="Caceteira">Caceteira</SelectItem>
-                  <SelectItem value="Cacumbi">Cacumbi</SelectItem>
-                  <SelectItem value="Capoeira">Capoeira</SelectItem>
-                  <SelectItem value="Chegança">Chegança</SelectItem>
-                  <SelectItem value="Guerreiro">Guerreiro</SelectItem>
-                  <SelectItem value="Lambe-sujo">Lambe-sujo</SelectItem>
-                  <SelectItem value="Literatura">Literatura</SelectItem>
-                  <SelectItem value="Maracatu">Maracatu</SelectItem>
-                  <SelectItem value="Nagô">Nagô</SelectItem>
-                  <SelectItem value="Parafusos">Parafusos</SelectItem>
-                  <SelectItem value="Pífano">Pífano</SelectItem>
-                  <SelectItem value="Reisado">Reisado</SelectItem>
-                  <SelectItem value="Renda irlandesa">
-                    Renda irlandesa
-                  </SelectItem>
-                  <SelectItem value="Samba de aboio">Samba de aboio</SelectItem>
-                  <SelectItem value="Samba de coco"> Samba de coco </SelectItem>
-                  <SelectItem value="Samba de pareia">
-                    Samba de pareia
-                  </SelectItem>
-                  <SelectItem value="São Gonçalo"> São Gonçalo </SelectItem>
-                  <SelectItem value="Taieiras"> Taieiras </SelectItem>
+                  {manifestacoes.map((manifestacao) => (
+                    <SelectItem value={manifestacao} key={manifestacao}>
+                      {manifestacao}
+                    </SelectItem>
+                  ))}
                 </SelectGroup>
               </SelectContent>
             </Select>
