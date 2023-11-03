@@ -19,6 +19,7 @@ const content = {
     'Revista Barra: Samba de Coco / Mestre Iolanda',
     'Samba de Coco de Seu Diô – Fundação de Cultura e Arte Aperipê / Aperipê TV',
   ],
+  imagesUrl: [''],
 }
 
 export const metadata: Metadata = {

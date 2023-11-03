@@ -21,6 +21,7 @@ const content = {
     'LIMA, Marcelo Rangel. O engenho criativo da Mussuca : desenvolvimento e cultura no campo negro de Laranjeiras, Sergipe. 2019. 155 f. Dissertação (Mestrado em Comunicação) - Universidade Federal de Sergipe, São Cristóvão, SE, 2019.',
     'SANTANA, J. S. Abordagem dos movimentos do São Gonçalo do Amarante de Laranjeiras - SE no ensino fundamental : uma ação pedagógica com ênfase nas artes cênicas. São Cristóvão, SE, 2019. Monografia (graduação em Licenciatura em Teatro) – Departamento de Teatro, Centro de Educação e Ciências Humanas, Universidade Federal de Sergipe, São Cristóvão, 2019.',
   ],
+  imagesUrl: [''],
 }
 
 export const metadata: Metadata = {

@@ -12,7 +12,7 @@ const content = {
     festas: '',
     sedes: '',
   },
-  refs: [],
+  refs: [''],
   imagesUrl: [
     '/images/ilustracoes/barco-de-fogo.png',
     '/images/ilustracoes/bacamarteiro.png',

@@ -17,6 +17,7 @@ const content = {
     'FERREIRA, Mariano Antonio. Guerreiro. Aracaju: Secretaria de Estado da Educação e Cultura / FUNDESC, [s.d.].',
     'Guerreiro. In: INDUMENTÁRIA FOLCLÓRICA. [levantamento de dados e sistematização: Claudia Toscano de Brito; Capa: Melcíades; Fotógrafo: Jairo ]. Aracaju: Secretaria de Estado da Educação e Cultura / FUNDESC, 1985.',
   ],
+  imagesUrl: [''],
 }
 
 export const metadata: Metadata = {

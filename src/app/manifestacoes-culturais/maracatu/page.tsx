@@ -22,6 +22,7 @@ const content = {
     'OLIVEIRA, Edivaldo Alves de. Os territórios dos Maracatus do povoado Brejão - Brejo Grande/SE. 2017. 138 f. Dissertação (Mestrado em Geografia) - Universidade Federal de Sergipe, São Cristóvão, SE, 2017.',
     'SOUZA, Marcelo Renan Oliveira de. Maracatus de Fortaleza: entre tradições, identidades e a formação de um patrimônio cultural. IPHAN, 2015',
   ],
+  imagesUrl: [''],
 }
 
 export const metadata: Metadata = {

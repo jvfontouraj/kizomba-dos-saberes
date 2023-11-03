@@ -23,6 +23,7 @@ const content = {
     'INDUMENTÁRIA FOLCLÓRICA. [levantamento de dados e sistematização: Claudia Toscano de Brito; Capa: Melcíades, Fotógrafo: Jairo]. Aracaju: Secretaria de Estado da Educação e Cultura / FUNDESC, 1985.',
     'SEPLAN. Sergipe, Cultura e Diversidade. Aracaju, 2010.',
   ],
+  imagesUrl: [''],
 }
 
 export const metadata: Metadata = {

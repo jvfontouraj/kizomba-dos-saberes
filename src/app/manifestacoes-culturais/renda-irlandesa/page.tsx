@@ -19,6 +19,7 @@ const content = {
     'IPHAN. Instrução Técnica do Processo de Registro do Modo de Fazer da Renda Irlandesa tendo como Referência o Ofício das Rendeiras de Divina Pastora/SE. ',
     'TORRES, D. A. Associação de Costureiras e Artesãs do Município de Laranjeiras: transformando a arte hereditária em fonte de renda. In: Anais eletrônicos do XI Congresso Luso Afro Brasileiro de Ciências Sociais: Diversidades e (Des)Igualdades. Salvador: UFBA, 2011. ',
   ],
+  imagesUrl: [''],
 }
 
 export const metadata: Metadata = {

@@ -20,6 +20,7 @@ const content = {
     'TORRES, Díjna Andrade. Mulher nagô: liderança feminina e as relações de gênero e parentesco no Terreiro Santa Bárbara Virgem, em Laranjeiras. Dissertação de Mestrado em Sociologia. São Cristóvão: Núcleo de Pós-Graduação e Pesquisa em Ciências Sociais, 2012.',
     'TORRES, Díjna Andrade. Mulher Nagô: liderança feminina e suas relações de poder e parentesco no Terreiro Santa Bárbara Virgem, em Laranjeiras. II Seminário de Estudos Culturais, Identidades e Relações Interétnicas. São Cristóvão: UFS, 2011. Disponível em: http://www.gerts.com.br/se-ciri/anais_II_SECIRI/gt_04/gt04_02.pdf.',
   ],
+  imagesUrl: [''],
 }
 
 export const metadata: Metadata = {

@@ -19,6 +19,7 @@ const content = {
     'INDUMENTÁRIA FOLCLÓRICA. [levantamento de dados e sistematização: Claudia Toscano de Brito; Capa: Melcíades; Fotógrafo: Jairo ]. Aracaju: Secretaria de Estado da Educação e Cultura / FUNDESC, 1985.',
     'SANTOS, Mesalas Ferreira. Formas Expressivas de um mestre: a mediação entre margem e centro nos folguedos de Sergipe. in: 29ª Reunião Brasileira de Antropologia, Rio Grande do Norte, 2014.',
   ],
+  imagesUrl: [''],
 }
 
 export const metadata: Metadata = {

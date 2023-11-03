@@ -16,6 +16,7 @@ const content = {
     'SANTOS, M. F.  Performance e Escárnio na Festa do Lambe-Sujo. 1. ed. São Cristóvão: Editora UFS, 2013. v. 1. 180p .',
     'SANTOS, V. R. . PERFORMANCE E CONTRADIÇÕES SOCIAIS NA FESTA DO LAMBE SUJOS E CABOCLINHOS EM LARANJEIRAS/SE. In: Reuniões de Antropólogos Norte e Nordeste ? ABANNE Reunião Equatorial de Antropologia ? REA, 2015, MACEIO.',
   ],
+  imagesUrl: [''],
 }
 
 export const metadata: Metadata = {
