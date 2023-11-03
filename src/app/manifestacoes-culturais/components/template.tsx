@@ -6,7 +6,6 @@ import Bandeiras1 from '@/assets/bandeiras1.png'
 import Bandeiras2 from '@/assets/bandeiras2.png'
 import ChevronDown from '@/assets/chevron-down.svg'
 import Piramides from '@/assets/piramides.png'
-import RealezaNago from '@/assets/realeza-nago.png'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css'
 

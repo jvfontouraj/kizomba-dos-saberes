@@ -12,7 +12,8 @@ const content = {
     festas: 'Ciclo Junino (São João e São Pedro)',
     sedes: '',
   },
-  refs: [],
+  refs: [''],
+  imagesUrl: [''],
 }
 
 export const metadata: Metadata = {
