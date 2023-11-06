@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import { useState } from 'react'
 import Image1 from '@/assets/hero-carousel/image-01.webp'
@@ -10,6 +11,7 @@ import cs from 'classnames'
 
 export function HeroGallery() {
   const [showImg, setShowImg] = useState(0)
+  const images = [Image1, Image2, Image3, Image4, Image5]
 
   setTimeout(() => {
     if (showImg < 4) {
@@ -20,57 +22,23 @@ export function HeroGallery() {
   }, 5000)
 
   return (
-    <div className="absolute">
-      <div className="absolute h-screen w-screen  -translate-x-1/2 -translate-y-1/2">
+    <div className="absolute w-full h-full overflow-hidden flex items-center justify-center">
+      {images.map((image, index) => (
         <Image
-          src={Image1}
+          key={index}
+          src={image}
           alt="Imagem de fundo"
           className={
-            (cs('h-full w-full'),
-            showImg === 0 ? ' animate-fade-in' : ' animate-fade-out opacity-0')
+            showImg === index
+              ? ' animate-fade-in'
+              : ' animate-fade-out opacity-0'
           }
+          style={{
+            minHeight: '100vh',
+            position: 'absolute',
+          }}
         />
-      </div>
-      <div className="absolute h-screen w-screen -translate-x-1/2 -translate-y-1/2">
-        <Image
-          src={Image2}
-          alt="Imagem de fundo"
-          className={
-            (cs('h-full w-full'),
-            showImg === 1 ? ' animate-fade-in' : ' animate-fade-out opacity-0')
-          }
-        />
-      </div>
-      <div className="absolute h-screen w-screen -translate-x-1/2 -translate-y-1/2">
-        <Image
-          src={Image3}
-          alt="Imagem de fundo"
-          className={
-            (cs('h-full w-full'),
-            showImg === 2 ? ' animate-fade-in' : ' animate-fade-out opacity-0')
-          }
-        />
-      </div>
-      <div className="absolute h-screen w-screen -translate-x-1/2 -translate-y-1/2">
-        <Image
-          src={Image4}
-          alt="Imagem de fundo"
-          className={
-            (cs('h-full w-full'),
-            showImg === 3 ? ' animate-fade-in' : ' animate-fade-out opacity-0')
-          }
-        />
-      </div>
-      <div className="absolute h-screen w-screen -translate-x-1/2 -translate-y-1/2">
-        <Image
-          src={Image5}
-          alt="Imagem de fundo"
-          className={
-            (cs('h-full w-full'),
-            showImg === 4 ? ' animate-fade-in' : ' animate-fade-out opacity-0')
-          }
-        />
-      </div>
+      ))}
     </div>
   )
 }

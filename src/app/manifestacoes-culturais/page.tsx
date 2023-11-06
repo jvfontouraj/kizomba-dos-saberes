@@ -6,24 +6,23 @@ import WoodBackground from '@/assets/wood-background.png'
 import Bandeiras2 from '@/assets/bandeiras2.png'
 import Cheganca from '@/assets/cheganca.png'
 import PaiJuaTransp from '@/assets/pai-jua.png'
-import RealezaNago from '@/assets/realeza-nago.png'
 
 // Ilustrações com fundo
-import Bacamarteiros from '@/assets/ilustracoes/com-fundo/bacamarteiro.png'
-import Batucada from '@/assets/ilustracoes/com-fundo/batucada.png'
-import Caceteira from '@/assets/ilustracoes/com-fundo/caceteira.png'
-import Cacumbi from '@/assets/ilustracoes/com-fundo/cacumbi.png'
-import Guerreiro from '@/assets/ilustracoes/com-fundo/guerreiro.png'
-import Nago from '@/assets/ilustracoes/com-fundo/nago.png'
-import PaiJua from '@/assets/ilustracoes/com-fundo/pai-jua.png'
-import Parafuso from '@/assets/ilustracoes/com-fundo/parafuso.png'
-import Reisado from '@/assets/ilustracoes/com-fundo/reisado.png'
-import Zabumba from '@/assets/ilustracoes/com-fundo/zabumba.png'
-import BarcoDeFogo from '@/assets/ilustracoes/com-fundo/barco-de-fogo.png'
-import Maracatu from '@/assets/ilustracoes/com-fundo/maracatu.png'
-import SambaDeAboio from '@/assets/ilustracoes/com-fundo/samba-de-aboio.png'
-import Sambadeira from '@/assets/ilustracoes/com-fundo/sambadeira.png'
-import Taieiras from '@/assets/ilustracoes/com-fundo/taieiras.png'
+import Bacamarteiros from 'public/images/ilustracoes/bacamarteiro.webp'
+import Batucada from 'public/images/ilustracoes/batucada.webp'
+import Caceteira from 'public/images/ilustracoes/caceteira.webp'
+import Cacumbi from 'public/images/ilustracoes/cacumbi.webp'
+import Guerreiro from 'public/images/ilustracoes/guerreiro.webp'
+import Nago from 'public/images/ilustracoes/nago.webp'
+import PaiJua from 'public/images/ilustracoes/pai-jua.webp'
+import Parafuso from 'public/images/ilustracoes/parafuso.webp'
+import Reisado from 'public/images/ilustracoes/reisado.webp'
+import Zabumba from 'public/images/ilustracoes/zabumba.webp'
+import BarcoDeFogo from 'public/images/ilustracoes/barco-de-fogo.webp'
+import Maracatu from 'public/images/ilustracoes/maracatu.webp'
+import SambaDeAboio from 'public/images/ilustracoes/samba-de-aboio.webp'
+import Sambadeira from 'public/images/ilustracoes/sambadeira.webp'
+import Taieiras from 'public/images/ilustracoes/taieiras.webp'
 
 export default function ManifestacoesCulturais() {
   const [inputValue, setInputValue] = useState('')
@@ -61,25 +60,11 @@ export default function ManifestacoesCulturais() {
         </div>
         <input
           type="text"
-          placeholder="Pesquise por nome ou busque por ordem alfabética, abaixo."
+          placeholder="Pesquise por nome ou busque abaixo por ordem alfabética."
           className="w-[500px] rounded-md px-4 py-2 text-neutral-600 shadow"
           onInput={updateSearch}
         />
         <div className="grid grid-cols-4 gap-10">
-          {'bacamarteiros'.includes(inputValue.toLowerCase()) && (
-            <Link href="/manifestacoes-culturais/bacamarteiros">
-              <div className="flex flex-col items-center gap-2">
-                <div className="aspect-square w-36 overflow-hidden rounded-full bg-[#e7c102] shadow-md">
-                  <Image
-                    src={Bacamarteiros}
-                    alt="ilustração de bacamarteiros"
-                    className="h-full object-cover"
-                  />
-                </div>
-                <h2 className="uppercase text-white">Bacamarteiros</h2>
-              </div>
-            </Link>
-          )}
           {'barco de fogo'.includes(inputValue.toLowerCase()) && (
             <Link href="/manifestacoes-culturais/barco-de-fogo">
               <div className="flex flex-col items-center gap-2">
@@ -97,7 +82,13 @@ export default function ManifestacoesCulturais() {
           {'batalhão'.includes(inputValue.toLowerCase()) && (
             <Link href="/manifestacoes-culturais/batalhao">
               <div className="flex flex-col items-center gap-2">
-                <div className="aspect-square w-36 rounded-full bg-[#e7c102] shadow-md" />
+                <div className="aspect-square w-36 overflow-hidden rounded-full bg-[#e7c102] shadow-md">
+                  <Image
+                    src={Bacamarteiros}
+                    alt="ilustração de bacamarteiros"
+                    className="h-full object-cover"
+                  />
+                </div>{' '}
                 <h2 className="uppercase text-white">BATALHÃO</h2>
               </div>
             </Link>
@@ -189,14 +180,6 @@ export default function ManifestacoesCulturais() {
               </div>
             </Link>
           )}
-          {'literatura'.includes(inputValue.toLowerCase()) && (
-            <Link href="/manifestacoes-culturais/literatura">
-              <div className="flex flex-col items-center gap-2">
-                <div className="aspect-square w-36 rounded-full bg-[#e7c102] shadow-md" />
-                <h2 className="uppercase text-white">LITERATURA</h2>
-              </div>
-            </Link>
-          )}
           {'maracatu'.includes(inputValue.toLowerCase()) && (
             <Link href="/manifestacoes-culturais/maracatu">
               <div className="flex flex-col items-center gap-2">
@@ -236,14 +219,6 @@ export default function ManifestacoesCulturais() {
                   />
                 </div>
                 <h2 className="uppercase text-white">PARAFUSOS</h2>
-              </div>
-            </Link>
-          )}
-          {'pastoreio'.includes(inputValue.toLowerCase()) && (
-            <Link href="/manifestacoes-culturais/pastoreio">
-              <div className="flex flex-col items-center gap-2">
-                <div className="aspect-square w-36 rounded-full bg-[#e7c102] shadow-md" />
-                <h2 className="uppercase text-white">PASTOREIO</h2>
               </div>
             </Link>
           )}
@@ -290,7 +265,7 @@ export default function ManifestacoesCulturais() {
                 <div className="aspect-square w-36 overflow-hidden rounded-full bg-[#BE3C45] shadow-md">
                   <Image
                     src={SambaDeAboio}
-                    alt="ilustração de parafuso"
+                    alt="ilustração samba de aboio"
                     className="-mt-1 h-full object-cover"
                   />
                 </div>
@@ -301,7 +276,13 @@ export default function ManifestacoesCulturais() {
           {'samba de coco'.includes(inputValue.toLowerCase()) && (
             <Link href="/manifestacoes-culturais/samba-de-coco">
               <div className="flex flex-col items-center gap-2">
-                <div className="aspect-square w-36 rounded-full bg-[#e7c102] shadow-md" />
+                <div className="aspect-square w-36 overflow-hidden rounded-full bg-[#e7c102] shadow-md">
+                  <Image
+                    src={Sambadeira}
+                    alt="ilustração samba de coco"
+                    className="h-full object-cover"
+                  />
+                </div>{' '}
                 <h2 className="uppercase text-white">SAMBA DE COCO</h2>
               </div>
             </Link>
@@ -309,13 +290,8 @@ export default function ManifestacoesCulturais() {
           {'samba de pareia'.includes(inputValue.toLowerCase()) && (
             <Link href="/manifestacoes-culturais/samba-de-pareia">
               <div className="flex flex-col items-center gap-2">
-                <div className="aspect-square w-36 overflow-hidden rounded-full bg-[#e7c102] shadow-md">
-                  <Image
-                    src={Sambadeira}
-                    alt="ilustração de parafuso"
-                    className="h-full object-cover"
-                  />
-                </div>
+                <div className="aspect-square w-36 rounded-full bg-[#e7c102] shadow-md" />
+
                 <h2 className="uppercase text-white">SAMBA DE PAREIA</h2>
               </div>
             </Link>

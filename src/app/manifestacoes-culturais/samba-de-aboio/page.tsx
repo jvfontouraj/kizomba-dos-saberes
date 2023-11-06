@@ -19,7 +19,11 @@ const content = {
     'ASSIS, Yérsia Souza de. Crianças ativas, aprendizagem e afro- brasilidade: pensando o aprendizado afro-brasileiro na casa de Santa Bárbara. Revista ABPN, v. 10, p. 530-548, 2018.',
     'ASSIS, Yérsia Souza de. Vale do Cotinguiba: Um território que se tornou uma ideia. (no prelo)',
   ],
-  imagesUrl: [''],
+  imagesUrl: [
+    '/images/ilustracoes/samba-de-aboio.webp',
+    '/images/ilustracoes/maracatu.webp',
+    '/images/ilustracoes/guerreiro.webp',
+  ],
 }
 
 export const metadata: Metadata = {

@@ -1,5 +1,5 @@
 import React from 'react'
-import './globals.css'
+import '@/styles/globals.css'
 import { Ubuntu } from 'next/font/google'
 import localFont from 'next/font/local'
 import { Menu } from '@/components/Menu'

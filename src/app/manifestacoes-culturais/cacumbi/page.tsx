@@ -16,7 +16,10 @@ const content = {
   refs: [
     'FONTES, Irineu. Cacumbi Mestre Deca: A relação grupo cultural e gestão pública. p.52 il. 2014. Monografia (Curso de Formação de Gestores Culturais dos Estados do Nordeste) – Instituto de Humanidades, Artes e Ciências Professor Milton Santos, Universidade Federal da Bahia, Salvador, 2014. http://anais.educonse.com.br/2016/lugar_e_lugaridade_do_folguedo_cacumbi_do_mestre_deca_laraneirass.pdf ',
   ],
-  imagesUrl: [''],
+  imagesUrl: [
+    '/images/ilustracoes/cacumbi.webp',
+    '/images/ilustracoes/parafuso.webp',
+  ],
 }
 
 export const metadata: Metadata = {

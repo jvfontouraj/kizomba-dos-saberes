@@ -17,7 +17,11 @@ const content = {
     "FONTES, Aglaé d'Ávila. Mestre Rindú - José Gonçalo Santos. São Cristóvão: PMSC/FUNPATRI, 2012.",
     'FRAGATA, Thiago. Mestres do Folk: Mestre Rindú, 10 de agosto de 2007, http://thiagofragata.blogspot.com.br/2007/08/mestres-do-folk-mestre-rind.html',
   ],
-  imagesUrl: [''],
+  imagesUrl: [
+    '/images/ilustracoes/caceteira.webp',
+    '/images/ilustracoes/bacamarteiro.webp',
+    '/images/ilustracoes/batucada.webp',
+  ],
 }
 
 export const metadata: Metadata = {

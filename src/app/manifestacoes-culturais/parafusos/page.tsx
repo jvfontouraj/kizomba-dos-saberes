@@ -18,7 +18,11 @@ const content = {
     'Parafusos < https://www.encontroteca.com.br/grupo/parafusos > ',
     'OLIVEIRA, Eliana Dias Ferreira. Ponteiros da memória: educação patrimonial do ensino de história em Sergipe. 2020. 492 f. Dissertação (Mestrado Profissional em Ensino de História) – Universidade Federal de Sergipe, São Cristóvão, SE, 2020.',
   ],
-  imagesUrl: [''],
+  imagesUrl: [
+    '/images/ilustracoes/parafuso.webp',
+    '/images/ilustracoes/maracatu.webp',
+    '/images/ilustracoes/guerreiro.webp',
+  ],
 }
 
 export const metadata: Metadata = {
