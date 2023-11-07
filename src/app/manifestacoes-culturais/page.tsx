@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import WoodBackground from '@/assets/wood-background.png'
 import Bandeiras2 from '@/assets/bandeiras2.png'
-import Cheganca from '@/assets/cheganca.png'
+import ChegancaPng from '@/assets/cheganca.png'
 import PaiJuaTransp from '@/assets/pai-jua.png'
 
 // Ilustrações com fundo
@@ -13,7 +13,7 @@ import Batucada from 'public/images/ilustracoes/batucada.webp'
 import Caceteira from 'public/images/ilustracoes/caceteira.webp'
 import Cacumbi from 'public/images/ilustracoes/cacumbi.webp'
 import Guerreiro from 'public/images/ilustracoes/guerreiro.webp'
-import Nago from 'public/images/ilustracoes/nago.webp'
+import Nago from 'public/images/ilustracoes/nagô.webp'
 import PaiJua from 'public/images/ilustracoes/pai-jua.webp'
 import Parafuso from 'public/images/ilustracoes/parafuso.webp'
 import Reisado from 'public/images/ilustracoes/reisado.webp'
@@ -23,6 +23,11 @@ import Maracatu from 'public/images/ilustracoes/maracatu.webp'
 import SambaDeAboio from 'public/images/ilustracoes/samba-de-aboio.webp'
 import Sambadeira from 'public/images/ilustracoes/sambadeira.webp'
 import Taieiras from 'public/images/ilustracoes/taieiras.webp'
+import Capoeira from 'public/images/ilustracoes/capoeira.webp'
+import Cheganca from 'public/images/ilustracoes/cheganca.webp'
+import Rendeira from 'public/images/ilustracoes/rendeira.webp'
+import Pareia from 'public/images/ilustracoes/pareia.webp'
+import SaoGoncalo from 'public/images/ilustracoes/sao-goncalo.webp'
 
 export default function ManifestacoesCulturais() {
   const [inputValue, setInputValue] = useState('')
@@ -37,7 +42,7 @@ export default function ManifestacoesCulturais() {
       <Image
         src={WoodBackground}
         alt=""
-        className="absolute  h-full object-cover opacity-20 brightness-50"
+        className="absolute w-screen h-full object-cover opacity-20 brightness-50"
       />
       <Image src={Bandeiras2} alt="" className="absolute top-28 z-10" />
       <Image src={Bandeiras2} alt="" className="absolute bottom-5 z-10" />
@@ -53,7 +58,7 @@ export default function ManifestacoesCulturais() {
             className="absolute -left-14 top-20 z-20 w-24"
           />
           <Image
-            src={Cheganca}
+            src={ChegancaPng}
             alt=""
             className="absolute -right-11 top-20 z-20 w-24"
           />
@@ -64,15 +69,15 @@ export default function ManifestacoesCulturais() {
           className="w-[500px] rounded-md px-4 py-2 text-neutral-600 shadow"
           onInput={updateSearch}
         />
-        <div className="grid grid-cols-4 gap-10">
+        <div className="grid grid-cols-4 gap-16 font-semibold text-lg">
           {'barco de fogo'.includes(inputValue.toLowerCase()) && (
             <Link href="/manifestacoes-culturais/barco-de-fogo">
               <div className="flex flex-col items-center gap-2">
-                <div className="aspect-square w-36 overflow-hidden rounded-full bg-[#e7c102] shadow-md">
+                <div className="aspect-square w-36 overflow-hidden rounded-full bg-[#0d0c38] shadow-md">
                   <Image
                     src={BarcoDeFogo}
-                    alt="ilustração de bacamarteiros"
-                    className="h-full object-cover"
+                    alt="ilustração barco de fogo"
+                    className="h-full object-cover scale-110 -translate-x-5"
                   />
                 </div>
                 <h2 className="uppercase text-white">BARCO DE FOGO</h2>
@@ -88,7 +93,7 @@ export default function ManifestacoesCulturais() {
                     alt="ilustração de bacamarteiros"
                     className="h-full object-cover"
                   />
-                </div>{' '}
+                </div>
                 <h2 className="uppercase text-white">BATALHÃO</h2>
               </div>
             </Link>
@@ -139,7 +144,13 @@ export default function ManifestacoesCulturais() {
           {'capoeira'.includes(inputValue.toLowerCase()) && (
             <Link href="/manifestacoes-culturais/capoeira">
               <div className="flex flex-col items-center gap-2">
-                <div className="aspect-square w-36 rounded-full bg-[#e7c102] shadow-md" />
+                <div className="aspect-square w-36 overflow-hidden flex items-center rounded-full bg-[#ce7644] shadow-md">
+                  <Image
+                    src={Capoeira}
+                    alt="ilustração de Capoeira"
+                    className="scale-75"
+                  />
+                </div>
                 <h2 className="uppercase text-white">CAPOEIRA</h2>
               </div>
             </Link>
@@ -147,7 +158,13 @@ export default function ManifestacoesCulturais() {
           {'chegança'.includes(inputValue.toLowerCase()) && (
             <Link href="/manifestacoes-culturais/cheganca">
               <div className="flex flex-col items-center gap-2">
-                <div className="aspect-square w-36 rounded-full bg-[#e7c102] shadow-md" />
+                <div className="aspect-square w-36 overflow-hidden flex items-center rounded-full bg-[#b7d6d7] shadow-md">
+                  <Image
+                    src={Cheganca}
+                    alt="ilustração de guerreiro"
+                    className="scale-75"
+                  />
+                </div>
                 <h2 className="uppercase text-white">CHEGANÇA</h2>
               </div>
             </Link>
@@ -197,11 +214,11 @@ export default function ManifestacoesCulturais() {
           {'nago'.includes(inputValue.toLowerCase()) && (
             <Link href="/manifestacoes-culturais/nago">
               <div className="flex flex-col items-center gap-2">
-                <div className="aspect-square w-36 overflow-hidden rounded-full bg-[#e7c102] shadow-md">
+                <div className="aspect-square relative w-36 flex items-center overflow-hidden rounded-full bg-[#8e6337] shadow-md">
                   <Image
                     src={Nago}
                     alt="ilustração de nago"
-                    className="h-full object-cover"
+                    className="object-cover w-36 absolute"
                   />
                 </div>
                 <h2 className="uppercase text-white">NAGÔ</h2>
@@ -254,7 +271,13 @@ export default function ManifestacoesCulturais() {
           {'renda irlandesa'.includes(inputValue.toLowerCase()) && (
             <Link href="/manifestacoes-culturais/renda-irlandesa">
               <div className="flex flex-col items-center gap-2">
-                <div className="aspect-square w-36 rounded-full bg-[#e7c102] shadow-md" />
+                <div className="aspect-square w-36 overflow-hidden flex items-center rounded-full bg-[#BE3C45] shadow-md">
+                  <Image
+                    src={Rendeira}
+                    alt="ilustração samba de aboio"
+                    className=""
+                  />
+                </div>
                 <h2 className="uppercase text-white">RENDA IRLANDESA</h2>
               </div>
             </Link>
@@ -282,7 +305,7 @@ export default function ManifestacoesCulturais() {
                     alt="ilustração samba de coco"
                     className="h-full object-cover"
                   />
-                </div>{' '}
+                </div>
                 <h2 className="uppercase text-white">SAMBA DE COCO</h2>
               </div>
             </Link>
@@ -290,8 +313,13 @@ export default function ManifestacoesCulturais() {
           {'samba de pareia'.includes(inputValue.toLowerCase()) && (
             <Link href="/manifestacoes-culturais/samba-de-pareia">
               <div className="flex flex-col items-center gap-2">
-                <div className="aspect-square w-36 rounded-full bg-[#e7c102] shadow-md" />
-
+                <div className="aspect-square w-36 overflow-hidden flex items-center rounded-full bg-[#f7e88d] shadow-md">
+                  <Image
+                    src={Pareia}
+                    alt="ilustração samba de coco"
+                    className="scale-90 translate-y-3"
+                  />
+                </div>
                 <h2 className="uppercase text-white">SAMBA DE PAREIA</h2>
               </div>
             </Link>
@@ -299,7 +327,15 @@ export default function ManifestacoesCulturais() {
           {'são gonçalo'.includes(inputValue.toLowerCase()) && (
             <Link href="/manifestacoes-culturais/sao-goncalo">
               <div className="flex flex-col items-center gap-2">
-                <div className="aspect-square w-36 rounded-full bg-[#e7c102] shadow-md" />
+                <div className="aspect-square w-36 relative overflow-hidden rounded-full bg-[#d8655f] shadow-md">
+                  <Image
+                    src={SaoGoncalo}
+                    alt="ilustração samba de coco"
+                    className="scale-95 absolute z-10"
+                  />
+                  <div className="w-1/2 absolute bg-[#d9695f] left-0 h-full" />
+                  <div className="w-1/2 absolute bg-[#d06056] left-1/2 h-full" />
+                </div>
                 <h2 className="uppercase text-white">SÃO GONÇALO</h2>
               </div>
             </Link>

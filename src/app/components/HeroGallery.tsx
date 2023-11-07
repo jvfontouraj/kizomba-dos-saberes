@@ -7,7 +7,6 @@ import Image3 from '@/assets/hero-carousel/image-03.webp'
 import Image4 from '@/assets/hero-carousel/image-04.webp'
 import Image5 from '@/assets/hero-carousel/image-05.webp'
 import Image from 'next/image'
-import cs from 'classnames'
 
 export function HeroGallery() {
   const [showImg, setShowImg] = useState(0)
@@ -36,6 +35,7 @@ export function HeroGallery() {
           style={{
             minHeight: '100vh',
             position: 'absolute',
+            width: '100vw',
           }}
         />
       ))}
