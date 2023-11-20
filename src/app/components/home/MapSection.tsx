@@ -116,32 +116,35 @@ export function MapSection() {
           alt=""
           className="absolute -bottom-20 right-36 z-20 w-36"
         />
-        <div className="absolute bottom-0 left-[400px] flex w-max h-52 flex-col gap-3 border border-[#e7c102] bg-[#2185BA] px-3 py-5">
-          <div className="flex items-start gap-2">
-            <Image src={Bandeiras1} alt="" className="w-5" />
-            <h3 className="font-londrinaSolid text-2xl uppercase text-[#e7c102]">
-              {selector === 'município' ? city : manifestation}
-            </h3>
+        <div className="absolute bottom-0 left-[400px] ">
+          <div className="relative flex w-auto h-52 flex-col gap-3 border border-[#e7c102] bg-[#2185BA] px-3 py-5">
+            <div className="flex items-start gap-2">
+              <Image src={Bandeiras1} alt="" className="w-5" />
+              <h3 className="font-londrinaSolid text-2xl uppercase text-[#e7c102]">
+                {selector === 'município' ? city : manifestation}
+              </h3>
+            </div>
+            <ul className="ml-4 w-80 text-sm text-white overflow-y-scroll overflow-x-hidden relative">
+              {selector === 'município'
+                ? citysCard.map((item) => {
+                    if (city === item.nome) {
+                      return item.manifestacoes.map((manifestacao) => (
+                        <li key={manifestacao}>• {manifestacao}</li>
+                      ))
+                    }
+                    return null
+                  })
+                : manifestationsCard.map((item) => {
+                    if (manifestation === item.nome) {
+                      return item.cidades.map((cidade) => (
+                        <li key={cidade}>• {cidade}</li>
+                      ))
+                    }
+                    return null
+                  })}
+            </ul>
+            <div className="absolute bottom-1 w-[336px] lef-0 h-10 from-[#2185BA] bg-gradient-to-t" />
           </div>
-          <ul className="ml-2 w-80 pl-2 text-sm text-white overflow-y-scroll">
-            {selector === 'município'
-              ? citysCard.map((item) => {
-                  if (city === item.nome) {
-                    return item.manifestacoes.map((manifestacao) => (
-                      <li key={manifestacao}>• {manifestacao}</li>
-                    ))
-                  }
-                  return null
-                })
-              : manifestationsCard.map((item) => {
-                  if (manifestation === item.nome) {
-                    return item.cidades.map((cidade) => (
-                      <li key={cidade}>• {cidade}</li>
-                    ))
-                  }
-                  return null
-                })}
-          </ul>
         </div>
       </div>
     </section>
