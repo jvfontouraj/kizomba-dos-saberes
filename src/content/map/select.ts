@@ -46,7 +46,6 @@ export const cidades = [
 ]
 
 export const manifestacoes = [
-  'Bacamarteiros',
   'Barco de fogo',
   'Batalhão',
   'Batucada',
@@ -56,7 +55,6 @@ export const manifestacoes = [
   'Chegança',
   'Guerreiro',
   'Lambe-sujo',
-  'Literatura',
   'Maracatu',
   'Nagô',
   'Parafusos',
