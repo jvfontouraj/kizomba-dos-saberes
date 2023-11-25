@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+import { useState } from 'react'
 import {
   Select,
   SelectContent,
@@ -18,25 +19,29 @@ import LambeSujo from '@/assets/lambe-sujo.png'
 import Bacamarteiro from '@/assets/bacamarteiro.png'
 import RealezaNago from '@/assets/realeza-nago.png'
 import PaiJua from '@/assets/pai-jua.png'
-import Mapa from '@/assets/mapa.png'
 import FundoMapa from '@/assets/fundo-mapa.png'
-import { useState } from 'react'
+import { map } from '@/assets/mapa/mapas'
+import Mapa from '@/assets/mapa/Geral.png'
 
 export function MapSection() {
   const [city, setCity] = useState('Aracaju')
+  const [showCity, setShowCity] = useState<string[]>(['Aracaju'])
   const [manifestation, setManifestation] = useState('')
   const [selector, setSelector] = useState('município')
 
   function handleSelectCity(city: string) {
     setCity(city)
+    setShowCity([city])
     setSelector('município')
-    console.log(city)
   }
 
   function handleSelectManifestation(manifestation: string) {
     setManifestation(manifestation)
+
+    manifestationsCard.map(
+      (item) => item.nome === manifestation && setShowCity(item.cidades),
+    )
     setSelector('manifestação')
-    console.log(manifestation)
   }
   return (
     <section className="relative flex h-[calc(100vh-5.5rem)] w-screen flex-col items-center justify-center gap-5 overflow-hidden bg-[#2185BA]">
@@ -96,6 +101,21 @@ export function MapSection() {
       </div>
       <div className="relative">
         <Image src={Mapa} alt="" className="relative z-10 w-[500px]" />
+        <div className="absolute top-0 left-0 z-20 w-[500px]">
+          {map.map((mapa) =>
+            showCity.map(
+              (item) =>
+                item === mapa.name && (
+                  <Image
+                    src={mapa.image}
+                    alt="município"
+                    key={mapa.name}
+                    className="absolute w-full h-auto"
+                  />
+                ),
+            ),
+          )}
+        </div>
         <Image
           src={Bacamarteiro}
           alt=""
@@ -124,7 +144,7 @@ export function MapSection() {
                 {selector === 'município' ? city : manifestation}
               </h3>
             </div>
-            <ul className="ml-4 w-80 text-sm text-white overflow-y-scroll overflow-x-hidden relative">
+            <ul className="ml-4 w-80 text-sm text-white overflow-y-scroll overflow-x-hidden relative pb-4">
               {selector === 'município'
                 ? citysCard.map((item) => {
                     if (city === item.nome) {
@@ -143,7 +163,6 @@ export function MapSection() {
                     return null
                   })}
             </ul>
-            <div className="absolute bottom-1 w-[336px] lef-0 h-10 from-[#2185BA] bg-gradient-to-t" />
           </div>
         </div>
       </div>

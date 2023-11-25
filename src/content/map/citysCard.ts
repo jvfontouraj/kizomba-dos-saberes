@@ -78,19 +78,6 @@ export const citysCard = [
     ],
   },
   {
-    nome: 'Canoa',
-    manifestacoes: [
-      'Barco de fogo',
-      'Batalhão',
-      'Batucada',
-      'Caceteira',
-      'Cacumbi',
-      'Capoeira',
-      'Chegança',
-      'Guerreiro',
-    ],
-  },
-  {
     nome: 'Canhoba',
     manifestacoes: [
       'Barco de fogo',
@@ -325,46 +312,7 @@ export const citysCard = [
     ],
   },
   {
-    nome: 'Malhador',
-    manifestacoes: [
-      'Barco de fogo',
-      'Batalhão',
-      'Batucada',
-      'Caceteira',
-      'Cacumbi',
-      'Capoeira',
-      'Chegança',
-      'Guerreiro',
-    ],
-  },
-  {
     nome: 'Moita Bonita',
-    manifestacoes: [
-      'Barco de fogo',
-      'Batalhão',
-      'Batucada',
-      'Caceteira',
-      'Cacumbi',
-      'Capoeira',
-      'Chegança',
-      'Guerreiro',
-    ],
-  },
-  {
-    nome: 'Monte Alegre',
-    manifestacoes: [
-      'Barco de fogo',
-      'Batalhão',
-      'Batucada',
-      'Caceteira',
-      'Cacumbi',
-      'Capoeira',
-      'Chegança',
-      'Guerreiro',
-    ],
-  },
-  {
-    nome: 'Mussuca- Laranjeiras',
     manifestacoes: [
       'Barco de fogo',
       'Batalhão',
@@ -481,19 +429,6 @@ export const citysCard = [
     ],
   },
   {
-    nome: 'Santo Amaro',
-    manifestacoes: [
-      'Barco de fogo',
-      'Batalhão',
-      'Batucada',
-      'Caceteira',
-      'Cacumbi',
-      'Capoeira',
-      'Chegança',
-      'Guerreiro',
-    ],
-  },
-  {
     nome: 'Santo Amaro das Brotas',
     manifestacoes: [
       'Barco de fogo',
@@ -521,19 +456,6 @@ export const citysCard = [
   },
   {
     nome: 'São Domingos',
-    manifestacoes: [
-      'Barco de fogo',
-      'Batalhão',
-      'Batucada',
-      'Caceteira',
-      'Cacumbi',
-      'Capoeira',
-      'Chegança',
-      'Guerreiro',
-    ],
-  },
-  {
-    nome: 'São Miguel do Aleixo',
     manifestacoes: [
       'Barco de fogo',
       'Batalhão',
