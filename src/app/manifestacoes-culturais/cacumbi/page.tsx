@@ -18,7 +18,10 @@ const content = {
   ],
   imagesUrl: [
     '/images/ilustracoes/cacumbi.webp',
-    '/images/ilustracoes/parafuso.webp',
+    '/images/fotos/cacumbi/cacumbi-1.webp',
+    '/images/fotos/cacumbi/cacumbi-2.webp',
+    '/images/fotos/cacumbi/cacumbi-3.webp',
+    '/images/fotos/cacumbi/cacumbi-4.webp',
   ],
 }
 

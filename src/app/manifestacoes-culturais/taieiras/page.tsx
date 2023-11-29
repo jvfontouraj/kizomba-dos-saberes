@@ -25,8 +25,9 @@ const content = {
   ],
   imagesUrl: [
     '/images/ilustracoes/taieiras.webp',
-    '/images/ilustracoes/maracatu.webp',
-    '/images/ilustracoes/guerreiro.webp',
+    '/images/fotos/taieiras/taieiras-1.webp',
+    '/images/fotos/taieiras/taieiras-2.webp',
+    '/images/fotos/taieiras/taieiras-3.webp',
   ],
 }
 

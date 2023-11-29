@@ -33,7 +33,7 @@ export default function RootLayout({
       </head>
       <body
         id="body"
-        className={`${ubuntu.className} ${paletteMosaic.variable}, relative`}
+        className={`${ubuntu.className} ${paletteMosaic.variable}, relative w-screen snap-mandatory snap-y [&>section]:snap-end`}
       >
         <Menu />
         {children}

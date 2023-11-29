@@ -21,8 +21,11 @@ const content = {
   ],
   imagesUrl: [
     '/images/ilustracoes/samba-de-aboio.webp',
-    '/images/ilustracoes/maracatu.webp',
-    '/images/ilustracoes/guerreiro.webp',
+    '/images/fotos/samba-de-aboio/samba-de-aboio-1.webp',
+    '/images/fotos/samba-de-aboio/samba-de-aboio-2.webp',
+    '/images/fotos/samba-de-aboio/samba-de-aboio-3.webp',
+    '/images/fotos/samba-de-aboio/samba-de-aboio-4.webp',
+    '/images/fotos/samba-de-aboio/samba-de-aboio-5.webp',
   ],
 }
 

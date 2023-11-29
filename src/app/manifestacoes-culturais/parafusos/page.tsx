@@ -20,8 +20,10 @@ const content = {
   ],
   imagesUrl: [
     '/images/ilustracoes/parafuso.webp',
-    '/images/ilustracoes/maracatu.webp',
-    '/images/ilustracoes/guerreiro.webp',
+    '/images/fotos/parafusos/parafusos-1.webp',
+    '/images/fotos/parafusos/parafusos-2.webp',
+    '/images/fotos/parafusos/parafusos-3.webp',
+    '/images/fotos/parafusos/parafusos-4.webp',
   ],
 }
 

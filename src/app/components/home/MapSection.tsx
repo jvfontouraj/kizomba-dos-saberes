@@ -44,7 +44,7 @@ export function MapSection() {
     setSelector('manifestação')
   }
   return (
-    <section className="relative flex h-[calc(100vh-5.5rem)] w-screen flex-col items-center justify-center gap-5 overflow-hidden bg-[#2185BA]">
+    <section className="relative flex h-[calc(100vh-5.5rem)] w-screen flex-col items-center justify-center gap-5 overflow-hidden bg-[#2185BA] ">
       <Image
         src={FundoMapa}
         alt={'fundo'}
@@ -136,15 +136,15 @@ export function MapSection() {
           alt=""
           className="absolute -bottom-20 right-36 z-20 w-36"
         />
-        <div className="absolute bottom-0 left-[400px] ">
-          <div className="relative flex w-auto h-52 flex-col gap-3 border border-[#e7c102] bg-[#2185BA] px-3 py-5">
+        <div className="absolute top-[61%] left-[400px] ">
+          <div className="relative flex w-auto h-fit max-h-52 flex-col gap-3 border border-[#e7c102] bg-[#2185BA] px-3 py-5">
             <div className="flex items-start gap-2">
               <Image src={Bandeiras1} alt="" className="w-5" />
               <h3 className="font-londrinaSolid text-2xl uppercase text-[#e7c102]">
                 {selector === 'município' ? city : manifestation}
               </h3>
             </div>
-            <ul className="ml-4 w-80 text-sm text-white overflow-y-scroll overflow-x-hidden relative pb-4">
+            <ul className="ml-4 w-80 text-sm text-white overflow-y-scroll overflow-x-hidden relative">
               {selector === 'município'
                 ? citysCard.map((item) => {
                     if (city === item.nome) {

@@ -19,7 +19,10 @@ const content = {
   ],
   imagesUrl: [
     '/images/ilustracoes/guerreiro.webp',
-    '/images/ilustracoes/zabumba.webp',
+    '/images/fotos/guerreiro/guerreiro-1.webp',
+    '/images/fotos/guerreiro/guerreiro-2.webp',
+    '/images/fotos/guerreiro/guerreiro-3.webp',
+    '/images/fotos/guerreiro/guerreiro-4.webp',
   ],
 }
 

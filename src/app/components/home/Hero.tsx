@@ -8,7 +8,7 @@ import Rendeira from '@/assets/rendeira.png'
 
 export function Hero() {
   return (
-    <section className="relative flex h-screen w-full items-center justify-center overflow-hidden">
+    <section className="relative flex h-screen w-full items-center justify-center overflow-hidden ">
       <Image src={BandeirasHero} alt="" className="absolute top-10 z-10" />
       <HeroGallery />
       <div className="relative flex flex-col">

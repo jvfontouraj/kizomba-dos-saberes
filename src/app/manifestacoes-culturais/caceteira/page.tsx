@@ -19,8 +19,8 @@ const content = {
   ],
   imagesUrl: [
     '/images/ilustracoes/caceteira.webp',
-    '/images/ilustracoes/bacamarteiro.webp',
-    '/images/ilustracoes/batucada.webp',
+    '/images/ilustracoes/caceteira.webp',
+    '/images/ilustracoes/caceteira.webp',
   ],
 }
 

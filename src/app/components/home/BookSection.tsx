@@ -6,7 +6,7 @@ import Livro from '@/assets/livro.png'
 
 export function BookSection() {
   return (
-    <section className="relative flex h-[calc(100vh-5.2rem)] w-full items-center justify-center bg-[#008045]">
+    <section className="relative flex h-[calc(100vh-5.2rem)] w-full items-center justify-center bg-[#008045] ">
       <Image
         src={WoodBackground}
         alt=""

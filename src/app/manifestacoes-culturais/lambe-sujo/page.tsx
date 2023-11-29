@@ -18,7 +18,10 @@ const content = {
   ],
   imagesUrl: [
     '/images/ilustracoes/pai-jua.webp',
-    '/images/ilustracoes/fogueteiro.webp',
+    '/images/fotos/lambe-sujo/lambe-sujo-1.webp',
+    '/images/fotos/lambe-sujo/lambe-sujo-2.webp',
+    '/images/fotos/lambe-sujo/lambe-sujo-3.webp',
+    '/images/fotos/lambe-sujo/lambe-sujo-4.webp',
   ],
 }
 

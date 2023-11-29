@@ -5,11 +5,11 @@ import { BookSection } from './components/home/BookSection'
 
 export default function Home() {
   return (
-    <main className="w-screen">
+    <>
       <Hero />
       <AboutSection />
       <MapSection />
       <BookSection />
-    </main>
+    </>
   )
 }

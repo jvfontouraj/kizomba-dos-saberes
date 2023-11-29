@@ -15,7 +15,7 @@ const content = {
   refs: [],
   imagesUrl: [
     '/images/ilustracoes/barco-de-fogo.webp',
-    '/images/ilustracoes/bacamarteiro.webp',
+    '/images/fotos/barco-de-fogo/barco-de-fogo-1.webp',
   ],
 }
 

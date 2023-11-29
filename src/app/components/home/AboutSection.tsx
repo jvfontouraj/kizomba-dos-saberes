@@ -8,7 +8,7 @@ export function AboutSection() {
   return (
     <section
       id="sobre"
-      className="relative flex h-[calc(100vh-5.2rem)] w-full items-center justify-center bg-[#ac9378] scroll-mt-[90px]"
+      className="relative flex h-[calc(100vh-5.2rem)] w-full items-center justify-center bg-[#ac9378] scroll-mt-[90px] "
     >
       <Image
         src={WoodBackground}

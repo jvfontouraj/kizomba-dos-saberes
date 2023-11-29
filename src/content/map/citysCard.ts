@@ -39,19 +39,6 @@ export const citysCard = [
     ],
   },
   {
-    nome: 'Arauá',
-    manifestacoes: [
-      'Barco de fogo',
-      'Batalhão',
-      'Batucada',
-      'Caceteira',
-      'Cacumbi',
-      'Capoeira',
-      'Chegança',
-      'Guerreiro',
-    ],
-  },
-  {
     nome: 'Barra dos Coqueiros',
     manifestacoes: [
       'Barco de fogo',
@@ -170,6 +157,19 @@ export const citysCard = [
   },
   {
     nome: 'Divina Pastora',
+    manifestacoes: [
+      'Barco de fogo',
+      'Batalhão',
+      'Batucada',
+      'Caceteira',
+      'Cacumbi',
+      'Capoeira',
+      'Chegança',
+      'Guerreiro',
+    ],
+  },
+  {
+    nome: 'Estância',
     manifestacoes: [
       'Barco de fogo',
       'Batalhão',

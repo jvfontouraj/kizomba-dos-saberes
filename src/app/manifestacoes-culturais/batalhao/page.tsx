@@ -15,7 +15,10 @@ const content = {
   refs: [],
   imagesUrl: [
     '/images/ilustracoes/bacamarteiro.webp',
-    '/images/ilustracoes/barco-de-fogo.webp',
+    '/images/fotos/batalhao/batalhao-1.webp',
+    '/images/fotos/batalhao/batalhao-2.webp',
+    '/images/fotos/batalhao/batalhao-3.webp',
+    '/images/fotos/batalhao/batalhao-4.webp',
   ],
 }
 

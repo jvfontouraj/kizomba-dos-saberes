@@ -21,8 +21,8 @@ const content = {
   ],
   imagesUrl: [
     '/images/ilustracoes/sambadeira.webp',
-    '/images/ilustracoes/maracatu.webp',
-    '/images/ilustracoes/guerreiro.webp',
+    '/images/fotos/samba-de-coco/samba-de-coco-1.webp',
+    '/images/fotos/samba-de-coco/samba-de-coco-2.webp',
   ],
 }
 
