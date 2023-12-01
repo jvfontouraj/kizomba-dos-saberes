@@ -9,6 +9,15 @@ import Piramides from '@/assets/piramides.png'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@/styles/manifestacoes-splide.css'
 
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/app/components/ui/dialog'
+
 interface TemplateProps {
   title: string
   text: string[]
@@ -70,7 +79,19 @@ export function Template({ content }: { content: TemplateProps }) {
             >
               {content.imagesUrl.map((image, index) => (
                 <SplideSlide key={index}>
-                  <img src={image} alt="imagem da manifestação" />
+                  <Dialog>
+                    <DialogTrigger>
+                      <img src={image} alt="imagem da manifestação" />
+                    </DialogTrigger>
+                    <DialogContent className="h-fit max-h-[80vh] w-fit max-w-[80vw]">
+                      <img
+                        src={image}
+                        alt="imagem da manifestação"
+                        className="h-full w-auto"
+                      />
+                      {/* <DialogDescription>Descrição da imagem</DialogDescription> */}
+                    </DialogContent>
+                  </Dialog>
                 </SplideSlide>
               ))}
             </Splide>

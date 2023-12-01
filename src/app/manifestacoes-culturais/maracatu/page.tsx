@@ -24,7 +24,9 @@ const content = {
   ],
   imagesUrl: [
     '/images/ilustracoes/maracatu.webp',
-    '/images/ilustracoes/guerreiro.webp',
+    '/images/fotos/maracatu/-2.jpg',
+    '/images/fotos/maracatu/maracatu-1.webp',
+    '/images/fotos/maracatu/maracatu-3.jpg',
   ],
 }
 

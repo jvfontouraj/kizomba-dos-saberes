@@ -1,7 +1,7 @@
 import { Hero } from './components/home/Hero'
 import { AboutSection } from './components/home/AboutSection'
 import { MapSection } from './components/home/MapSection'
-import { BookSection } from './components/home/BookSection'
+// import { BookSection } from './components/home/BookSection'
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       <Hero />
       <AboutSection />
       <MapSection />
-      <BookSection />
+      {/* <BookSection /> */}
     </>
   )
 }
