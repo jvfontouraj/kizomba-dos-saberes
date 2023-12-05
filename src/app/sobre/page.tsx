@@ -7,7 +7,7 @@ import Logo from '@/assets/logo-sobre.png'
 import Piramides from '@/assets/piramides.png'
 import MenuBar from '@/assets/menubar.svg'
 import Parafuso from '@/assets/parafuso.png'
-import { ContactForm } from '../components/ContactForm'
+import { ContactForm } from '@/app/components/ContactForm'
 
 export default function Sobre() {
   const [blueHeight, setBlueHeight] = useState(0)
