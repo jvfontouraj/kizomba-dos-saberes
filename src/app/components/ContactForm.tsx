@@ -1,6 +1,6 @@
 import { z } from 'zod'
 import { useForm, SubmitHandler } from 'react-hook-form'
-import { zodResolver } from '@hookform/resolvers/zod/'
+import { zodResolver } from '@hookform/resolvers/zod'
 
 export function ContactForm() {
   const formSchema = z.object({
