@@ -1,13 +1,18 @@
 'use client'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
+import { ContactForm } from '@/app/components/ContactForm'
 import BandeirasHero from '@/assets/bandeirashero.png'
 import FundoSobre from '@/assets/fundo-sobre.png'
 import Logo from '@/assets/logo-sobre.png'
 import Piramides from '@/assets/piramides.png'
 import MenuBar from '@/assets/menubar.svg'
 import Parafuso from '@/assets/parafuso.png'
-import { ContactForm } from '@/app/components/ContactForm'
+import Guerreiro from '@/assets/ilustracoes/sem-fundo/guerreiro.png'
+import Reisado from '@/assets/ilustracoes/sem-fundo/reisado.png'
+import SambaDeAboio from '@/assets/ilustracoes/sem-fundo/samba-de-aboio.png'
+import Bandeiras1 from '@/assets/bandeiras1.png'
+import Bandeiras2 from '@/assets/bandeiras2.png'
 
 export default function Sobre() {
   const [blueHeight, setBlueHeight] = useState(0)
@@ -88,7 +93,32 @@ export default function Sobre() {
           />
         </div>
         <div className="relative h-fit mt-20 pb-40 z-10 max-w-7xl w-full px-20 flex">
-          <div className="w-full h-fit flex justify-between bg-[#28a346] text-neutral-50 px-20 py-10">
+          <div className="relative w-full h-fit flex justify-between bg-[#28a346] text-neutral-50 px-20 py-10">
+            <Image
+              src={Guerreiro}
+              alt="ilustração guerreiro"
+              className="absolute w-[35rem] h-auto right-0 top-1/2 translate-x-1/2 "
+            />
+            <Image
+              src={Reisado}
+              alt="ilustração reisado"
+              className="absolute w-80 h-auto bottom-0 left-1/2 -translate-x-1/2"
+            />
+            <Image
+              src={SambaDeAboio}
+              alt="ilustração samba de aboio"
+              className="absolute top-0 left-0 -translate-y-2/3 w-80 h-auto"
+            />
+            <Image
+              src={Bandeiras1}
+              alt="bandeiras1"
+              className="absolute top-0 left-0 -translate-x-1/2"
+            />
+            <Image
+              src={Bandeiras2}
+              alt="bandeiras2"
+              className="absolute bottom-0 left-0 scale-105 translate-y-2"
+            />
             <div className="w-1/2 flex flex-col gap-3">
               <h2 className="font-londrinaSolid text-4xl uppercase leading-none text-[#e7c102] mb-2">
                 Equipe
@@ -188,7 +218,7 @@ export default function Sobre() {
                 <h3 className="text-[#e7c102] font-bold">Ilustrações</h3>
                 <span>Edwyn Gomes</span>
               </div>
-              <div className="flex flex-col font-bold mt-5">
+              <div className="flex flex-col font-bold mt-5 text-sm">
                 <span>Todos os direitos reservados a Kizomba dos Saberes.</span>
                 <span>
                   Nenhuma imagem pode ser reproduzida sem autorização prévia.

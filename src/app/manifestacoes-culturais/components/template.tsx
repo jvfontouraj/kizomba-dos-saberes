@@ -13,8 +13,6 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
-  DialogHeader,
-  DialogTitle,
   DialogTrigger,
 } from '@/app/components/ui/dialog'
 
@@ -83,11 +81,11 @@ export function Template({ content }: { content: TemplateProps }) {
                     <DialogTrigger>
                       <img src={image} alt="imagem da manifestação" />
                     </DialogTrigger>
-                    <DialogContent className="h-fit max-h-[80vh] w-fit max-w-[80vw]">
+                    <DialogContent className="h-fit w-fit flex items-center justify-center overflow-hidden">
                       <img
                         src={image}
                         alt="imagem da manifestação"
-                        className="h-full w-auto"
+                        className="h-full w-auto max-h-[90vh] max-w-[90vw]"
                       />
                       {/* <DialogDescription>Descrição da imagem</DialogDescription> */}
                     </DialogContent>
