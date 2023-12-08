@@ -24,7 +24,7 @@ export function Menu() {
         <nav className="flex gap-9 text-sm font-bold uppercase text-[#0073a8ff]">
           <Link href={'/'}>Página Inicial</Link>
           <Link href={'/manifestacoes-culturais'}>Manifestações Culturais</Link>
-          {/* <Link href={'/atividades-educativas'}>Atividades Educativas</Link> */}
+          <Link href={'/atividades-educativas'}>Atividades Educativas</Link>
           {/* <Link href={'/afropedia-sergipana'}>Afropedia Sergipana</Link> */}
           {/* <Link href={'/calendafro'}>Calendafro</Link> */}
           <Link href={'/sobre'}>Kizomba dos Saberes</Link>
