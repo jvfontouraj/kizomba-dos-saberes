@@ -4,6 +4,7 @@ import { Ubuntu } from 'next/font/google'
 import localFont from 'next/font/local'
 import { Menu } from '@/components/Menu'
 import { Footer } from '@/components/Footer'
+import { Toaster } from '@/app/components/ui/toaster'
 
 const ubuntu = Ubuntu({
   subsets: ['latin'],
@@ -38,6 +39,7 @@ export default function RootLayout({
         <Menu />
         {children}
         <Footer />
+        <Toaster />
       </body>
     </html>
   )
