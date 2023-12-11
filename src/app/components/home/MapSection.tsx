@@ -146,22 +146,20 @@ export function MapSection() {
             </div>
             <ul className="ml-4 w-80 text-sm text-white overflow-y-scroll overflow-x-hidden relative">
               {selector === 'município'
-                ? citysCard.map((item) => {
-                    if (city === item.nome) {
-                      return item.manifestacoes.map((manifestacao) => (
+                ? citysCard.map(
+                    (item) =>
+                      city === item.nome &&
+                      item.manifestacoes.map((manifestacao) => (
                         <li key={manifestacao}>• {manifestacao}</li>
-                      ))
-                    }
-                    return null
-                  })
-                : manifestationsCard.map((item) => {
-                    if (manifestation === item.nome) {
-                      return item.cidades.map((cidade) => (
+                      )),
+                  )
+                : manifestationsCard.map(
+                    (item) =>
+                      manifestation === item.nome &&
+                      item.cidades.map((cidade) => (
                         <li key={cidade}>• {cidade}</li>
-                      ))
-                    }
-                    return null
-                  })}
+                      )),
+                  )}
             </ul>
           </div>
         </div>

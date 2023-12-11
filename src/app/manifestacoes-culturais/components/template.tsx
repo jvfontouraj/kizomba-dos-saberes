@@ -12,7 +12,7 @@ import '@/styles/manifestacoes-splide.css'
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
+  // DialogDescription,
   DialogTrigger,
 } from '@/app/components/ui/dialog'
 
@@ -28,7 +28,7 @@ interface TemplateProps {
   imagesUrl: string[]
 }
 
-export function Template({ content }: { content: TemplateProps }) {
+export function Template(content: TemplateProps) {
   return (
     <main className="relative flex flex-col items-center bg-[#ac9378] text-white">
       <Image
