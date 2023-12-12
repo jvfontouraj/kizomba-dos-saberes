@@ -28,7 +28,7 @@ interface TemplateProps {
   imagesUrl: string[]
 }
 
-export function Template(content: TemplateProps) {
+export function Template({ content }: { content: TemplateProps }) {
   return (
     <main className="relative flex flex-col items-center bg-[#ac9378] text-white">
       <Image
