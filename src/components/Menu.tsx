@@ -25,8 +25,8 @@ export function Menu() {
           <Link href={'/'}>Página Inicial</Link>
           <Link href={'/manifestacoes-culturais'}>Manifestações Culturais</Link>
           <Link href={'/atividades-educativas'}>Atividades Educativas</Link>
-          {/* <Link href={'/afropedia-sergipana'}>Afropedia Sergipana</Link> */}
-          {/* <Link href={'/calendafro'}>Calendafro</Link> */}
+          <Link href={'/afropedia-sergipana'}>Afropedia Sergipana</Link>
+          <Link href={'/calendafro'}>Calendafro</Link>
           <Link href={'/sobre'}>Kizomba dos Saberes</Link>
         </nav>
       </div>
