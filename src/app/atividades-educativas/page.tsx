@@ -7,7 +7,6 @@ import ChegancaPng from '@/assets/cheganca.png'
 import PaiJuaTransp from '@/assets/pai-jua.png'
 import { atividadesEducativas } from '@/content/atividades-educativas/atividadesEducativas'
 import { DownloadBtn } from '../components/DownloadBtn'
-import { ExternalLinkBtn } from '../components/ExternalLinkBtn'
 
 export default function AtividadesEducativas() {
   const [inputValue, setInputValue] = useState('')
@@ -63,7 +62,7 @@ export default function AtividadesEducativas() {
             if (item.name.toLowerCase().includes(inputValue.toLowerCase())) {
               return (
                 <div className="flex flex-col" key={item.name}>
-                  <div className="flex items-center">
+                  <div className="flex items-center gap-2">
                     <div className="w-20 h-20 relative overflow-hidden">
                       <img
                         src={item.imgUrl}
@@ -75,77 +74,33 @@ export default function AtividadesEducativas() {
                       {item.name}
                     </h2>
                   </div>
-                  <div className="flex flex-col gap-5 ml-20">
-                    <div className="flex flex-col">
-                      {item.activities.map((activity) => (
-                        <div
-                          className="flex gap-3 items-center"
-                          key={activity.name}
-                        >
-                          <div className="flex items-center gap-1">
-                            <DownloadBtn href={activity.src} />
-                            <h3 className="font-londrinaSolid uppercase text-[#e7c102] font-semibold text-xl">
-                              {activity.name}
-                            </h3>
-                          </div>
-                          <span className="text-neutral-50 text-sm">
+                  <div className="flex flex-col gap-2 ml-20">
+                    {item.activities.map((activity) => (
+                      <div
+                        className="flex gap-3 items-center w-full"
+                        key={activity.name}
+                      >
+                        <div className="flex items-center gap-1">
+                          <DownloadBtn href={activity.src} />
+                          <h3 className="font-londrinaSolid uppercase text-[#e7c102] font-semibold text-xl w-[235px]">
+                            {activity.name}
+                          </h3>
+                        </div>
+                        {activity.tags && (
+                          <span className="text-neutral-50 text-sm w-full">
+                            Palavras-chave:{' '}
                             {activity.tags.map(
                               (tag, index) =>
                                 tag +
-                                (activity.tags.length - 1 !== index
+                                (activity.tags &&
+                                activity.tags.length - 1 !== index
                                   ? ', '
                                   : ''),
                             )}
                           </span>
-                        </div>
-                      ))}
-                    </div>
-                    <div className="flex flex-col">
-                      {item.lessonPlans.map((lessonPlan) => (
-                        <div
-                          className="flex gap-3 items-center"
-                          key={lessonPlan.name}
-                        >
-                          <div className="flex items-center gap-1">
-                            <DownloadBtn href={lessonPlan.src} />
-                            <h3 className="font-londrinaSolid uppercase text-[#e7c102] font-semibold text-xl">
-                              {lessonPlan.name}
-                            </h3>
-                          </div>
-                          <span className="text-neutral-50 text-sm">
-                            {lessonPlan.tags.map(
-                              (tag, index) =>
-                                tag +
-                                (lessonPlan.tags.length - 1 !== index
-                                  ? ', '
-                                  : ''),
-                            )}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                    <div className="flex flex-col">
-                      {item.games.map((game) => (
-                        <div
-                          className="flex gap-3 items-center"
-                          key={game.name}
-                        >
-                          <div className="flex items-center gap-1">
-                            <ExternalLinkBtn href={game.src} />
-                            <h3 className="font-londrinaSolid uppercase text-[#e7c102] font-semibold text-xl">
-                              {game.name}
-                            </h3>
-                          </div>
-                          <span className="text-neutral-50 text-sm">
-                            {game.tags.map(
-                              (tag, index) =>
-                                tag +
-                                (game.tags.length - 1 !== index ? ', ' : ''),
-                            )}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
+                        )}
+                      </div>
+                    ))}
                   </div>
                 </div>
               )
