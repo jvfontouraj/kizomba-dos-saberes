@@ -128,6 +128,7 @@ export const tagsCatalog = [
       'Texto',
       'Trabalho',
       'Trabalho manual',
+      'Plano de Aula',
     ],
   },
 ]

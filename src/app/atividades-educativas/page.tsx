@@ -14,8 +14,8 @@ import { ChevronDownIcon } from '@radix-ui/react-icons'
 
 export default function AtividadesEducativas() {
   const [inputValue, setInputValue] = useState('')
-
-  const tags = ['Ensino Médio', 'Musicalidade']
+  const [tagsList, setTagsList] = useState<string[]>([])
+  const [showCategory, setShowCategory] = useState<string[]>([])
 
   function updateSearch(event: any) {
     setInputValue(event.target.value)
@@ -26,8 +26,14 @@ export default function AtividadesEducativas() {
     atividadesEducativas.map((item) => {
       item.activities.map((activity) => {
         activity.tags?.map((tag) => {
-          if (tags.includes(tag)) {
-            console.log(item.name)
+          if (tagsList.includes(tag)) {
+            if (showCategory.includes(item.name)) {
+              setShowCategory(
+                showCategory.filter((state) => state !== item.name),
+              )
+            } else {
+              setShowCategory([...showCategory, item.name])
+            }
           }
           return null
         })
@@ -35,7 +41,23 @@ export default function AtividadesEducativas() {
       })
       return null
     })
-  }, [inputValue])
+  }, [inputValue, tagsList])
+
+  // useEffect(() => {
+  //   console.log(tagsList)
+  // }, [tagsList])
+
+  useEffect(() => {
+    console.log(showCategory)
+  }, [showCategory])
+
+  function toggleCheckbox(tag: string) {
+    if (tagsList.includes(tag)) {
+      setTagsList(tagsList.filter((item) => item !== tag))
+    } else {
+      setTagsList([...tagsList, tag])
+    }
+  }
 
   return (
     <main className="relative flex flex-col items-center bg-[#ac9378]">
@@ -56,7 +78,7 @@ export default function AtividadesEducativas() {
         className="absolute bottom-5 z-10"
       />
 
-      <div className="z-10 flex flex-col items-center gap-20 pb-40 pt-24 w-full max-w-3xl min-h-screen">
+      <div className="z-10 flex flex-col items-center gap-20 pb-40 pt-24 w-full max-w-3xl min-h-[calc(100vh+200px)]">
         <div className="relative">
           <h1 className="mt-20 font-londrinaSolid text-6xl uppercase leading-normal text-[#e7c102] [word-spacing:10px]">
             Atividades Educativas
@@ -79,10 +101,10 @@ export default function AtividadesEducativas() {
           onInput={updateSearch}
         />
         <div className="relative flex flex-col gap-10 w-full">
-          {atividadesEducativas.map((item) => {
+          {atividadesEducativas.map((item, index) => {
             if (item.name.toLowerCase().includes(inputValue.toLowerCase())) {
               return (
-                <div className="flex flex-col" key={item.name}>
+                <div className="flex flex-col" key={index}>
                   <div className="flex items-center gap-2">
                     <div className="w-20 h-20 relative overflow-hidden">
                       <img
@@ -96,45 +118,79 @@ export default function AtividadesEducativas() {
                     </h2>
                   </div>
                   <div className="flex flex-col gap-2 ml-20">
-                    {item.activities.map((activity) => (
-                      <div
-                        className="flex gap-3 items-center w-full"
-                        key={activity.name}
-                      >
-                        <div className="flex items-center gap-1">
-                          <DownloadBtn href={activity.src} />
-                          <Link
-                            href={activity.src}
-                            target="_blank"
-                            className="font-londrinaSolid uppercase text-[#e7c102] font-semibold text-xl w-[235px]"
-                          >
-                            {activity.name}
-                          </Link>
+                    {item.activities.map((activity, index) =>
+                      tagsList.length === 0 ? (
+                        <div
+                          className="flex gap-3 items-center w-full"
+                          key={index}
+                        >
+                          <div className="flex items-center gap-1">
+                            <DownloadBtn href={activity.src} />
+                            <Link
+                              href={activity.src}
+                              target="_blank"
+                              className="font-londrinaSolid uppercase text-[#e7c102] font-semibold text-xl w-[235px]"
+                            >
+                              {activity.name}
+                            </Link>
+                          </div>
+                          {activity.tags && (
+                            <span className="text-neutral-50 text-sm w-full">
+                              Palavras-chave:{' '}
+                              {activity.tags.map(
+                                (tag, index) =>
+                                  tag +
+                                  (activity.tags &&
+                                  activity.tags.length - 1 !== index
+                                    ? ', '
+                                    : ''),
+                              )}
+                            </span>
+                          )}
                         </div>
-                        {activity.tags && (
-                          <span className="text-neutral-50 text-sm w-full">
-                            Palavras-chave:{' '}
-                            {activity.tags.map(
-                              (tag, index) =>
-                                tag +
-                                (activity.tags &&
-                                activity.tags.length - 1 !== index
-                                  ? ', '
-                                  : ''),
+                      ) : (
+                        activity.tags &&
+                        activity.tags.some((tag) => tagsList.includes(tag)) && (
+                          <div
+                            className="flex gap-3 items-center w-full"
+                            key={index}
+                          >
+                            <div className="flex items-center gap-1">
+                              <DownloadBtn href={activity.src} />
+                              <Link
+                                href={activity.src}
+                                target="_blank"
+                                className="font-londrinaSolid uppercase text-[#e7c102] font-semibold text-xl w-[235px]"
+                              >
+                                {activity.name}
+                              </Link>
+                            </div>
+                            {activity.tags && (
+                              <span className="text-neutral-50 text-sm w-full">
+                                Palavras-chave:{' '}
+                                {activity.tags.map(
+                                  (tag, index) =>
+                                    tag +
+                                    (activity.tags &&
+                                    activity.tags.length - 1 !== index
+                                      ? ', '
+                                      : ''),
+                                )}
+                              </span>
                             )}
-                          </span>
-                        )}
-                      </div>
-                    ))}
+                          </div>
+                        )
+                      ),
+                    )}
                   </div>
                 </div>
               )
             }
             return null
           })}
-          <div className="flex flex-col gap-5 px-7 py-5 absolute -left-48 -translate-x-1/2 w-[290px] h-fit bg-neutral-50 rounded-md">
+          <div className="flex flex-col gap-5 px-7 py-5 absolute -left-48 -translate-x-1/2 w-[290px] h-fit max-h-[600px] overflow-y-scroll bg-neutral-50 rounded-md">
             <h3 className="font-londrinaSolid text-2xl uppercase text-center text-[#0073a8ff]">
-              Categorias
+              Filtros
             </h3>
             {tagsCatalog.map((item, index) => (
               <Accordion.Root
@@ -157,7 +213,12 @@ export default function AtividadesEducativas() {
                   <ul>
                     {item.tags.map((tag, index) => (
                       <Accordion.Content key={index} className="flex gap-2">
-                        <input type="checkbox" name={tag} id={tag} />
+                        <input
+                          type="checkbox"
+                          name={tag}
+                          id={tag}
+                          onChange={() => toggleCheckbox(tag)}
+                        />
                         <label htmlFor={tag} className="text-neutral-700">
                           {tag}
                         </label>
