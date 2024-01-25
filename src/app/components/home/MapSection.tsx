@@ -44,19 +44,19 @@ export function MapSection() {
     setSelector('manifestação')
   }
   return (
-    <section className="relative flex h-[calc(100vh-5.5rem)] w-screen flex-col items-center justify-center gap-5 overflow-hidden bg-[#2185BA] ">
+    <section className="relative flex h-fit md:min-h-[calc(100vh-5.5rem)] w-screen flex-col items-center justify-center gap-5 overflow-hidden bg-[#2185BA] pt-10 pb-40 md:py-0">
       <Image
         src={FundoMapa}
         alt={'fundo'}
-        className="absolute h-screen w-screen top-0 opacity-30"
+        className="absolute h-full md:h-screen w-screen top-0 opacity-30"
       />
-      <div className="relative flex flex-col gap-3">
-        <h2 className="font-londrinaSolid text-7xl uppercase text-[#e7c102]">
+      <div className="relative flex flex-col items-center gap-3">
+        <h2 className="z-10 font-londrinaSolid text-4xl max-w-xs md:max-w-none text-center md:text-7xl uppercase text-[#e7c102]">
           MAPA DA CULTURA AFRO-SERGIPANA
         </h2>
-        <div className="flex gap-3 text-[#2185BA] ">
+        <div className="flex flex-col justify-center md:flex-row gap-3 text-[#2185BA]">
           <Select onValueChange={handleSelectCity}>
-            <SelectTrigger className="w-80">
+            <SelectTrigger className="w-60 md:w-80 text-xs md:text-sm h-fit md:h-auto">
               <SelectValue placeholder="Pesquise por município" />
             </SelectTrigger>
             <SelectContent>
@@ -66,6 +66,7 @@ export function MapSection() {
                     value={cidade}
                     key={cidade}
                     onClick={() => handleSelectCity(cidade)}
+                    className="text-xs md:text-sm"
                   >
                     {cidade}
                   </SelectItem>
@@ -74,13 +75,17 @@ export function MapSection() {
             </SelectContent>
           </Select>
           <Select onValueChange={handleSelectManifestation}>
-            <SelectTrigger className="w-80">
+            <SelectTrigger className="w-60 md:w-80 text-xs md:text-sm h-fit md:h-auto">
               <SelectValue placeholder="Pesquise por manifestação cultural" />
             </SelectTrigger>
             <SelectContent>
               <SelectGroup className="h-full max-h-80 overflow-x-scroll text-[#2185BA]">
                 {manifestacoes.map((manifestacao) => (
-                  <SelectItem value={manifestacao} key={manifestacao}>
+                  <SelectItem
+                    value={manifestacao}
+                    key={manifestacao}
+                    className="text-xs md:text-sm"
+                  >
                     {manifestacao}
                   </SelectItem>
                 ))}
@@ -91,12 +96,12 @@ export function MapSection() {
         <Image
           src={Bandeiras1}
           alt=""
-          className="absolute -left-14 top-5 w-10"
+          className="absolute left-3 -top-1 scale-[.65] md:scale-100 md:-left-14 md:top-5 w-10"
         />
         <Image
           src={Cheganca}
           alt=""
-          className="absolute -right-40 -top-20 w-40"
+          className="absolute right-4 md:-right-40 md:-top-20 w-14 md:w-40"
         />
       </div>
       <div className="relative">

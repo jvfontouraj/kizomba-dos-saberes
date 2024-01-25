@@ -8,22 +8,30 @@ export function AboutSection() {
   return (
     <section
       id="sobre"
-      className="relative flex h-[calc(100vh-5.2rem)] w-full items-center justify-center bg-[#ac9378] scroll-mt-[90px] "
+      className="relative flex h-fit md:min-h-[calc(100vh-5.2rem)] w-full items-center justify-center bg-[#ac9378] scroll-mt-[0px] md:scroll-mt-[90px]"
     >
       <Image
         src={WoodBackground}
         alt=""
         className="absolute w-screen h-full object-cover opacity-40 brightness-50"
       />
-      <div className="z-10 grid grid-cols-2">
-        <div className="mr-32 flex flex-col items-center justify-self-end">
-          <Image src={LogoKizomba} alt="" className="h-[22rem] w-auto" />
-          <Image src={Capoeira} alt="" className="-mt-12 h-[22rem] w-auto" />
+      <div className="z-10 p-10 md:p-0 grid gap-10 md:gap-0 grid-cols-1 grid-rows-[auto_auto] md:grid-cols-2">
+        <div className="md:mr-32 flex md:flex-col items-center justify-center md:justify-self-end">
+          <Image
+            src={LogoKizomba}
+            alt=""
+            className="h-32 md:h-[22rem] w-auto translate-x-2"
+          />
+          <Image
+            src={Capoeira}
+            alt=""
+            className="md:-mt-12 h-28 md:h-[22rem] w-auto -translate-x-2"
+          />
         </div>
 
         <div className="flex flex-col gap-2">
           <Image src={Piramides} alt="" className="h-auto w-36" />
-          <div className="flex max-w-[60ch] flex-col gap-3 text-justify text-white">
+          <div className="flex max-w-[60ch] flex-col gap-3 text-justify text-white text-sm md:text-base">
             <p>
               O portal <span className="font-bold">Kizomba dos Saberes</span> é
               uma ferramenta de educação sobre as culturas afro, contribuindo

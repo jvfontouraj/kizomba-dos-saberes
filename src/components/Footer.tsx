@@ -6,7 +6,7 @@ import FAPITEC from '@/assets/fapitec.png'
 
 export function Footer() {
   return (
-    <footer className="flex items-center justify-center gap-10 bg-[#e7c102] py-10">
+    <footer className="flex flex-col md:flex-row items-center justify-center gap-10 bg-[#e7c102] py-10">
       <div className="flex items-center gap-5">
         <h3 className="text-sm font-semibold uppercase">Realização</h3>
         <Image src={UFS} alt="" />
