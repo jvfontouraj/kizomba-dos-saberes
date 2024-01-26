@@ -38,7 +38,7 @@ export default function ManifestacoesCulturais() {
   }
 
   return (
-    <main className="relative flex h-[1300px] md:h-[1816px] flex-col items-center bg-[#ac9378]">
+    <main className="relative flex h-[1300px] md:h-[1816px] flex-col items-center bg-[#ac9378] overflow-hidden">
       <Image
         src={WoodBackground}
         alt="imagem de fundo"
@@ -77,7 +77,7 @@ export default function ManifestacoesCulturais() {
           className="w-72 md:w-[500px] rounded-md px-4 py-2 text-neutral-600 shadow text-xs md:text-base"
           onInput={updateSearch}
         />
-        <div className="grid grid-cols-3 md:grid-cols-4 gap-y-8 md:gap-16 font-semibold text-lg w-full">
+        <div className="grid grid-cols-3 md:grid-cols-4 gap-y-8 md:gap-16 font-semibold text-lg w-full md:w-auto">
           {'barco de fogo'.includes(inputValue.toLowerCase()) && (
             <Link href="/manifestacoes-culturais/barco-de-fogo">
               <div className="flex flex-col items-center gap-2">

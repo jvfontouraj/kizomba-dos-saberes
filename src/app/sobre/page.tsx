@@ -23,32 +23,43 @@ export default function Sobre() {
 
   return (
     <main>
-      <div id="blue-section" className="h-fit flex flex-col items-center">
+      <div
+        id="blue-section"
+        className="relative h-fit flex flex-col items-center gap-16 md:gap-0 overflow-hidden"
+      >
         <Image
           src={FundoSobre}
           alt={'imagem de fundo'}
           className="absolute w-screen top-0 -z-10"
           style={{ height: blueHeight }}
         />
-        <Image src={BandeirasHero} alt="" className="absolute top-10 z-10" />
+        <Image
+          src={BandeirasHero}
+          alt=""
+          className="absolute scale-[3] md:scale-100 top-16 md:top-10 z-10"
+        />
 
-        <div className="relative h-screen z-10 max-w-7xl w-full px-20 flex pt-60">
-          <div className="w-1/2 mt-10">
+        <div className="relative md:h-screen gap-5 md:gap-0 z-10 max-w-7xl w-full px-5 md:px-20 flex flex-col md:flex-row pt-24 md:pt-60">
+          <div className="md:w-1/2 mt-10">
             <Image
               src={Logo}
               alt="Logo do Kizomba dos Saberes"
-              className="w-2/3 aspect-square mx-auto"
+              className="w-1/2 md:w-2/3 aspect-square mx-auto"
             />
           </div>
-          <div className="w-1/2 text-neutral-50 flex flex-col gap-10">
+          <div className="md:w-1/2 text-neutral-50 flex flex-col gap-10">
             <div className="flex flex-col gap-5">
               <div className="flex items-end gap-5">
-                <Image src={Piramides} alt="" className="h-min w-28 mb-2" />
-                <h1 className="font-londrinaSolid text-6xl uppercase leading-none text-[#e7c102]">
+                <Image
+                  src={Piramides}
+                  alt="ilustração de piramides"
+                  className="h-min w-28 mb-2"
+                />
+                <h1 className="font-londrinaSolid text-4xl md:text-6xl uppercase leading-none text-[#e7c102]">
                   Quem Somos
                 </h1>
               </div>
-              <article className="flex flex-col gap-3">
+              <article className="flex flex-col gap-3 text-sm md:text-base">
                 <p>
                   O projeto{' '}
                   <span className="font-semibold">Kizomba dos Saberes</span> é
@@ -71,10 +82,10 @@ export default function Sobre() {
               </article>
             </div>
             <div className="flex flex-col gap-3">
-              <h2 className="font-londrinaSolid text-3xl uppercase leading-none text-[#e7c102]">
+              <h2 className="font-londrinaSolid text-2xl md:text-3xl uppercase leading-none text-[#e7c102]">
                 Foram Realizados
               </h2>
-              <ul className="flex flex-col gap-3 font-semibold">
+              <ul className="flex flex-col gap-3 font-semibold text-sm md:text-base">
                 <li>
                   · Cinco eventos formativos com a presença de mestres e mestras
                   da cultura negra
@@ -88,39 +99,39 @@ export default function Sobre() {
           </div>
           <Image
             src={Piramides}
-            alt=""
-            className="h-min w-28 absolute bottom-20 left-1/2 -translate-x-1/2"
+            alt="ilustração de piramides"
+            className="h-min w-28 absolute -bottom-10 md:bottom-20 left-1/2 -translate-x-1/2"
           />
         </div>
-        <div className="relative h-fit mt-20 pb-40 z-10 max-w-7xl w-full px-20 flex">
-          <div className="relative w-full h-fit flex justify-between bg-[#28a346] text-neutral-50 px-20 py-10">
+        <div className="relative h-fit mt-20 pb-5 md:pb-40 z-20 max-w-7xl w-full px-0 md:px-20 flex bg-[#0073a8ff]">
+          <div className="relative w-full h-fit flex flex-col md:flex-row gap-3 md:gap-0 justify-between bg-[#28a346] text-neutral-50 px-10 md:px-20 py-10">
             <Image
               src={Guerreiro}
               alt="ilustração guerreiro"
-              className="absolute w-[35rem] h-auto right-0 top-1/2 translate-x-1/2 "
+              className="absolute w-72 bottom-20 md:bottom-auto md:w-[35rem] h-auto -right-16 md:right-0 md:top-1/2 md:translate-x-1/2 "
             />
             <Image
               src={Reisado}
               alt="ilustração reisado"
-              className="absolute w-80 h-auto bottom-0 left-1/2 -translate-x-1/2"
+              className="absolute w-40 bottom-1/2 translate-y-16 md:translate-y-0 right-0 md:right-auto md:w-80 h-auto md:bottom-0 md:left-1/2 md:-translate-x-1/2"
             />
             <Image
               src={SambaDeAboio}
               alt="ilustração samba de aboio"
-              className="absolute top-0 left-0 -translate-y-2/3 w-80 h-auto"
+              className="absolute top-0 left-1/2 -translate-x-1/2 md:translate-x-0 md:left-0 -translate-y-2/3 w-60 md:w-80 h-auto"
             />
             <Image
               src={Bandeiras1}
               alt="bandeiras1"
-              className="absolute top-0 left-0 -translate-x-1/2"
+              className="absolute top-11 left-10 md:top-0 md:left-0 md:-translate-x-1/2 h-10 md:h-auto w-auto"
             />
             <Image
               src={Bandeiras2}
               alt="bandeiras2"
-              className="absolute bottom-0 left-0 scale-105 translate-y-2"
+              className="absolute bottom-0 left-0 scale-[2.5] md:scale-105 translate-y-2 h-auto"
             />
-            <div className="w-1/2 flex flex-col gap-3">
-              <h2 className="font-londrinaSolid text-4xl uppercase leading-none text-[#e7c102] mb-2">
+            <div className="md:w-1/2 flex flex-col gap-3 text-sm md:text-base">
+              <h2 className="font-londrinaSolid text-3xl md:text-4xl uppercase leading-none text-[#e7c102] mb-4 md:mb-2 ml-8 md:ml-0">
                 Equipe
               </h2>
               <div className="flex flex-col">
@@ -142,7 +153,7 @@ export default function Sobre() {
                 <h3 className="text-[#e7c102] font-bold">
                   BOLSISTAS DE MESTRADO
                 </h3>
-                <span>José Edwyn Gomes</span>
+                <span>Edwyn Gomes</span>
                 <span>Daniela Macedo Lima</span>
               </div>
               <div className="flex flex-col">
@@ -174,7 +185,7 @@ export default function Sobre() {
                 <span>Maria Eduarda Loeser</span>
               </div>
             </div>
-            <div className="w-1/2 flex flex-col gap-3">
+            <div className="md:w-1/2 flex flex-col gap-3 text-sm md:text-base">
               <div className="flex flex-col">
                 <h3 className="text-[#e7c102] font-bold">
                   MESTRANDO COLABORADOR VOLUNTÁRIO
@@ -218,7 +229,7 @@ export default function Sobre() {
                 <h3 className="text-[#e7c102] font-bold">Ilustrações</h3>
                 <span>Edwyn Gomes</span>
               </div>
-              <div className="flex flex-col font-bold mt-5 text-sm">
+              <div className="flex flex-col font-bold mt-5 text-xs md:text-sm">
                 <span>Todos os direitos reservados a Kizomba dos Saberes.</span>
                 <span>
                   Nenhuma imagem pode ser reproduzida sem autorização prévia.
@@ -228,11 +239,11 @@ export default function Sobre() {
           </div>
         </div>
       </div>
-      <div className="h-fit relative bg-[#a79280] ">
-        <MenuBar className="fill-[#a79280] w-screen absolute -top-1" />
-        <div className="flex gap-20 mx-auto py-40 max-w-7xl w-full px-20">
+      <div className="h-fit relative -z-10 bg-[#0073a8ff] md:bg-[#a79280]">
+        <MenuBar className="fill-[#a79280] w-screen absolute -top-1 hidden md:block" />
+        <div className="flex md:gap-20 mx-auto py-10 md:py-40 max-w-7xl w-full px-5 md:px-20">
           <ContactForm />
-          <div className="w-1/2 flex items-center justify-center">
+          <div className="hidden w-1/2 md:flex items-center justify-center">
             <Image
               src={Parafuso}
               alt="Ilustração Parafusos"

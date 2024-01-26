@@ -67,17 +67,17 @@ export function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex flex-col gap-10 w-1/2"
+      className="flex flex-col gap-10 w-full md:w-1/2"
     >
-      <h2 className="font-londrinaSolid text-4xl uppercase leading-none text-[#e7c102]">
+      <h2 className="font-londrinaSolid text-4xl uppercase leading-none text-[#e7c102] z-10">
         Fale Conosco!
       </h2>
       <div>
-        <div className="relative w-3/4 h-fit">
+        <div className="relative md:w-3/4 h-fit">
           <input
             {...register('name')}
             type="text"
-            className="w-full relative z-10 bg-[#a79280] text-neutral-50 placeholder:text-neutral-50 p-2"
+            className="w-full relative z-10 bg-[#0073a8ff] md:bg-[#a79280] text-neutral-50 placeholder:text-neutral-50 p-2"
             placeholder="Nome"
           />
           <div className="absolute right-0 top-0 w-[calc(100%+1px)] h-[calc(100%+1px)] bg-gradient-to-tr from-[#e7c102] to-transparent to-70%" />
@@ -87,11 +87,11 @@ export function ContactForm() {
         )}
       </div>
       <div>
-        <div className="relative w-3/4 h-fit">
+        <div className="relative md:w-3/4 h-fit">
           <input
             {...register('phone')}
             type="text"
-            className="w-full relative z-10 bg-[#a79280] text-neutral-50 placeholder:text-neutral-50 p-2"
+            className="w-full relative z-10 bg-[#0073a8ff] md:bg-[#a79280] text-neutral-50 placeholder:text-neutral-50 p-2"
             placeholder="Telefone"
           />
           <div className="absolute right-0 top-0 w-[calc(100%+1px)] h-[calc(100%+1px)] bg-gradient-to-tr from-[#e7c102] to-transparent to-70%" />
@@ -102,11 +102,11 @@ export function ContactForm() {
       </div>
 
       <div>
-        <div className="relative w-3/4 h-fit">
+        <div className="relative md:w-3/4 h-fit">
           <input
             {...register('email')}
             type="text"
-            className="w-full relative z-10 bg-[#a79280] text-neutral-50 placeholder:text-neutral-50 p-2"
+            className="w-full relative z-10 bg-[#0073a8ff] md:bg-[#a79280] text-neutral-50 placeholder:text-neutral-50 p-2"
             placeholder="E-mail"
           />
           <div className="absolute right-0 top-0 w-[calc(100%+1px)] h-[calc(100%+1px)] bg-gradient-to-tr from-[#e7c102] to-transparent to-70%" />
@@ -116,10 +116,10 @@ export function ContactForm() {
         )}
       </div>
       <div>
-        <div className="relative w-3/4 h-40">
+        <div className="relative md:w-3/4 h-40">
           <textarea
             {...register('text')}
-            className="resize-none w-full h-full relative z-10 bg-[#a79280] text-neutral-50 placeholder:text-neutral-50 p-2"
+            className="resize-none w-full h-full relative z-10 bg-[#0073a8ff] md:bg-[#a79280] text-neutral-50 placeholder:text-neutral-50 p-2"
             placeholder="Digite aqui sua mensagem..."
           />
           <div className="absolute right-0 top-0 w-[calc(100%+1px)] h-[calc(100%+1px)] bg-gradient-to-tr from-[#e7c102] to-transparent to-70%" />
