@@ -41,17 +41,17 @@ export default function ManifestacoesCulturais() {
     <main className="relative flex h-[1300px] md:h-[1816px] flex-col items-center bg-[#ac9378]">
       <Image
         src={WoodBackground}
-        alt=""
+        alt="imagem de fundo"
         className="absolute w-screen h-full object-cover opacity-20 brightness-50"
       />
       <Image
         src={Bandeiras2}
-        alt=""
+        alt="ilustração de bandeirinhas"
         className="absolute scale-[2] md:scale-100 top-16 md:top-28 z-10"
       />
       <Image
         src={Bandeiras2}
-        alt=""
+        alt="ilustração de bandeirinhas"
         className="absolute scale-[2] md:scale-100 bottom-5 z-10"
       />
 

@@ -11,17 +11,17 @@ export default function AfropediaSergipana() {
     <main className="relative flex min-h-screen h-fit pb-20 md:pb-40 flex-col items-center gap-10 md:gap-14 overflow-hidden">
       <Image
         src={FundoAfropedia}
-        alt=""
+        alt="imagem de fundo"
         className="absolute w-screen h-full object-cover -z-10"
       />
       <Image
         src={Bandeiras2}
-        alt=""
+        alt="ilustração de bandeirinhas"
         className="absolute scale-[2] md:scale-100 top-16 md:top-28 z-10"
       />
       <Image
         src={Bandeiras2}
-        alt=""
+        alt="ilustração de bandeirinhas"
         className="absolute scale-[2] md:scale-100 bottom-5 z-10"
       />
       <div className="relative mt-24 md:mt-44">
