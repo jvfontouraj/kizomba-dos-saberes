@@ -60,9 +60,9 @@ export function Template({ content }: { content: TemplateProps }) {
           <Image
             src={Bandeiras1}
             alt="Bandeiras"
-            className="absolute -left-20 top-4 z-0"
+            className="absolute h-6 md:h-auto w-auto left-8 top-1 md:-left-20 md:top-4 z-0"
           />
-          <h1 className="font-londrinaSolid text-3xl md:text-6xl uppercase leading-none text-[#e7c102] [grid-area:title]">
+          <h1 className="font-londrinaSolid ml-7 md:ml-0 text-3xl md:text-6xl uppercase leading-none text-[#e7c102] [grid-area:title]">
             {content.title}
           </h1>
           <div className="flex w-full flex-col gap-5 text-justify text-sm md:text-base [grid-area:text]">
