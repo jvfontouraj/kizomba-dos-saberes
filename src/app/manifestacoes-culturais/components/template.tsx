@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -30,33 +31,41 @@ interface TemplateProps {
 
 export function Template({ content }: { content: TemplateProps }) {
   return (
-    <main className="relative flex flex-col items-center bg-[#ac9378] text-white">
+    <main className="relative flex flex-col items-center bg-[#ac9378] text-white overflow-hidden">
       <Image
         src={WoodBackground}
-        alt=""
+        alt="imagem de fundo"
         className="absolute  h-full object-cover opacity-20 brightness-50"
       />
-      <Image src={Bandeiras2} alt="" className="absolute top-28 z-10" />
-      <Image src={Bandeiras2} alt="" className="absolute bottom-5 z-10" />
+      <Image
+        src={Bandeiras2}
+        alt="ilustração de bandeirinhas"
+        className="absolute scale-[2] md:scale-100 top-16 md:top-28 z-10"
+      />
+      <Image
+        src={Bandeiras2}
+        alt="ilustração de bandeirinhas"
+        className="absolute scale-[2] md:scale-100 bottom-5 z-10"
+      />
 
-      <div className="z-10 mt-32 flex w-full max-w-6xl flex-col items-center gap-20 pb-40 pt-24">
+      <div className="z-10 mt-24 md:mt-32 flex w-full max-w-6xl flex-col items-center gap-10 md:gap-20 pb-40 md:pt-24">
         <Link
           href="/manifestacoes-culturais"
-          className="flex items-center self-start font-bold uppercase text-neutral-200"
+          className="flex items-center self-start font-bold uppercase text-neutral-200 text-xs md:text-base ml-5"
         >
-          <ChevronDown className=" mr-5 w-5 rotate-90 fill-[#e7c102]" />
+          <ChevronDown className="mr-1 md:mr-5 w-3 md:w-5 rotate-90 fill-[#e7c102]" />
           Voltar para manifestações culturais
         </Link>
-        <div className="relative grid w-full max-w-6xl grid-cols-2 gap-x-10 gap-y-20 [grid-template-areas:_'title_title'_'text_images'_'details_images'_'refs_images']">
+        <div className="relative grid w-full max-w-6xl grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10 md:gap-y-20 px-5 md:px-0 [grid-template-areas:_'title'_'images'_'text'_'details'_'refs'] md:[grid-template-areas:_'title_title'_'text_images'_'details_images'_'refs_images']">
           <Image
             src={Bandeiras1}
             alt="Bandeiras"
             className="absolute -left-20 top-4 z-0"
           />
-          <h1 className="font-londrinaSolid text-6xl uppercase leading-none text-[#e7c102] [grid-area:title]">
+          <h1 className="font-londrinaSolid text-3xl md:text-6xl uppercase leading-none text-[#e7c102] [grid-area:title]">
             {content.title}
           </h1>
-          <div className="flex w-full flex-col gap-5 text-justify [grid-area:text]">
+          <div className="flex w-full flex-col gap-5 text-justify text-sm md:text-base [grid-area:text]">
             {content.text.map((text, index) => (
               <p key={index}>{text}</p>
             ))}
@@ -94,7 +103,7 @@ export function Template({ content }: { content: TemplateProps }) {
               ))}
             </Splide>
           </div>
-          <div className="flex h-fit flex-col gap-5 border-l-2 border-[#efa300] pl-3 [grid-area:details]">
+          <div className="flex h-fit flex-col text-sm md:text-base gap-5 border-l-2 border-[#efa300] pl-3 [grid-area:details]">
             {content.details.locais && (
               <div>
                 <h3 className="font-bold">Localizam-se em:</h3>
@@ -115,7 +124,7 @@ export function Template({ content }: { content: TemplateProps }) {
             )}
           </div>
           {content.refs.length > 0 && (
-            <div className="flex flex-col gap-2 text-sm [grid-area:refs]">
+            <div className="flex flex-col gap-2 text-xs md:text-sm [grid-area:refs]">
               <h4 className="font-bold">Referências:</h4>
               {content.refs.map((ref, index) => (
                 <p key={index}>{ref}</p>
