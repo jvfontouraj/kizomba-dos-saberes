@@ -54,7 +54,7 @@ export function MapSection() {
         <h2 className="z-10 font-londrinaSolid text-4xl max-w-xs md:max-w-none text-center md:text-7xl uppercase text-[#e7c102]">
           MAPA DA CULTURA AFRO-SERGIPANA
         </h2>
-        <div className="flex flex-col justify-center md:flex-row gap-3 text-[#2185BA]">
+        <div className="flex flex-col justify-center items-center md:flex-row gap-3 text-[#2185BA]">
           <Select onValueChange={handleSelectCity}>
             <SelectTrigger className="w-60 md:w-80 text-xs md:text-sm h-fit md:h-auto">
               <SelectValue placeholder="Pesquise por município" />
@@ -74,6 +74,7 @@ export function MapSection() {
               </SelectGroup>
             </SelectContent>
           </Select>
+          <span className="z-10 text-xl text-white">ou</span>
           <Select onValueChange={handleSelectManifestation}>
             <SelectTrigger className="w-60 md:w-80 text-xs md:text-sm h-fit md:h-auto">
               <SelectValue placeholder="Pesquise por manifestação cultural" />
@@ -146,7 +147,7 @@ export function MapSection() {
           className="absolute w-28 -bottom-16 right-20 md:-bottom-20 md:right-36 z-20 md:w-36"
         />
         <div className="absolute top-96 right-1/2 translate-x-1/2 md:top-[61%] md:left-[400px] ">
-          <div className="relative flex w-auto h-fit max-h-52 flex-col gap-3 border border-[#e7c102] bg-[#2185BA] px-3 py-5">
+          <div className="relative flex w-auto md:w-fit h-fit max-h-52 flex-col gap-3 border border-[#e7c102] bg-[#2185BA] px-3 py-5">
             <div className="flex items-start gap-2">
               <Image src={Bandeiras1} alt="" className="w-5" />
               <h3 className="font-londrinaSolid text-2xl uppercase text-[#e7c102]">
