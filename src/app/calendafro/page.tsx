@@ -125,6 +125,11 @@ export default function Calendafro() {
                   </div>
                 ))}
               </div>
+              <span className="text-sm">
+                Obs.: As datas aqui apresentadas são previsões de acordo com as
+                tradições e podem sofrer alterações. O projeto Kizomba do
+                Saberes não se responsabiliza por mudanças ou imprevistos.
+              </span>
             </div>
           </div>
         </div>
