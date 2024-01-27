@@ -8,7 +8,7 @@ export function AboutSection() {
   return (
     <section
       id="sobre"
-      className="relative flex h-fit md:min-h-[calc(100vh-5.2rem)] w-full items-center justify-center bg-[#ac9378] scroll-mt-[0px] md:scroll-mt-[90px]"
+      className="relative flex h-fit md:min-h-[calc(100vh-5.2rem)] md:py-20 2xl:py-5 w-full items-center justify-center bg-[#ac9378] scroll-mt-[0px] md:scroll-mt-[90px]"
     >
       <Image
         src={WoodBackground}

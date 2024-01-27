@@ -39,7 +39,7 @@ export default function Sobre() {
           className="absolute scale-[3] md:scale-100 top-16 md:top-10 z-10"
         />
 
-        <div className="relative md:h-screen gap-5 md:gap-0 z-10 max-w-7xl w-full px-5 md:px-20 flex flex-col md:flex-row pt-24 md:pt-60">
+        <div className="relative h-auto gap-5 md:gap-0 z-10 max-w-7xl w-full px-5 md:px-20 flex flex-col md:flex-row pb-20 pt-24 md:pt-48 2xl:pt-60">
           <div className="md:w-1/2 mt-10">
             <Image
               src={Logo}
@@ -55,11 +55,11 @@ export default function Sobre() {
                   alt="ilustração de piramides"
                   className="h-min w-28 mb-2"
                 />
-                <h1 className="font-londrinaSolid text-4xl md:text-6xl uppercase leading-none text-[#e7c102]">
+                <h1 className="font-londrinaSolid text-4xl 2xl:text-6xl uppercase leading-none text-[#e7c102]">
                   Quem Somos
                 </h1>
               </div>
-              <article className="flex flex-col gap-3 text-sm md:text-base">
+              <article className="flex flex-col gap-3 text-sm 2xl:text-base">
                 <p>
                   O projeto{' '}
                   <span className="font-semibold">Kizomba dos Saberes</span> é
@@ -82,10 +82,10 @@ export default function Sobre() {
               </article>
             </div>
             <div className="flex flex-col gap-3">
-              <h2 className="font-londrinaSolid text-2xl md:text-3xl uppercase leading-none text-[#e7c102]">
+              <h2 className="font-londrinaSolid text-2xl 2xl:text-3xl uppercase leading-none text-[#e7c102]">
                 Foram Realizados
               </h2>
-              <ul className="flex flex-col gap-3 font-semibold text-sm md:text-base">
+              <ul className="flex flex-col gap-3 font-semibold text-sm 2xl:text-base">
                 <li>
                   · Cinco eventos formativos com a presença de mestres e mestras
                   da cultura negra
@@ -100,10 +100,10 @@ export default function Sobre() {
           <Image
             src={Piramides}
             alt="ilustração de piramides"
-            className="h-min w-28 absolute -bottom-10 md:bottom-20 left-1/2 -translate-x-1/2"
+            className="h-min w-28 absolute -bottom-10 md:bottom-0 left-1/2 -translate-x-1/2"
           />
         </div>
-        <div className="relative h-fit mt-20 pb-5 md:pb-40 z-20 max-w-7xl w-full px-0 md:px-20 flex bg-[#0073a8ff]">
+        <div className="relative h-fit mt-20 pb-5 md:pb-40 z-20 max-w-7xl w-full px-0 md:px-20 flex bg-[#0073a8ff] md:bg-transparent">
           <div className="relative w-full h-fit flex flex-col md:flex-row gap-3 md:gap-0 justify-between bg-[#28a346] text-neutral-50 px-10 md:px-20 py-10">
             <Image
               src={Guerreiro}

@@ -44,11 +44,11 @@ export function MapSection() {
     setSelector('manifestação')
   }
   return (
-    <section className="relative flex h-fit md:min-h-[calc(100vh-5.5rem)] w-screen flex-col items-center justify-center gap-5 overflow-hidden bg-[#2185BA] pt-10 pb-72 md:py-0">
+    <section className="relative flex h-fit md:min-h-[calc(100vh-5.5rem)] w-screen flex-col items-center justify-center gap-5 overflow-hidden bg-[#2185BA] pt-10 pb-72 md:py-20 2xl:py-5">
       <Image
         src={FundoMapa}
         alt={'fundo'}
-        className="absolute h-full md:h-screen w-screen top-0 opacity-30"
+        className="absolute h-full w-screen top-0 opacity-30"
       />
       <div className="relative flex flex-col items-center gap-8 md:gap-3">
         <h2 className="z-10 font-londrinaSolid text-4xl max-w-xs md:max-w-none text-center md:text-7xl uppercase text-[#e7c102]">
