@@ -19,8 +19,9 @@ const content = {
   ],
   imagesUrl: [
     '/images/ilustracoes/caceteira.webp',
-    '/images/ilustracoes/caceteira.webp',
-    '/images/ilustracoes/caceteira.webp',
+    '/images/fotos/caceteira/caceteira-1.webp',
+    '/images/fotos/caceteira/caceteira-2.webp',
+    '/images/fotos/caceteira/caceteira-3.webp',
   ],
 }
 

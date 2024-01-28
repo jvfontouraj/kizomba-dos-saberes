@@ -57,7 +57,9 @@ export function MapSection() {
         <div className="flex flex-col justify-center items-center md:flex-row gap-3 text-[#2185BA]">
           <Select onValueChange={handleSelectCity}>
             <SelectTrigger className="w-60 md:w-80 text-xs md:text-sm h-fit md:h-auto">
-              <SelectValue placeholder="Pesquise por município" />
+              <SelectValue placeholder="Pesquise por município">
+                {selector === 'município' ? city : 'Pesquise por município'}
+              </SelectValue>
             </SelectTrigger>
             <SelectContent>
               <SelectGroup className="h-full max-h-80 overflow-x-scroll text-[#2185BA]">
@@ -77,7 +79,11 @@ export function MapSection() {
           <span className="z-10 text-xl text-white">ou</span>
           <Select onValueChange={handleSelectManifestation}>
             <SelectTrigger className="w-60 md:w-80 text-xs md:text-sm h-fit md:h-auto">
-              <SelectValue placeholder="Pesquise por manifestação cultural" />
+              <SelectValue placeholder="Pesquise por manifestação cultural">
+                {selector === 'manifestação'
+                  ? manifestation
+                  : 'Pesquise por manifestação cultural'}
+              </SelectValue>
             </SelectTrigger>
             <SelectContent>
               <SelectGroup className="h-full max-h-80 overflow-x-scroll text-[#2185BA]">
