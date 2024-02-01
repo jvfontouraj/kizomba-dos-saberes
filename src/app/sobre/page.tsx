@@ -135,29 +135,33 @@ export default function Sobre() {
                 Equipe
               </h2>
               <div className="flex flex-col">
-                <h3 className="text-[#e7c102] font-bold">Coordenadora</h3>
+                <h3 className="text-[#e7c102] font-bold uppercase">
+                  Coordenadora
+                </h3>
                 <span>Prof. Dra. Mariana Bracks Fonseca</span>
               </div>
               <div className="flex flex-col">
-                <h3 className="text-[#e7c102] font-bold">VICE-COORDENADOR</h3>
+                <h3 className="text-[#e7c102] font-bold uppercase">
+                  VICE-COORDENADOR
+                </h3>
                 <span>Prof. Dr. Carlos Liberato</span>
               </div>
               <div className="flex flex-col">
-                <h3 className="text-[#e7c102] font-bold">
+                <h3 className="text-[#e7c102] font-bold uppercase">
                   BOLSISTAS DE PÓS- DOUTORADO
                 </h3>
                 <span>Díjna Andrade Torres</span>
                 <span>Yérsia Souza de Assis</span>
               </div>
               <div className="flex flex-col">
-                <h3 className="text-[#e7c102] font-bold">
+                <h3 className="text-[#e7c102] font-bold uppercase">
                   BOLSISTAS DE MESTRADO
                 </h3>
                 <span>Edwyn Gomes</span>
                 <span>Daniela Macedo Lima</span>
               </div>
               <div className="flex flex-col">
-                <h3 className="text-[#e7c102] font-bold">
+                <h3 className="text-[#e7c102] font-bold uppercase">
                   BOLSISTAS DE INICIAÇÃO CIENTÍFICA
                 </h3>
                 <span>Maria Isabel de Barros Santos</span>
@@ -170,7 +174,7 @@ export default function Sobre() {
                 <span>Kardja Vieira Bittencourt</span>
               </div>
               <div className="flex flex-col">
-                <h3 className="text-[#e7c102] font-bold">
+                <h3 className="text-[#e7c102] font-bold uppercase">
                   ESTUDANTES COLABORADORES VOLUNTÁRIOS
                 </h3>
                 <span>Laura Giovana Menezes Nascimento</span>
@@ -187,20 +191,20 @@ export default function Sobre() {
             </div>
             <div className="md:w-1/2 flex flex-col gap-3 text-sm md:text-base">
               <div className="flex flex-col">
-                <h3 className="text-[#e7c102] font-bold">
+                <h3 className="text-[#e7c102] font-bold uppercase">
                   MESTRANDO COLABORADOR VOLUNTÁRIO
                 </h3>
                 <span>Hiato Feitosa</span>
                 <span>Maria da Conceição Bezerra</span>
               </div>
               <div className="flex flex-col">
-                <h3 className="text-[#e7c102] font-bold">
+                <h3 className="text-[#e7c102] font-bold uppercase">
                   DOUTORANDO COLABORADOR VOLUNTÁRIO
                 </h3>
                 <span>Mariana Galvão Nascimento</span>
               </div>
               <div className="flex flex-col">
-                <h3 className="text-[#e7c102] font-bold">
+                <h3 className="text-[#e7c102] font-bold uppercase">
                   PROFESSORAS COLABORADORAS DA REDE DE ENSINO DE SERGIPE
                 </h3>
                 <span>Alessandra Santos da Graça</span>
@@ -214,19 +218,21 @@ export default function Sobre() {
                 <span>João Muzzart</span>
               </div>
               <div className="flex flex-col">
-                <h3 className="text-[#e7c102] font-bold">
+                <h3 className="text-[#e7c102] font-bold uppercase">
                   Projeto Gráfico Site
                 </h3>
                 <span>Folha Verde Design</span>
               </div>
               <div className="flex flex-col">
-                <h3 className="text-[#e7c102] font-bold">
+                <h3 className="text-[#e7c102] font-bold uppercase">
                   Desenvolvimento Site
                 </h3>
                 <span>João Vitor Fontoura Jardim</span>
               </div>
               <div className="flex flex-col">
-                <h3 className="text-[#e7c102] font-bold">Ilustrações</h3>
+                <h3 className="text-[#e7c102] font-bold uppercase">
+                  Ilustrações
+                </h3>
                 <span>Edwyn Gomes</span>
               </div>
               <div className="flex flex-col font-bold mt-5 text-xs md:text-sm">
@@ -239,7 +245,7 @@ export default function Sobre() {
           </div>
         </div>
       </div>
-      <div className="h-fit relative -z-10 bg-[#0073a8ff] md:bg-[#a79280]">
+      <div className="h-fit relative bg-[#0073a8ff] md:bg-[#a79280]">
         <MenuBar className="fill-[#a79280] w-screen absolute -top-1 hidden md:block" />
         <div className="flex md:gap-20 mx-auto py-10 md:py-40 max-w-7xl w-full px-5 md:px-20">
           <ContactForm />

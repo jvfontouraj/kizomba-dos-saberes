@@ -37,6 +37,31 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
           'Samba',
         ],
       },
+      {
+        name: 'Jogo 1',
+        src: 'https://p.interacty.me/7dedb45a08d37f1f/iframe.html',
+        tags: ['Jogo'],
+      },
+      {
+        name: 'Jogo 2',
+        src: 'https://p.interacty.me/945e871c4bbe55b1/iframe.html',
+        tags: ['Jogo'],
+      },
+      {
+        name: 'Jogo 3',
+        src: 'https://p.interacty.me/58e77928caf8b329/iframe.html',
+        tags: ['Jogo'],
+      },
+      {
+        name: 'Jogo 4',
+        src: 'https://p.interacty.me/2fea6037675036a1/iframe.html',
+        tags: ['Jogo'],
+      },
+      {
+        name: 'Jogo 5',
+        src: 'https://p.interacty.me/13f28ddab053f738/iframe.html',
+        tags: ['Jogo'],
+      },
     ],
   },
   {
@@ -119,7 +144,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
     imgUrl: '/images/ilustracoes-sem-fundo/caceteira.png',
     activities: [
       {
-        name: 'Plano de aula 01',
+        name: 'Plano de aula 1',
         src: '/atividades-educacionais/Caceteira/PlanodeAula-ACaceteira.pdf',
         tags: [
           'Caceteira',
@@ -140,7 +165,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
     imgUrl: '/images/ilustracoes-sem-fundo/cacumbi.png',
     activities: [
       {
-        name: 'Atividade 01',
+        name: 'Atividade 1',
         src: '/atividades-educacionais/Cacumbi/Atividades/atividade01cacumbi.pdf',
         tags: [
           'Cacumbi',
@@ -151,7 +176,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Atividade 02',
+        name: 'Atividade 2',
         src: '/atividades-educacionais/Cacumbi/Atividades/Atividade1-Cacumbi.pdf',
         tags: [
           'Cacumbi',
@@ -161,11 +186,11 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Atividade 03',
+        name: 'Atividade 3',
         src: '/atividades-educacionais/Cacumbi/Atividades/Atividade02Cacumbi.pdf',
       },
       {
-        name: 'Plano de aula 01',
+        name: 'Plano de aula 1',
         src: '/atividades-educacionais/Cacumbi/PlanosdeAula/Planodeaula-Cacumbi(1).pdf',
         tags: [
           'Cacumbi',
@@ -178,7 +203,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Plano de aula 02',
+        name: 'Plano de aula 2',
         src: '/atividades-educacionais/Cacumbi/PlanosdeAula/Planodeaula-Cacumbi(2).pdf',
         tags: ['Cacumbi', 'Ensino Fundamental', 'Cultura', 'Religiosidade'],
       },
@@ -189,7 +214,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
     imgUrl: '/images/ilustracoes-sem-fundo/capoeira.png',
     activities: [
       {
-        name: 'Atividade e Plano de aula 01',
+        name: 'Atividade e Plano de aula 1',
         src: '/atividades-educacionais/capoeira/PlanodeAula-Capoeira(1).pdf',
         tags: [
           'Capoeira',
@@ -201,7 +226,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Atividade e Plano de aula 02',
+        name: 'Atividade e Plano de aula 2',
         src: '/atividades-educacionais/capoeira/Planodeaula-Capoeira(2).pdf',
         tags: [
           'Capoeira',
@@ -212,7 +237,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Atividade e Plano de aula 03',
+        name: 'Atividade e Plano de aula 3',
         src: '/atividades-educacionais/capoeira/Planodeaula-Capoeira(3).pdf',
         tags: ['Capoeira', 'Ensino médio', 'Brasil Colônia', 'Cultura'],
       },
@@ -223,7 +248,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
     imgUrl: '/images/ilustracoes-sem-fundo/cheganca.png',
     activities: [
       {
-        name: 'Plano de aula 01',
+        name: 'Plano de aula 1',
         src: '/atividades-educacionais/Chegança/Chegança-planodeaula01.pdf',
         tags: [
           'Chegança',
@@ -234,7 +259,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Plano de aula 02',
+        name: 'Plano de aula 2',
         src: '/atividades-educacionais/Chegança/Planodeaula-Chegança.pdf',
         tags: ['Plano de Aula'],
       },
@@ -245,7 +270,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
     imgUrl: '/images/ilustracoes-sem-fundo/guerreiro.png',
     activities: [
       {
-        name: 'Plano de aula 01',
+        name: 'Plano de aula 1',
         src: '/atividades-educacionais/Guerreiro/Guerreiro-planodeaula01.pdf',
         tags: [
           'Guerreiro',
@@ -263,7 +288,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
     imgUrl: '/images/ilustracoes-sem-fundo/lambe-sujo.png',
     activities: [
       {
-        name: 'Atividade 01',
+        name: 'Atividade 1',
         src: '/atividades-educacionais/Lambe-sujo/Atividades/Atividade01-LAMBESUJO.pdf',
         tags: [
           'Lambe-sujo',
@@ -275,7 +300,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Atividade 02',
+        name: 'Atividade 2',
         src: '/atividades-educacionais/Lambe-sujo/Atividades/Atividade02Lambe-Sujo.pdf',
         tags: [
           'Lambe-sujo',
@@ -287,7 +312,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Plano de aula 01',
+        name: 'Plano de aula 1',
         src: '/atividades-educacionais/Lambe-sujo/PlanosdeAula/PlanodeaulaLambe-sujo+atividade01.pdf',
         tags: [
           'Lambe-sujo',
@@ -305,7 +330,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
     imgUrl: '/images/logo.png',
     activities: [
       {
-        name: 'Plano de aula e atividade 01',
+        name: 'Plano de aula e atividade 1',
         src: '/atividades-educacionais/Literatura/PlanodeaulaeAtividades01paraturmasdo7ÂºdoEnsinoFundamental-Batalhao.pdf',
         tags: [
           'Literatura',
@@ -317,7 +342,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Plano de aula e atividade 02',
+        name: 'Plano de aula e atividade 2',
         src: '/atividades-educacionais/Literatura/PlanodeaulaeAtividades02paraturmasdoensinomÃ©dio-literatura.pdf',
         tags: [
           'Literatura',
@@ -335,19 +360,19 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
     imgUrl: '/images/ilustracoes-sem-fundo/maracatu.png',
     activities: [
       {
-        name: 'Atividade 01',
+        name: 'Atividade 1',
         src: '/atividades-educacionais/Maracatu/MARACATUKIZOMBAI.pdf',
       },
       {
-        name: 'Atividade 02',
+        name: 'Atividade 2',
         src: '/atividades-educacionais/Maracatu/MARACATUATIVIDADEII.pdf',
       },
       {
-        name: 'Atividade 03',
+        name: 'Atividade 3',
         src: '/atividades-educacionais/Maracatu/MARACATUIII.pdf',
       },
       {
-        name: 'Plano de aula 01',
+        name: 'Plano de aula 1',
         src: '/atividades-educacionais/Maracatu/Planodeaula01-maracatu.pdf',
         tags: ['Maracatu', 'Música', 'Identidade', 'Ensino Médio'],
       },
@@ -358,7 +383,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
     imgUrl: '/images/ilustracoes-sem-fundo/nagô.webp',
     activities: [
       {
-        name: 'Atividade 01',
+        name: 'Atividade 1',
         src: '/atividades-educacionais/Nagô/Atividades/AtividadesNAGÔ01pdf.pdf',
         tags: [
           'Nagô',
@@ -370,7 +395,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Atividade 02',
+        name: 'Atividade 2',
         src: '/atividades-educacionais/Nagô/Atividades/Atividade02.pdf',
         tags: [
           'Nagô',
@@ -382,7 +407,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Plano de aula 01',
+        name: 'Plano de aula 1',
         src: '/atividades-educacionais/Nagô/PlanosdeAula/Nagô-Planodeaulaeativ01.pdf',
         tags: [
           'Nagô',
@@ -393,7 +418,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Plano de aula 02',
+        name: 'Plano de aula 2',
         src: '/atividades-educacionais/Nagô/PlanosdeAula/planodeaulaeatividadenago02.pdf',
         tags: [
           'Nagô',
@@ -405,7 +430,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Plano de aula 03',
+        name: 'Plano de aula 3',
         src: '/atividades-educacionais/Nagô/PlanosdeAula/PLANODEAULANagÃ´03.pdf',
         tags: [
           'Nagô',
@@ -422,7 +447,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
     imgUrl: '/images/ilustracoes-sem-fundo/parafuso.png',
     activities: [
       {
-        name: 'Atividade 01',
+        name: 'Atividade 1',
         src: '/atividades-educacionais/Parafusos/Atividades/AtividadeParafusos(QUESTÃ_OVESTIBULAR)01.pdf',
         tags: [
           'Parafusos',
@@ -433,7 +458,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Atividade 02',
+        name: 'Atividade 2',
         src: '/atividades-educacionais/Parafusos/Atividades/NEGROESCAPOU(PARAFUSOS)02.pdf',
         tags: [
           'Parafusos',
@@ -444,7 +469,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Plano de aula 01',
+        name: 'Plano de aula 1',
         src: '/atividades-educacionais/Parafusos/PlanodeAula/Parafusos-planodeaula01.pdf',
         tags: [
           'Parafusos',
@@ -455,7 +480,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Plano de aula 02',
+        name: 'Plano de aula 2',
         src: '/atividades-educacionais/Parafusos/PlanodeAula/ParafusosPlanodeaula02.pdf',
         tags: [
           'Parafusos',
@@ -473,7 +498,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
     imgUrl: '/images/ilustracoes-sem-fundo/pifano.png',
     activities: [
       {
-        name: 'Atividade 01',
+        name: 'Atividade 1',
         src: '/atividades-educacionais/pifanos/ATIVIDADEPÍFANOS_ZABUMBA01.pdf',
         tags: [
           'Pífanos',
@@ -490,7 +515,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
     imgUrl: '/images/logo.png',
     activities: [
       {
-        name: 'Atividade 01',
+        name: 'Atividade 1',
         src: '/atividades-educacionais/Quilombos/Atividades/ATIVIDADE01-QUILOMBOSEMSERGIPE-ESCRAVIDÃO,RESISTÊNCIAELIBERDADE(1).pdf',
         tags: [
           'Quilombo',
@@ -502,7 +527,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Atividade 02',
+        name: 'Atividade 2',
         src: '/atividades-educacionais/Quilombos/Atividades/Atividade02.pdf',
         tags: [
           'Quilombo',
@@ -513,12 +538,12 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Atividade 03',
+        name: 'Atividade 3',
         src: '/atividades-educacionais/Quilombos/Atividades/Quilombo-atividade03.pdf',
         tags: ['Quilombo', 'Ensino Médio', 'Abolição', 'Escravidão', 'Redação'],
       },
       {
-        name: 'Plano de aula 01',
+        name: 'Plano de aula 1',
         src: '/atividades-educacionais/Quilombos/PlanosdeAula/PLANODEAULA01-QUILOMBOSEMSERGIPE-ESCRAVIDÃO,RESISTÊNCIAELIBERDADE.pdf',
         tags: [
           'Quilombo',
@@ -529,7 +554,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Plano de aula 02',
+        name: 'Plano de aula 2',
         src: '/atividades-educacionais/Quilombos/PlanosdeAula/Planodeaula02eAtividadesparaturmasdo3ÂºdoEnsinoFundamental-quilombo.pdf',
         tags: [
           'Quilombo',
@@ -541,7 +566,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Plano de aula 03',
+        name: 'Plano de aula 3',
         src: '/atividades-educacionais/Quilombos/PlanosdeAula/Planodeaula03eAtividadesparaturmasdo4ÂºdoEnsinoFundamental-quilombo.pdf',
         tags: [
           'Quilombo',
@@ -552,7 +577,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Plano de aula 04',
+        name: 'Plano de aula 4',
         src: '/atividades-educacionais/Quilombos/PlanosdeAula/Planodeaula04eAtividadesparaturmasdoensinomÃ©dio-quilombo.pdf',
         tags: [
           'Quilombo',
@@ -569,7 +594,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
     imgUrl: '/images/ilustracoes-sem-fundo/reisado.png',
     activities: [
       {
-        name: 'Atividade 01',
+        name: 'Atividade 1',
         src: '/atividades-educacionais/reisado/ATIVIDADEREISADO01.pdf',
         tags: [
           'Reisado',
@@ -580,7 +605,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Atividade 02',
+        name: 'Atividade 2',
         src: '/atividades-educacionais/reisado/AtividadeReisado02.pdf',
         tags: [
           'Reisado',
@@ -597,7 +622,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
     imgUrl: '/images/ilustracoes-sem-fundo/rendeira.png',
     activities: [
       {
-        name: 'Atividade 01',
+        name: 'Atividade 1',
         src: '/atividades-educacionais/Renda-Irlandesa/Atividade/ATIVIDADERENDAIRLANDESA01.pdf',
         tags: [
           'Renda Irlandesa',
@@ -608,7 +633,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Plano de aula 01',
+        name: 'Plano de aula 1',
         src: '/atividades-educacionais/Renda-Irlandesa/Planodeaula/RENDAIRLANDESA- PLANODEAULA01.pdf',
         tags: [
           'Renda Irlandesa',
@@ -626,19 +651,19 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
     imgUrl: '/images/logo.png',
     activities: [
       {
-        name: 'Atividade 01',
+        name: 'Atividade 1',
         src: '/atividades-educacionais/Roteiros/AsDandaras–UmavisitaçãoaoQuilomboBrejãodosNegrosesuasoutrasexpressõesculturais..pdf',
       },
       {
-        name: 'Atividade 02',
+        name: 'Atividade 2',
         src: '/atividades-educacionais/Roteiros/Japaratuba–Enxergandoaculturanegralocaleoutrasexpressõesculturais..pdf',
       },
       {
-        name: 'Atividade 01',
+        name: 'Atividade 1',
         src: '/atividades-educacionais/Roteiros/OPortoD’Areia–UmavisitaçãoaoQuilomboUrbanodeorigemdoBarco-de-fogoesuasoutrasexpressõesculturais..pdf',
       },
       {
-        name: 'Atividade 01',
+        name: 'Atividade 1',
         src: '/atividades-educacionais/Roteiros/ROTEIRODOPROJETOROTADOQUILOMBOMOCAMBOTURISMORURALCOMUNITÃ_RIO.pdf',
       },
     ],
@@ -648,7 +673,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
     imgUrl: '/images/ilustracoes-sem-fundo/samba-de-aboio.png',
     activities: [
       {
-        name: 'Atividade 01',
+        name: 'Atividade 1',
         src: '/atividades-educacionais/Samba-de-aboio/Atividade/Atividade01-SambaseAboio.pdf',
         tags: [
           'Samba de Aboio',
@@ -659,7 +684,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Atividade 02',
+        name: 'Atividade 2',
         src: '/atividades-educacionais/Samba-de-aboio/Atividade/Atividade02SAMBADEABOIO-LucasGama.pdf',
         tags: [
           'Samba de Aboio',
@@ -670,7 +695,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Plano de aula 01',
+        name: 'Plano de aula 1',
         src: '/atividades-educacionais/Samba-de-aboio/PlanodeAula/Planodeaula01SambadeAboio.pdf',
         tags: [
           'Samba de Aboio',
@@ -681,7 +706,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Plano de aula 02',
+        name: 'Plano de aula 2',
         src: '/atividades-educacionais/Samba-de-aboio/PlanodeAula/SambadeAboio-planodeaula02.pdf',
         tags: [
           'Samba de Aboio',
@@ -699,7 +724,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
     imgUrl: '/images/ilustracoes-sem-fundo/sambadeira.png',
     activities: [
       {
-        name: 'Atividade 01',
+        name: 'Atividade 1',
         src: '/atividades-educacionais/Samba-de-coco/Atividades/Atividade01.pdf',
         tags: [
           'Samba de Coco',
@@ -711,7 +736,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Atividade 02',
+        name: 'Atividade 2',
         src: '/atividades-educacionais/Samba-de-coco/Atividades/Atividade02.pdf',
         tags: [
           'Samba de Coco',
@@ -723,7 +748,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Atividade 03',
+        name: 'Atividade 3',
         src: '/atividades-educacionais/Samba-de-coco/Atividades/SAMBADECOCO-Atividade03.pdf',
         tags: [
           'Samba de Coco',
@@ -735,7 +760,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Plano de aula 01',
+        name: 'Plano de aula 1',
         src: '/atividades-educacionais/Samba-de-coco/PlanosdeAula/Planodeaula-sambadecoco01.pdf',
         tags: [
           'Samba de Coco',
@@ -747,7 +772,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Plano de aula 02',
+        name: 'Plano de aula 2',
         src: '/atividades-educacionais/Samba-de-coco/PlanosdeAula/Sambadecoco-planodeaula.pdf',
         tags: [
           'Samba de Coco',
@@ -758,7 +783,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Plano de aula 03',
+        name: 'Plano de aula 3',
         src: '/atividades-educacionais/Samba-de-coco/PlanosdeAula/Sambadecoco-planodeaula03.pdf',
         tags: [
           'Samba de Coco',
@@ -776,7 +801,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
     imgUrl: '/images/ilustracoes-sem-fundo/pareia.png',
     activities: [
       {
-        name: 'Atividade 01',
+        name: 'Atividade 1',
         src: '/atividades-educacionais/Samba-de-pareia/Atividades/AtividadeSambadePareia01.pdf',
         tags: [
           'Samba de Pareia',
@@ -787,7 +812,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Atividade 02',
+        name: 'Atividade 2',
         src: '/atividades-educacionais/Samba-de-pareia/Atividades/Atividade02Sambadepareia.pdf',
         tags: [
           'Samba de Pareia',
@@ -799,7 +824,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Plano de aula 01',
+        name: 'Plano de aula 1',
         src: '/atividades-educacionais/Samba-de-pareia/PlanosdeAula/Planodeaula01-SambadePareia.pdf',
         tags: [
           'Samba de Pareia',
@@ -816,7 +841,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
     imgUrl: '/images/ilustracoes-sem-fundo/sao-goncalo.png',
     activities: [
       {
-        name: 'Atividade 01',
+        name: 'Atividade 1',
         src: '/atividades-educacionais/SãoGonçalo/Atividade/Atividade01.pdf',
         tags: [
           'São Gonçalo',
@@ -828,7 +853,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Atividade 02',
+        name: 'Atividade 2',
         src: '/atividades-educacionais/SãoGonçalo/Atividade/Atividade02.pdf',
         tags: [
           'São Gonçalo',
@@ -840,11 +865,11 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Atividade 03',
+        name: 'Atividade 3',
         src: '/atividades-educacionais/SãoGonçalo/Atividade/Recursodidático-SãoGonçalo.pdf',
       },
       {
-        name: 'Plano de aula 01',
+        name: 'Plano de aula 1',
         src: '/atividades-educacionais/SãoGonçalo/PlanodeAula/Planodeaula-SãoGonçalo(1).pdf',
         tags: [
           'São Gonçalo',
@@ -856,7 +881,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Plano de aula 02',
+        name: 'Plano de aula 2',
         src: '/atividades-educacionais/SãoGonçalo/PlanodeAula/Planodeaula-SãoGonçalo(2).docx.pdf',
         tags: [
           'São Gonçalo',
@@ -874,7 +899,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
     imgUrl: '/images/ilustracoes-sem-fundo/taieiras.png',
     activities: [
       {
-        name: 'Atividade 01',
+        name: 'Atividade 1',
         src: '/atividades-educacionais/Taieiras/Atividades/Atividade01Taieiras.pdf',
         tags: [
           'Taieiras',
@@ -886,7 +911,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Atividade 02',
+        name: 'Atividade 2',
         src: '/atividades-educacionais/Taieiras/Atividades/Atividade02Taieiras-1.pdf',
         tags: [
           'Taieiras',
@@ -898,7 +923,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Atividade 03',
+        name: 'Atividade 3',
         src: '/atividades-educacionais/Taieiras/Atividades/Atividade03.pdf',
         tags: [
           'Taieiras',
@@ -910,7 +935,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Plano de aula 01',
+        name: 'Plano de aula 1',
         src: '/atividades-educacionais/Taieiras/PlanosdeAula/Plano01+atividadeTaieiras.pdf',
         tags: [
           'Taieiras',
@@ -922,7 +947,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Plano de aula 02',
+        name: 'Plano de aula 2',
         src: '/atividades-educacionais/Taieiras/PlanosdeAula/Planodeaula02-Taieiras.pdf',
         tags: [
           'Taieiras',
@@ -934,7 +959,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
         ],
       },
       {
-        name: 'Plano de aula 03',
+        name: 'Plano de aula 3',
         src: '/atividades-educacionais/Taieiras/PlanosdeAula/planodeaula03Taieiras.pdf',
         tags: [
           'Taieiras',

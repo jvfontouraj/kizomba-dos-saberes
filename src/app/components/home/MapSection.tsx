@@ -50,11 +50,11 @@ export function MapSection() {
         alt={'fundo'}
         className="absolute h-full w-screen top-0 opacity-30"
       />
-      <div className="relative flex flex-col items-center gap-8 md:gap-3">
+      <div className="relative flex flex-col items-center gap-8 md:gap-10">
         <h2 className="z-10 font-londrinaSolid text-4xl max-w-xs md:max-w-none text-center md:text-7xl uppercase text-[#e7c102]">
           MAPA DA CULTURA AFRO-SERGIPANA
         </h2>
-        <div className="flex flex-col justify-center items-center md:flex-row gap-3 text-[#2185BA]">
+        <div className="flex flex-col justify-center items-center md:flex-row md:gap-3 text-[#2185BA]">
           <Select onValueChange={handleSelectCity}>
             <SelectTrigger className="w-60 md:w-80 text-xs md:text-sm h-fit md:h-auto">
               <SelectValue placeholder="Pesquise por município">

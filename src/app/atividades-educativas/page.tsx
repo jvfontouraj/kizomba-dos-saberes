@@ -15,7 +15,7 @@ import { ChevronDownIcon } from '@radix-ui/react-icons'
 export default function AtividadesEducativas() {
   const [inputValue, setInputValue] = useState('')
   const [tagsList, setTagsList] = useState<string[]>([])
-  const [showFIlterMenu, setShowFilterMenu] = useState(false)
+  const [showFilterMenu, setShowFilterMenu] = useState(false)
   // const [showCategory, setShowCategory] = useState<string[]>([])
 
   function updateSearch(event: any) {
@@ -61,8 +61,12 @@ export default function AtividadesEducativas() {
   }
 
   function handleOpenFilterMenu() {
-    setShowFilterMenu(!showFIlterMenu)
+    setShowFilterMenu(!showFilterMenu)
   }
+
+  useEffect(() => {
+    screen.width > 768 && setShowFilterMenu(true)
+  }, [])
 
   return (
     <main className="relative flex flex-col items-center bg-[#ac9378] overflow-hidden">
@@ -119,7 +123,7 @@ export default function AtividadesEducativas() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className={`ease-[cubic-bezier(0.87,_0,_0.13,_1)] transition-transform duration-300 ${
-              showFIlterMenu && 'rotate-180'
+              showFilterMenu && 'rotate-180'
             }`}
           >
             <path
@@ -147,11 +151,11 @@ export default function AtividadesEducativas() {
                       {item.name}
                     </h2>
                   </div>
-                  <div className="flex flex-col gap-2 md:ml-20">
+                  <div className="flex flex-col gap-4 md:ml-20">
                     {item.activities.map((activity, index) =>
                       tagsList.length === 0 ? (
                         <div
-                          className="flex gap-3 items-center w-full"
+                          className="flex gap-3 items-start w-full"
                           key={index}
                         >
                           <div className="flex items-center gap-1">
@@ -159,7 +163,7 @@ export default function AtividadesEducativas() {
                             <Link
                               href={activity.src}
                               target="_blank"
-                              className="font-londrinaSolid uppercase text-[#e7c102] font-semibold text-base md:text-xl w-[110px] md:w-[235px]"
+                              className="font-londrinaSolid uppercase text-[#e7c102] font-semibold text-base md:text-xl w-[110px] md:w-[235px] leading-none"
                             >
                               {activity.name}
                             </Link>
@@ -220,9 +224,9 @@ export default function AtividadesEducativas() {
           })}
           <div
             className={`md:flex flex-col gap-5 px-7 py-5 absolute -left-5 md:-left-36 2xl:-left-48 md:-translate-x-1/2 w-screen md:w-[240px] 2xl:w-[290px] h-fit max-h-[calc(100vh-100px)] md:max-h-[600px] overflow-y-scroll bg-neutral-50 md:rounded-md transition-transform duration-100 ${
-              showFIlterMenu
-                ? 'scale-y-0 -translate-y-1/2'
-                : 'scale-y-100 translate-y-0'
+              showFilterMenu
+                ? 'scale-y-100 translate-y-0'
+                : 'scale-y-0 -translate-y-1/2'
             }`}
           >
             <h3 className="font-londrinaSolid text-2xl md:text-xl 2xl:text-2xl uppercase text-center text-[#0073a8ff]">

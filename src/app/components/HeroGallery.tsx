@@ -28,7 +28,7 @@ export function HeroGallery() {
           src={image}
           alt="Imagem de fundo"
           className={cs(
-            'absolute md:w-screen md:min-h-screen h-screen object-cover md:h-full md:object-none',
+            'absolute md:w-screen md:min-h-screen h-screen object-cover md:h-full md:object-fill',
             showImg === index
               ? ' animate-fade-in'
               : ' animate-fade-out opacity-0',
