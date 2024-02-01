@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import Link from 'next/link'
-import WoodBackground from '@/assets/wood-background.png'
+import WoodBackground from 'public/images/wood-background.webp'
 import Bandeiras2 from '@/assets/bandeiras2.png'
 import ChegancaPng from '@/assets/cheganca.png'
 import PaiJuaTransp from '@/assets/pai-jua.png'

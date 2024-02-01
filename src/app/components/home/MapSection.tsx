@@ -19,7 +19,7 @@ import LambeSujo from '@/assets/lambe-sujo.png'
 import Bacamarteiro from '@/assets/bacamarteiro.png'
 import RealezaNago from '@/assets/realeza-nago.png'
 import PaiJua from '@/assets/pai-jua.png'
-import FundoMapa from '@/assets/fundo-mapa.png'
+import FundoMapa from '@/assets/fundo-mapa.webp'
 import { map } from '@/assets/mapa/mapas'
 import Mapa from '@/assets/mapa/Geral.png'
 

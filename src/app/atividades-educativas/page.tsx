@@ -73,7 +73,7 @@ export default function AtividadesEducativas() {
       <div
         className="absolute w-screen h-full opacity-20 brightness-50"
         style={{
-          backgroundImage: "url('/images/wood-background.png')",
+          backgroundImage: "url('/images/wood-background.webp')",
         }}
       />
       <Image

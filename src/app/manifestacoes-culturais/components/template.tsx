@@ -2,7 +2,7 @@
 'use client'
 import Image from 'next/image'
 import Link from 'next/link'
-import WoodBackground from '@/assets/wood-background.png'
+import WoodBackground from 'public/images/wood-background.webp'
 import Bandeiras1 from '@/assets/bandeiras1.png'
 import Bandeiras2 from '@/assets/bandeiras2.png'
 import ChevronDown from '@/assets/chevron-down.svg'
