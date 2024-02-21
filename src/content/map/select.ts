@@ -13,6 +13,7 @@ export const cidades = [
   'Gararu',
   'General Maynard',
   'Graccho Cardoso',
+  'Indiaroba',
   'Itabaiana',
   'Itaporanga',
   'Japaratuba',

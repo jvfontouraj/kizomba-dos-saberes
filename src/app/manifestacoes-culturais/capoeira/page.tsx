@@ -11,9 +11,10 @@ const content = {
     'José Paulo dos Anjos, mais conhecido como Mestre Paulo dos Anjos nasceu em 15 de Agosto de 1936, na cidade da Estância, no sul sergipano. Em Salvador passou a praticar boxe, quando conheceu Mestre Canjiquinha em 1950, com quem aprendeu  a arte da capoeira e tornou-se uma das principais personalidades sergipanas da capoeira. Os grupos mais antigos de Sergipe são o Grupo Molas, fundado em 1977 pelo Mestre Lucas (Luiz Carlos Vieira Tavares) e o grupo Novos Irmãos, fundado em 1978, pelo radialista estanciano Mestre Jorge. De acordo com o Mestre Robson Mangangá, entrevistado em 2014, existiam cerca de 150 grupos em  Sergipe. Em Aracaju é tradição a ocorrência de rodas de capoeira nas manhãs de sábado no Mercado Thales Ferraz. O dia 17 de Março além de aniversário da cidade também é comemorado o dia da Capoeira em Aracaju.',
   ],
   details: {
-    locais: 'Lorem Ipsum',
+    locais: 'Diversas regiões do Estado de Sergipe',
     festas: '',
     sedes: '',
+    ondeEncontrar: '',
   },
   refs: [
     'BRAGA, Janine de Carvalho Ferreira ; SALDANHA, B. S. . CAPOEIRA: DA CRIMINALIZAÇÃO NO CÓDIGO PENAL DE 1890 AO RECONHECIMENTO COMO ESPORTE NACIONAL E LEGISLAÇÃO APLICADA. In: Janaína Rigo Santin, Ivan Aparecido Ruiz. (Org.). CAPOEIRA: DA CRIMINALIZAÇÃO NO CÓDIGO PENAL DE 1890 AO RECONHECIMENTO COMO ESPORTE NACIONAL E LEGISLAÇÃO APLICADA. 1ed.Florianópolis: CONPEDI, 2014, v. , p. 117-142.',

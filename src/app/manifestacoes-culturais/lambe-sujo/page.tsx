@@ -10,7 +10,8 @@ const content = {
   details: {
     locais: 'Laranjeiras',
     festas: 'Segundo domingo de outubro',
-    sedes: 'Zé Rolinha ',
+    sedes: '',
+    ondeEncontrar: '',
   },
   refs: [
     'SANTOS, M. F.  Performance e Escárnio na Festa do Lambe-Sujo. 1. ed. São Cristóvão: Editora UFS, 2013. v. 1. 180p .',
@@ -22,6 +23,7 @@ const content = {
     '/images/fotos/lambe-sujo/lambe-sujo-2.webp',
     '/images/fotos/lambe-sujo/lambe-sujo-3.webp',
     '/images/fotos/lambe-sujo/lambe-sujo-4.webp',
+    '/images/fotos/lambe-sujo/lambe-sujo-5.webp',
   ],
 }
 

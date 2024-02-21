@@ -10,8 +10,10 @@ const content = {
   details: {
     locais:
       'Divina Pastora, Laranjeiras, Itabaiana , Lagarto, Japaratuba, Carmópolis, Santo Amaro das Brotas e São Cristóvão.',
-    festas: '',
+    festas:
+      'Festa de Reis e Coroação de Nossa Senhora do Rosário (Laranjeiras); Festa de São Benedito (Divina Pastora)',
     sedes: '',
+    ondeEncontrar: '',
   },
   refs: [
     'DANTAS, Beatriz Góis. Chegança: Cadernos do Folclore. vol. 14. Rio de Janeiro: FUNARTE, 1976.',

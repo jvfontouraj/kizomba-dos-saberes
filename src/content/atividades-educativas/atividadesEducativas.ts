@@ -40,28 +40,28 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
       {
         name: 'Jogo 1',
         src: 'https://p.interacty.me/7dedb45a08d37f1f/iframe.html',
-        tags: ['Jogo'],
+        tags: ['Jogo', 'Música', 'Percepção Musical', 'Samba'],
       },
       {
         name: 'Jogo 2',
         src: 'https://p.interacty.me/945e871c4bbe55b1/iframe.html',
-        tags: ['Jogo'],
+        tags: ['Jogo', 'Jogo da Memória', 'Imagem'],
       },
       {
         name: 'Jogo 3',
         src: 'https://p.interacty.me/58e77928caf8b329/iframe.html',
-        tags: ['Jogo'],
+        tags: ['Jogo', 'Questões', 'Nagô'],
       },
       {
         name: 'Jogo 4',
         src: 'https://p.interacty.me/2fea6037675036a1/iframe.html',
-        tags: ['Jogo'],
+        tags: ['Jogo', 'Jogo da Memória', 'Imagem'],
       },
-      {
-        name: 'Jogo 5',
-        src: 'https://p.interacty.me/13f28ddab053f738/iframe.html',
-        tags: ['Jogo'],
-      },
+      // {
+      //   name: 'Jogo 5',
+      //   src: 'https://p.interacty.me/13f28ddab053f738/iframe.html',
+      //   tags: ['Jogo'],
+      // },
     ],
   },
   {
@@ -93,12 +93,12 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
       {
         name: 'Plano de Aula 1',
         src: '/atividades-educacionais/Bacamarteiros/Planos/Planodeaula-Bacamarteiro(1).pdf',
-        tags: ['Plano de Aula'],
+        tags: ['Plano de Aula', 'Batalhão', 'Brasil Império'],
       },
       {
         name: 'Plano de Aula 2',
         src: '/atividades-educacionais/Bacamarteiros/Planos/Planodeaula-Bacamarteiro(2).pdf',
-        tags: ['Plano de Aula'],
+        tags: ['Plano de Aula', 'Batalhão', 'Brasil Império'],
       },
     ],
   },
@@ -109,22 +109,27 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
       {
         name: 'Atividade 1',
         src: '/atividades-educacionais/Barco-de-fogo/Atividade(Barcodefogo).pdf',
+        tags: ['Ensino Fundamental', 'Questões', 'História'],
       },
       {
         name: 'Atividade 2',
         src: '/atividades-educacionais/Barco-de-fogo/Barcodefogo.pdf',
+        tags: ['Ensino Fundamental', 'Poema', 'História'],
       },
       {
         name: 'Atividade 3',
         src: '/atividades-educacionais/Barco-de-fogo/Barcodefogo-planoeatividade.pdf',
+        tags: ['Ensino Médio', 'Texto', 'Debate'],
       },
       {
         name: 'Atividade 4',
         src: '/atividades-educacionais/Barco-de-fogo/Barcodefogo-recursodidático.pdf',
+        tags: ['Ensino Fundamental', 'Jogo', 'Quiz'],
       },
       {
         name: 'Atividade 5',
         src: '/atividades-educacionais/Barco-de-fogo/Quadrinho.pdf',
+        tags: ['Ensino Fundamental', 'História em Quadrinhos', 'História'],
       },
     ],
   },
@@ -135,7 +140,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
       {
         name: 'Plano de Aula 1',
         src: '/atividades-educacionais/Batucada/Batucada-planodeaula.pdf',
-        tags: ['Plano de Aula'],
+        tags: ['Plano de Aula', 'Estância', 'Debate', 'Apresentação'],
       },
     ],
   },
@@ -188,6 +193,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
       {
         name: 'Atividade 3',
         src: '/atividades-educacionais/Cacumbi/Atividades/Atividade02Cacumbi.pdf',
+        tags: ['Cacumbi', 'Educação Infantil', 'Pintura', 'Laranjeiras'],
       },
       {
         name: 'Plano de aula 1',
@@ -261,7 +267,15 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
       {
         name: 'Plano de aula 2',
         src: '/atividades-educacionais/Chegança/Planodeaula-Chegança.pdf',
-        tags: ['Plano de Aula'],
+        tags: [
+          'Plano de Aula',
+          'Ensino Fundamental',
+          'Texto',
+          'Imagem',
+          'História',
+          'Português',
+          'Religiosidade',
+        ],
       },
     ],
   },
@@ -362,14 +376,28 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
       {
         name: 'Atividade 1',
         src: '/atividades-educacionais/Maracatu/MARACATUKIZOMBAI.pdf',
+        tags: ['História', 'Artes', 'Música', 'Ensino Fundamental II'],
       },
       {
         name: 'Atividade 2',
         src: '/atividades-educacionais/Maracatu/MARACATUATIVIDADEII.pdf',
+        tags: [
+          'Artes',
+          'Ensino Fundamental II',
+          'Pulsação/ Parlendas',
+          'Provérbios',
+          'Trava-línguas',
+        ],
       },
       {
         name: 'Atividade 3',
         src: '/atividades-educacionais/Maracatu/MARACATUIII.pdf',
+        tags: [
+          'Artes',
+          'Música',
+          'Ensino Fundamental II',
+          'Instrumentos de percussão',
+        ],
       },
       {
         name: 'Plano de aula 1',
@@ -653,18 +681,34 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
       {
         name: 'Atividade 1',
         src: '/atividades-educacionais/Roteiros/AsDandaras–UmavisitaçãoaoQuilomboBrejãodosNegrosesuasoutrasexpressõesculturais..pdf',
+        tags: ['Roteiro histórico-cultural', 'Brejão dos Negros', 'Quilombo'],
       },
       {
         name: 'Atividade 2',
         src: '/atividades-educacionais/Roteiros/Japaratuba–Enxergandoaculturanegralocaleoutrasexpressõesculturais..pdf',
+        tags: [
+          'Roteiro histórico-cultural',
+          'Japaratuba',
+          'Festa das Cabacinhas',
+        ],
       },
       {
-        name: 'Atividade 1',
+        name: 'Atividade 3',
         src: '/atividades-educacionais/Roteiros/OPortoD’Areia–UmavisitaçãoaoQuilomboUrbanodeorigemdoBarco-de-fogoesuasoutrasexpressõesculturais..pdf',
+        tags: [
+          'Roteiro histórico-cultural',
+          'Porto D’Areia',
+          'Quilombo Urbano',
+        ],
       },
       {
-        name: 'Atividade 1',
+        name: 'Atividade 4',
         src: '/atividades-educacionais/Roteiros/ROTEIRODOPROJETOROTADOQUILOMBOMOCAMBOTURISMORURALCOMUNITÃ_RIO.pdf',
+        tags: [
+          'Roteiro histórico-cultural',
+          'Porto da Folha',
+          'Quilombo Mocambo',
+        ],
       },
     ],
   },
@@ -691,7 +735,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
           'Educação Infantil',
           'Música',
           'Aguada',
-          'Instrumentos musicais',
+          'Instrumentos Musicais',
         ],
       },
       {
@@ -867,6 +911,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
       {
         name: 'Atividade 3',
         src: '/atividades-educacionais/SãoGonçalo/Atividade/Recursodidático-SãoGonçalo.pdf',
+        tags: ['São Gonçalo', 'Imagem', 'Instrumentos Musicais'],
       },
       {
         name: 'Plano de aula 1',

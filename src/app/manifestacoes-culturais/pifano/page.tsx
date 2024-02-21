@@ -14,6 +14,7 @@ const content = {
     festas:
       'Festas de São João, novenas para os santos católicos e cortejos funerários.',
     sedes: '',
+    ondeEncontrar: '',
   },
   refs: [
     'BRITO, Claudia Toscano de. Indumentária Folclórica. [levantamento de dados e sistematização: Claudia Toscano de Brito; Capa: Melcíades; Fotógrafo: Jairo ]. Aracaju: Secretaria de Estado da Educação e Cultura / FUNDESC, 1985.',
@@ -21,11 +22,7 @@ const content = {
     'Documentário Mestre Tonho Preto: Missa do Vaqueiro. (acesso em: 21/07/2023). https://www.youtube.com/watch?v=ix_zY7aTymI.',
     'Documentário Banda de Pífano Santo Antônio do Mestre Tonho Preto. (acesso em: 21/07/2023). https://www.youtube.com/watch?v=DfgVH2dSsdw',
   ],
-  imagesUrl: [
-    '/images/ilustracoes/zabumba.webp',
-    '/images/ilustracoes/bacamarteiro.webp',
-    '/images/ilustracoes/batucada.webp',
-  ],
+  imagesUrl: ['/images/ilustracoes/zabumba.webp'],
 }
 
 export const metadata: Metadata = {

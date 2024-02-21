@@ -10,7 +10,8 @@ const content = {
   details: {
     locais: 'Laranjeiras',
     festas: 'Festas de São João e o nascimento de crianças da comunidade. ',
-    sedes: '',
+    sedes: 'Quilombo da Mussuca, Laranjeiras',
+    ondeEncontrar: '',
   },
   refs: [
     'SILVA, Jonathan Rodrigues. Samba de Pareia pelos saberes do corpo que samba. 195 f. il. 2019. Dissertação (Mestrado em Culturas Populares) – Programa de Pós-Graduação Interdisciplinar em Culturas Populares, Universidade Federal de Sergipe, São Cristóvão, 2019.',

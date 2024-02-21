@@ -12,8 +12,9 @@ const content = {
   details: {
     locais:
       ' Japaratuba, Itaporanga, Amparo de São Francisco, Boquim, Itabaiana, São Cristóvão, Areia Branca, Pedrinhas, Pirambu, Indiaroba, Malhador, Santa Rosa de Lima, Tobias Barreto, Neópolis e Cristinápolis.',
-    festas: 'Dezembro a Janeiro',
+    festas: 'Ciclos Natalinos; Ciclos Juninos',
     sedes: '',
+    ondeEncontrar: '',
   },
   refs: [
     'BRITO, Claudia Toscano de. Indumentária Folclórica. [levantamento de dados e sistematização: Claudia Toscano de Brito; Capa: Melcíades; Fotógrafo: Jairo ]. Aracaju: Secretaria de Estado da Educação e Cultura / FUNDESC, 1985.',

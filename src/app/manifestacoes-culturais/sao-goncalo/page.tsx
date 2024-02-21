@@ -12,7 +12,8 @@ const content = {
       'Laranjeiras (Há registros da ocorrência da dança em Lagarto, São Cristóvão, Simão Dias, Pinhão, Tobias Barreto, São Domingos e Carira) ',
     festas:
       '10 de janeiro (Dia de São Gonçalo), Pagamento de promessas (dança votiva), Festa do Senhor da Cruz (Semana Santa) e outros eventos culturais do Estado.',
-    sedes: 'Povoado Mussuca',
+    sedes: '',
+    ondeEncontrar: 'Quilombo da Mussuca, Laranjeiras',
   },
   refs: [
     'BOMFIM, W. J. Identidade, Memoria e Narrativas na Dança de São Gonçalo do Povoado Mussuca-SE. Aracaju, 2014.',

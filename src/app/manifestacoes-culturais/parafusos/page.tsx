@@ -11,6 +11,7 @@ const content = {
     locais: 'Lagarto',
     festas: 'Festas juninas e outros eventos culturais do Estado',
     sedes: 'Associação dos Grupos Folclórico de Lagarto (ASFLAG)',
+    ondeEncontrar: '',
   },
   refs: [
     'Giro Sergipe - Conheça os "Parafusos", grupo folclórico de Lagarto, único no Brasil - 10/10/2020 < https://globoplay.globo.com/v/8940150/ > ',

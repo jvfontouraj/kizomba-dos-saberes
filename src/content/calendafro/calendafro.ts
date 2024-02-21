@@ -39,7 +39,6 @@ export const calendafroContent: calendafroContentTypes = {
     {
       title: [
         'FESTA DE BOM JESUS DOS NAVEGANTES',
-        'FESTA DO MASTRO',
         'SAMBA DE CÔCO DO MESTRE DIÔ',
       ],
       date: '22 a 28 de janeiro',
@@ -71,12 +70,12 @@ export const calendafroContent: calendafroContentTypes = {
         '(ASSOCIAÇÃO LUZ DO ORIENTE/ ILÊ YÁTASSYTAÔÔ IFÁ ENIBALÉ)',
       ],
       date: 'Sábado próximo ao dia 2 de fevereiro',
-      local: 'Aracaju- bairro Industrial',
+      local: 'Aracaju, bairro Industrial',
     },
     {
       title: ['FESTA DE MAR (CASA D’MAR)'],
       date: 'Sábado próximo ao dia 2 de fevereiro',
-      local: 'Aracaju, bairro Industrial',
+      local: 'Povoado Areia Branca',
     },
     {
       title: ['DESFILES DE ESCOLA DE SAMBAS E BLOCOS CARNAVALESCOS'],
@@ -99,7 +98,7 @@ export const calendafroContent: calendafroContentTypes = {
     },
     {
       title: ['CORTEJO AFOXÉ'],
-      date: '25 de abril',
+      date: '20 e 21 de abril',
       local: 'Nossa Senhora do Socorro',
     },
   ],
@@ -120,6 +119,11 @@ export const calendafroContent: calendafroContentTypes = {
       title: ['CORTEJO FOLCLÓRICO BATALHÃO DE BACAMARTEIROS'],
       date: '24 a 29 de junho',
       local: 'Carmópolis',
+    },
+    {
+      title: ['FESTA DO MASTRO'],
+      date: '28 de junho',
+      local: 'Capela',
     },
     {
       title: ['CORTEJO DO GRUPO BACAMARTEIRO'],
@@ -248,5 +252,17 @@ export const calendafroContent: calendafroContentTypes = {
       date: '16 de Dezembro',
       local: 'Barra dos Coqueiros',
     },
+    {
+      title: ['Lavagem de Nossa Senhora da Conceição'],
+      date: '03 a 08 de dezembro',
+      local: 'Riachuelo',
+    },
+    {
+      title: ['Lavagem de Nossa Senhora da Conceição'],
+      date: '08 de dezembro',
+      local: 'Aracaju',
+    },
+
+    { title: ['Afoxé Omo Oxum'], date: '08 de dezembro ', local: 'Aracaju ' },
   ],
 }

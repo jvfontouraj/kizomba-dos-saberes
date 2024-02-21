@@ -8,10 +8,11 @@ const content = {
     'O fazer da renda é uma atividade coletiva, e para fazê-la,  o primeiro passo são os desenhos em um papel, em seguida, é preciso alinhavar o lacê nesse desenho, e  preencher os espaços com os pontos da renda irlandesa, que de acordo com as rendeiras, existem mais de cem pontos que resultam na confecção de uma renda singular, ressaltada pelo relevo e brilho do lacê.  Portanto, confere ao produto um diferencial em relação às outras rendas produzidas no país. Vale destacar que Sergipe é o único pólo de Renda Irlandesa no mundo, e em 2008, recebeu o título de Patrimônio Cultural do Brasil, conferido pelo Conselho Consultivo do Patrimônio Histórico e Artístico Nacional do Iphan. Atualmente, essa tarefa ocupa mais de uma centena de artesãs sergipanas, além de ser uma referência cultural.',
   ],
   details: {
-    locais: 'Divina Pastora, Laranjeiras e Aracaju',
+    locais: 'Divina Pastora',
     festas: '',
     sedes:
       'ASDEREN - Associação para o Desenvolvimento de Renda de Divina Pastora; Associação das Rendeiras Independentes de Divina Pastora (ASDRIN); Associação de Costureiras e Artesãs do Município de Laranjeiras.',
+    ondeEncontrar: '',
   },
   refs: [
     'CAVALCANTI, M. L. V. de C.; FONSECA, M. C. L. Patrimônio imaterial no Brasil. Legislação e Políticas Estaduais; Brasília: UNESCO, Educarte, 2008.',

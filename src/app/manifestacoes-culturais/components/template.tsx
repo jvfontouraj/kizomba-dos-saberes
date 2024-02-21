@@ -24,6 +24,7 @@ interface TemplateProps {
     locais: string
     festas: string
     sedes: string
+    ondeEncontrar: string
   }
   refs: string[]
   imagesUrl: string[]
@@ -106,7 +107,7 @@ export function Template({ content }: { content: TemplateProps }) {
           <div className="flex h-fit flex-col text-sm md:text-base gap-5 border-l-2 border-[#efa300] pl-3 [grid-area:details]">
             {content.details.locais && (
               <div>
-                <h3 className="font-bold">Localizam-se em:</h3>
+                <h3 className="font-bold">Localiza-se em:</h3>
                 <span>{content.details.locais}</span>
               </div>
             )}
@@ -120,6 +121,12 @@ export function Template({ content }: { content: TemplateProps }) {
               <div>
                 <h3 className="font-bold">Sedes:</h3>
                 <span>{content.details.sedes}</span>
+              </div>
+            )}
+            {content.details.ondeEncontrar && (
+              <div>
+                <h3 className="font-bold">Onde Encontrar:</h3>
+                <span>{content.details.ondeEncontrar}</span>
               </div>
             )}
           </div>

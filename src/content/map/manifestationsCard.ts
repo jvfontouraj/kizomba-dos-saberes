@@ -45,7 +45,7 @@ export const manifestationsCard = [
   },
   {
     nome: 'Lambe-sujo',
-    cidades: ['Laranjeiras'],
+    cidades: ['Laranjeiras', 'Indiaroba'],
   },
   {
     nome: 'Maracatu',

@@ -11,6 +11,7 @@ const content = {
     locais: 'Carmópolis; General Maynard; Santo Amaro',
     festas: 'Ciclo Junino (São João e São Pedro)',
     sedes: '',
+    ondeEncontrar: '',
   },
   refs: [],
   imagesUrl: [

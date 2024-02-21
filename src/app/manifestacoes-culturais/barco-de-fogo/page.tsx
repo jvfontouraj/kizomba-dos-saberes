@@ -8,9 +8,10 @@ const content = {
     'O Barco de Fogo, após ornamentado pelos fogueteiros, é pendurado no fio de aço e são acesas as espadas (fogos de artifício) nele acoplados. Os barcos percorrem cerca de 300 metros no tradicional evento do Barco de Fogo, o Concurso do Melhor Barco de Fogo, que ocorre nas festas juninas da cidade estância a, mas também há apresentações na data de 11 de junho, dia oficial do Barco de Fogo, instituído pela Lei Estadual n° 7.301/2011, em homenagem ao nascimento de Chico Surdo. O Barco de Fogo tornou-se Patrimônio Cultural Imaterial de Sergipe, em virtude do seu modo de fazer artesanal, uma tradição que foi mantida, aperfeiçoada e passada por gerações pelas comunidades estancianas que aderiram a essa manifestação cultural, que tornou-se de grande importância para a cultura e economia do município sergipano.',
   ],
   details: {
-    locais: '',
+    locais: 'Estância',
     festas: '',
     sedes: '',
+    ondeEncontrar: '',
   },
   refs: [],
   imagesUrl: [

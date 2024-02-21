@@ -10,7 +10,8 @@ const content = {
   details: {
     locais: 'Povoado Aguada/Carmópolis',
     festas: 'Realiza-se impreterivelmente no final de semana da Páscoa',
-    sedes: 'Família Mota e Assis',
+    sedes: 'Terreiro de Santa Bárbara, Aguada',
+    ondeEncontrar: '',
   },
   refs: [
     'ALMEIDA, Luan Vinícius Carvalho de. "Vem ver, gente, esse samba como é": caminhos, olhares e escutas acerca do Samba de Aboio-Sergipe. 2022. 158 f. Dissertação (Mestrado Interdisciplinar em Culturas Populares) - Universidade Federal de Sergipe. São Cristóvão, Sergipe, 2022.',
@@ -21,11 +22,11 @@ const content = {
   ],
   imagesUrl: [
     '/images/ilustracoes/samba-de-aboio.webp',
-    '/images/fotos/samba-de-aboio/samba-de-aboio-1.webp',
-    '/images/fotos/samba-de-aboio/samba-de-aboio-2.webp',
     '/images/fotos/samba-de-aboio/samba-de-aboio-3.webp',
     '/images/fotos/samba-de-aboio/samba-de-aboio-4.webp',
     '/images/fotos/samba-de-aboio/samba-de-aboio-5.webp',
+    '/images/fotos/samba-de-aboio/samba-de-aboio-6.webp',
+    '/images/fotos/samba-de-aboio/samba-de-aboio-7.webp',
   ],
 }
 

@@ -59,6 +59,14 @@ export const theme = {
         from: { opacity: 0, transform: 'translate(0, -48%) scale(0.96)' },
         to: { opacity: 1, transform: 'translate(0, 0) scale(1)' },
       },
+      overlayShow2: {
+        from: { opacity: '0' },
+        to: { opacity: '1' },
+      },
+      contentShow2: {
+        from: { opacity: '0', transform: 'translate(-50%, -48%) scale(0.96)' },
+        to: { opacity: '1', transform: 'translate(-50%, -50%) scale(1)' },
+      },
     },
     animation: {
       'fade-in': 'fade-in 1s ease-in-out',
@@ -69,6 +77,8 @@ export const theme = {
       slideUp: 'slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1)',
       overlayShow: 'overlayShow 200ms cubic-bezier(0.16, 1, 0.3, 1)',
       contentShow: 'contentShow 200ms cubic-bezier(0.16, 1, 0.3, 1)',
+      overlayShow2: 'overlayShow2 150ms cubic-bezier(0.16, 1, 0.3, 1)',
+      contentShow2: 'contentShow2 150ms cubic-bezier(0.16, 1, 0.3, 1)',
     },
   },
 }

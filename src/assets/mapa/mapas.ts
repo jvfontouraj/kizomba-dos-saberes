@@ -169,6 +169,7 @@ export const map = [
   { name: 'General Maynard', image: GeneralMaynard },
   { name: 'Graccho Cardoso', image: GracchoCardoso },
   { name: 'Ilha das Flores', image: '' },
+  { name: 'Indiaroba', image: Indiaroba },
   { name: 'Itabaiana', image: Itabaiana },
   { name: 'Itaporanga', image: Itaporanga },
   { name: 'Japaratuba', image: Japaratuba },

@@ -13,6 +13,7 @@ const content = {
     festas: 'Festa do Inhame; Samba de Aboio; Festa de Iansã',
     sedes:
       'Terreiro de Santa Barbara Virgem/Laranjeiras; Centro Santo Antonio/ Nossa Senhora do Socorro; Terreiro de Santa Barbara/ Carmópolis.',
+    ondeEncontrar: '',
   },
   refs: [
     'ASSIS, Yérsia Souza de. Vale do Cotinguiba: Um território que se tornou uma ideia.',
@@ -22,8 +23,6 @@ const content = {
   ],
   imagesUrl: [
     '/images/ilustracoes/nagô.webp',
-    '/images/fotos/nago/nago-1.webp',
-    '/images/fotos/nago/nago-2.webp',
     '/images/fotos/nago/nago-3.webp',
     '/images/fotos/nago/nago-4.webp',
   ],

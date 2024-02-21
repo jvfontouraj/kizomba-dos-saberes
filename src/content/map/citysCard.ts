@@ -59,6 +59,7 @@ export const citysCard = [
     nome: 'Graccho Cardoso',
     manifestacoes: ['Pífano'],
   },
+  { nome: 'Indiaroba', manifestacoes: ['Lambe-Sujo'] },
   {
     nome: 'Itabaiana',
     manifestacoes: ['Chegança'],

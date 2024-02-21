@@ -11,6 +11,7 @@ const content = {
     locais: 'Estância',
     festas: 'Festas de São João, 22 de Dezembro (Dia das Batucadas).',
     sedes: '',
+    ondeEncontrar: '',
   },
   refs: [
     'BRITO, Claudia Toscano de. Indumentária Folclórica. [levantamento de dados e sistematização: Claudia Toscano de Brito; Capa: Melcíades; Fotógrafo: Jairo ]. Aracaju: Secretaria de Estado da Educação e Cultura / FUNDESC, 1985.',

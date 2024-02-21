@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 'use client'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
@@ -13,6 +14,8 @@ import Reisado from '@/assets/ilustracoes/sem-fundo/reisado.png'
 import SambaDeAboio from '@/assets/ilustracoes/sem-fundo/samba-de-aboio.png'
 import Bandeiras1 from '@/assets/bandeiras1.png'
 import Bandeiras2 from '@/assets/bandeiras2.png'
+import { InfoCircledIcon, Cross2Icon } from '@radix-ui/react-icons'
+import * as Dialog from '@radix-ui/react-dialog'
 
 export default function Sobre() {
   const [blueHeight, setBlueHeight] = useState(0)
@@ -144,39 +147,44 @@ export default function Sobre() {
                 <h3 className="text-[#e7c102] font-bold uppercase">
                   VICE-COORDENADOR
                 </h3>
-                <span>Prof. Dr. Carlos Liberato</span>
+                <span>Prof. Ms. Carlos Franco Liberato</span>
               </div>
               <div className="flex flex-col">
                 <h3 className="text-[#e7c102] font-bold uppercase">
-                  BOLSISTAS DE PÓS- DOUTORADO
+                  Pesquisadoras (Pós Doutorado)
                 </h3>
-                <span>Díjna Andrade Torres</span>
-                <span>Yérsia Souza de Assis</span>
+                <span>Profa. Dra. Díjna Andrade Torres</span>
+                <span>Profa. Dra. Yérsia Souza de Assis </span>
               </div>
               <div className="flex flex-col">
                 <h3 className="text-[#e7c102] font-bold uppercase">
-                  BOLSISTAS DE MESTRADO
+                  Pesquisadores (Mestrado)
                 </h3>
                 <span>Edwyn Gomes</span>
                 <span>Daniela Macedo Lima</span>
               </div>
               <div className="flex flex-col">
                 <h3 className="text-[#e7c102] font-bold uppercase">
-                  BOLSISTAS DE INICIAÇÃO CIENTÍFICA
+                  Pesquisadores (Graduação/Iniciação Científica)
                 </h3>
+                <span>Allef Wanderson Rocha Silva</span>
+                <span>Beatriz Agnes Costa Bosco</span>
+                <span>Kardja Vieira Bittencourt</span>
+                <span>João Pedro Santos Vieira</span>
                 <span>Maria Isabel de Barros Santos</span>
                 <span>Mirosmar Bezerra</span>
                 <span>Maiara Quaranta Lobão Linhares</span>
-                <span>Anacelia de Souza Luduvice</span>
-                <span>Allef</span>
-                <span>Beatriz Agnes Costa Bosco</span>
-                <span>Milene</span>
-                <span>Kardja Vieira Bittencourt</span>
               </div>
               <div className="flex flex-col">
                 <h3 className="text-[#e7c102] font-bold uppercase">
-                  ESTUDANTES COLABORADORES VOLUNTÁRIOS
+                  Pesquisadores (Colaboração Voluntária)
                 </h3>
+                <span>Prof. Hiago Feitosa da Silva</span>
+                <span>
+                  Profa.Ms. Maria da Conceição Bezerra dos Santos Sobrinha
+                </span>
+                <span>Profa. Ms. Mariana Galvão Nascimento</span>
+                <span>Profa. Ms. Luciana Oliveira</span>
                 <span>Laura Giovana Menezes Nascimento</span>
                 <span>Dacia Rita Ferreira Bispo</span>
                 <span>Vanessa Andrade</span>
@@ -187,26 +195,6 @@ export default function Sobre() {
                 <span>Thayemille Nathaly Santos</span>
                 <span>Lucas Gabriel Gama</span>
                 <span>Maria Eduarda Loeser</span>
-              </div>
-            </div>
-            <div className="md:w-1/2 flex flex-col gap-3 text-sm md:text-base">
-              <div className="flex flex-col">
-                <h3 className="text-[#e7c102] font-bold uppercase">
-                  MESTRANDO COLABORADOR VOLUNTÁRIO
-                </h3>
-                <span>Hiato Feitosa</span>
-                <span>Maria da Conceição Bezerra</span>
-              </div>
-              <div className="flex flex-col">
-                <h3 className="text-[#e7c102] font-bold uppercase">
-                  DOUTORANDO COLABORADOR VOLUNTÁRIO
-                </h3>
-                <span>Mariana Galvão Nascimento</span>
-              </div>
-              <div className="flex flex-col">
-                <h3 className="text-[#e7c102] font-bold uppercase">
-                  PROFESSORAS COLABORADORAS DA REDE DE ENSINO DE SERGIPE
-                </h3>
                 <span>Alessandra Santos da Graça</span>
                 <span>Andréia Teixeira dos Santos</span>
                 <span>Adalcy Costa dos Santos</span>
@@ -217,6 +205,8 @@ export default function Sobre() {
                 <span>Messalas Santos</span>
                 <span>João Muzzart</span>
               </div>
+            </div>
+            <div className="md:w-1/2 flex flex-col gap-3 text-sm md:text-base">
               <div className="flex flex-col">
                 <h3 className="text-[#e7c102] font-bold uppercase">
                   Projeto Gráfico Site
@@ -231,9 +221,82 @@ export default function Sobre() {
               </div>
               <div className="flex flex-col">
                 <h3 className="text-[#e7c102] font-bold uppercase">
-                  Ilustrações
+                  Identidade Visual e Artes Visuais
                 </h3>
+                <div className="flex items-center gap-2">
+                  <span>Edwyn Gomes</span>
+                  <Dialog.Root>
+                    <Dialog.Trigger asChild>
+                      <button className="hover:scale-105">
+                        <InfoCircledIcon />
+                      </button>
+                    </Dialog.Trigger>
+                    <Dialog.Portal>
+                      <Dialog.Overlay className="bg-blackA6 data-[state=open]:animate-overlayShow2 fixed inset-0 z-40" />
+                      <Dialog.Content className="z-50 overflow-scroll data-[state=open]:animate-contentShow2 fixed top-[50%] left-[50%] max-h-[85vh] w-[90vw] max-w-[650px] translate-x-[-50%] translate-y-[-50%] rounded-[6px] bg-white p-[25px] shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none">
+                        <div className="flex flex-col gap-3">
+                          <p>
+                            "Edwyn Gomes é um jovem artista negro sergipano,
+                            pesquisador do Grupo de Estudos em História da
+                            África e Diáspora Africana (ANANSE.GEPHADA), com
+                            enfoque no campo da história da escravidão e
+                            pós-abolição. Mestre em História pelo Programa de
+                            Pós-Graduação da Universidade Federal de Sergipe
+                            (PROHIS/UFS), tem desenvolvido pesquisas notáveis
+                            sobre sua própria família, remontando quase 200 anos
+                            de histórias e trajetórias negras em Sergipe. Sua
+                            produção artística pode ser vista como reflexo das
+                            pesquisas que vem desenvolvendo. Edwyn tem focado no
+                            protagonismo negro e buscado inspiração na estética
+                            afro-sergipana, com o objetivo de ressaltar que as
+                            tradições culturais de Sergipe foram construídas e
+                            tem sido mantidas majoritariamente por pessoas
+                            negras, ainda desvalorizadas, desconhecidas e
+                            invisibilizadas. Premiado em 2020 no edital
+                            "Quarentena da Gente" do Instituto Banese. Foi 3º
+                            lugar no ranking nordestino do edital "Arte do
+                            Quilombo" da Fundação Cultural Palmares (2020);
+                            recebendo moção de aplauso pelo Conselho Estadual de
+                            Cultura do Estado de Sergipe pela sua primeira
+                            exposição (Preto Sergipe, 2021), apoiada pela lei
+                            Aldir Blanc e Prêmio Artistas 2021, pela Olho Mágico
+                            Produções."
+                          </p>
+                          <p>edwynartes@gmail.com</p>
+                          <p>Instagram: @edwyn.gomes</p>
+                        </div>
+                        <Dialog.Close asChild>
+                          <button
+                            className="text-blackA11 hover:bg-blackA4 focus:shadow-blackA7 absolute top-[10px] right-[10px] inline-flex h-[25px] w-[25px] appearance-none items-center justify-center rounded-full focus:shadow-[0_0_0_2px] focus:outline-none"
+                            aria-label="Close"
+                          >
+                            <Cross2Icon />
+                          </button>
+                        </Dialog.Close>
+                      </Dialog.Content>
+                    </Dialog.Portal>
+                  </Dialog.Root>
+                </div>
+              </div>
+              <div className="flex flex-col">
+                <h3 className="text-[#e7c102] font-bold uppercase">
+                  Fotógrafos
+                </h3>
+                <span className="text-sm font-semibold mb-2">
+                  Agradecemos a generosidade dos fotógrafos que colaboraram
+                  gratuitamente
+                </span>
+                <span>César de Oliveira</span>
+                <span>Díjna Torres </span>
                 <span>Edwyn Gomes</span>
+                <span>Heitor Xavier </span>
+                <span>Igor Matias </span>
+                <span>Lúcio Telles </span>
+                <span>Marco Vieira</span>
+                <span>Moema Costa</span>
+                <span>Priscila Viana </span>
+                <span>Pritty Reis </span>
+                <span>Yérsia Assis</span>
               </div>
               <div className="flex flex-col font-bold mt-5 text-xs md:text-sm">
                 <span>Todos os direitos reservados a Kizomba dos Saberes.</span>
