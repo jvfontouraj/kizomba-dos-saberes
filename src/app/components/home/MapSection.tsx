@@ -22,6 +22,7 @@ import PaiJua from '@/assets/pai-jua.png'
 import FundoMapa from '@/assets/fundo-mapa.webp'
 import { map } from '@/assets/mapa/mapas'
 import Mapa from '@/assets/mapa/Geral.png'
+import Link from 'next/link'
 
 export function MapSection() {
   const [city, setCity] = useState('Aracaju')
@@ -152,7 +153,7 @@ export function MapSection() {
           alt=""
           className="absolute w-28 -bottom-16 right-20 md:-bottom-20 md:right-36 z-20 md:w-36"
         />
-        <div className="absolute top-96 right-1/2 translate-x-1/2 md:top-[61%] md:left-[400px] ">
+        <div className="absolute z-50 top-96 right-1/2 translate-x-1/2 md:top-[61%] md:left-[400px] ">
           <div className="relative flex w-auto md:w-fit h-fit max-h-52 flex-col gap-3 border border-[#e7c102] bg-[#2185BA] px-3 py-5">
             <div className="flex items-start gap-2">
               <Image src={Bandeiras1} alt="" className="w-5" />
@@ -165,8 +166,16 @@ export function MapSection() {
                 ? citysCard.map(
                     (item) =>
                       city === item.nome &&
-                      item.manifestacoes.map((manifestacao) => (
-                        <li key={manifestacao}>• {manifestacao}</li>
+                      item.manifestacoes.map((manifestacao, index) => (
+                        <li key={index}>
+                          •{' '}
+                          <Link
+                            href={`/manifestacoes-culturais/${manifestacao.url}`}
+                            target="_blank"
+                          >
+                            {manifestacao.nome}
+                          </Link>
+                        </li>
                       )),
                   )
                 : manifestationsCard.map(

@@ -249,7 +249,7 @@ export default function Sobre() {
                 <span>Morgana Catherine Leite Santos</span>
                 <span>Wirna Maria</span>
                 <span>Messalas Santos</span>
-                <span>João Muzzart</span>
+                <span>João Mouzart de Oliveira Junior</span>
               </div>
               <div className="flex flex-col">
                 <h3 className="text-[#e7c102] font-bold uppercase">
@@ -284,6 +284,12 @@ export default function Sobre() {
                 <span>Priscila Viana </span>
                 <span>Pritty Reis </span>
                 <span>Yérsia Assis</span>
+              </div>
+              <div className="flex flex-col">
+                <h3 className="text-[#e7c102] font-bold uppercase">
+                  Acervo de vídeos e sonoros
+                </h3>
+                <span>Alfredo Bello - DJ Tudo (Selo Mundo Melhor)</span>
               </div>
               <div className="flex flex-col">
                 <h3 className="text-[#e7c102] font-bold uppercase">

@@ -19,7 +19,7 @@ export const content: ContentTypes[] = [
     mediaType: 'video',
     media: [
       {
-        src: 'YkFcbY0d3vY',
+        src: 'VVHk2H5Bt5Q',
         alt: 'Vídeo do lançamento do projeto',
       },
     ],
@@ -30,7 +30,7 @@ export const content: ContentTypes[] = [
     mediaType: 'video',
     media: [
       {
-        src: 'YkFcbY0d3vY',
+        src: 'qRRkthkwxAs',
         alt: 'Vídeo da oficina formativa com mestras e mestres dos saberes sergipanos',
       },
     ],
@@ -69,7 +69,7 @@ export const content: ContentTypes[] = [
     mediaType: 'video',
     media: [
       {
-        src: 'YkFcbY0d3vY',
+        src: 'yXvpQ4ADp7k',
         alt: 'Vídeo da oficina Educação e religiosidades afro-sergipanas',
       },
     ],

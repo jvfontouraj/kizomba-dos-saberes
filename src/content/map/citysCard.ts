@@ -1,157 +1,196 @@
 export const citysCard = [
   {
     nome: 'Amparo do São Francisco',
-    manifestacoes: ['Guerreiro', 'Samba de coco'],
+    manifestacoes: [
+      { nome: 'Guerreiro', url: 'guerreiro' },
+      { nome: 'Samba de coco', url: 'samba-de-coco' },
+    ],
   },
   {
     nome: 'Aquidabã',
-    manifestacoes: ['Pífano', 'Reisado'],
+    manifestacoes: [
+      { nome: 'Pífano', url: 'pifano' },
+      { nome: 'Reisado', url: 'reisado' },
+    ],
   },
   {
     nome: 'Aracaju',
-    manifestacoes: ['Guerreiro', 'Reisado', 'Samba de coco'],
+    manifestacoes: [
+      { nome: 'Guerreiro', url: 'guerreiro' },
+      { nome: 'Reisado', url: 'reisado' },
+      { nome: 'Samba de coco', url: 'samba-de-coco' },
+    ],
   },
   {
     nome: 'Barra dos Coqueiros',
-    manifestacoes: ['Samba de coco'],
+    manifestacoes: [{ nome: 'Samba de coco', url: 'samba-de-coco' }],
   },
   {
     nome: 'Boquim',
-    manifestacoes: ['Pífano'],
+    manifestacoes: [{ nome: 'Pífano', url: 'pifano' }],
   },
   {
     nome: 'Brejo Grande',
-    manifestacoes: ['Maracatu'],
+    manifestacoes: [{ nome: 'Maracatu', url: 'maracatu' }],
   },
   {
     nome: 'Capela',
-    manifestacoes: ['Pífano'],
+    manifestacoes: [{ nome: 'Pífano', url: 'pifano' }],
   },
   {
     nome: 'Carmópolis',
-    manifestacoes: ['Batalhão', 'Nagô', 'Samba de aboio'],
+    manifestacoes: [
+      { nome: 'Batalhão', url: 'batalhao' },
+      { nome: 'Nagô', url: 'nago' },
+      { nome: 'Samba de aboio', url: 'samba-de-aboio' },
+    ],
   },
   {
     nome: 'Carira',
-    manifestacoes: ['Pífano'],
+    manifestacoes: [{ nome: 'Pífano', url: 'pifano' }],
   },
   {
     nome: 'Cristinápolis',
-    manifestacoes: ['Reisado'],
+    manifestacoes: [{ nome: 'Reisado', url: 'reisado' }],
   },
   {
     nome: 'Divina Pastora',
-    manifestacoes: ['Chegança', 'Renda irlandesa'],
+    manifestacoes: [
+      { nome: 'Chegança', url: 'cheganca' },
+      { nome: 'Renda irlandesa', url: 'renda-irlandesa' },
+    ],
   },
   {
     nome: 'Estância',
-    manifestacoes: ['Barco de fogo', 'Batucada'],
+    manifestacoes: [
+      { nome: 'Barco de fogo', url: 'barco-de-fogo' },
+      { nome: 'Batucada', url: 'batucada' },
+    ],
   },
   {
     nome: 'Gararu',
-    manifestacoes: ['Pífano'],
+    manifestacoes: [{ nome: 'Pífano', url: 'pifano' }],
   },
   {
     nome: 'General Maynard',
-    manifestacoes: ['Batalhão'],
+    manifestacoes: [{ nome: 'Batalhão', url: 'batalhao' }],
   },
   {
     nome: 'Graccho Cardoso',
-    manifestacoes: ['Pífano'],
+    manifestacoes: [{ nome: 'Pífano', url: 'pifano' }],
   },
-  { nome: 'Indiaroba', manifestacoes: ['Lambe-Sujo'] },
+  {
+    nome: 'Indiaroba',
+    manifestacoes: [{ nome: 'Lambe-Sujo', url: 'lambe-sujo' }],
+  },
   {
     nome: 'Itabaiana',
-    manifestacoes: ['Chegança'],
+    manifestacoes: [{ nome: 'Chegança', url: 'cheganca' }],
   },
   {
     nome: 'Itaporanga',
-    manifestacoes: ['Cacumbi', 'Pífano', 'Reisado', 'São Gonçalo'],
+    manifestacoes: [
+      { nome: 'Cacumbi', url: 'cacumbi' },
+      { nome: 'Pífano', url: 'pifano' },
+      { nome: 'Reisado', url: 'reisado' },
+      { nome: 'São Gonçalo', url: 'sao-goncalo' },
+    ],
   },
   {
     nome: 'Japaratuba',
-    manifestacoes: ['Cacumbi'],
+    manifestacoes: [{ nome: 'Cacumbi', url: 'cacumbi' }],
   },
   {
     nome: 'Lagarto',
     manifestacoes: [
-      'Parafusos',
-      'Pífano',
-      'Reisado',
-      'Samba de coco',
-      'Taieiras',
+      { nome: 'Parafusos', url: 'parafusos' },
+      { nome: 'Pífano', url: 'pifano' },
+      { nome: 'Reisado', url: 'reisado' },
+      { nome: 'Samba de coco', url: 'samba-de-coco' },
+      { nome: 'Taieiras', url: 'taieiras' },
     ],
   },
   {
     nome: 'Laranjeiras',
     manifestacoes: [
-      'Batalhão',
-      'Cacumbi',
-      'Guerreiro',
-      'Lambe-sujo',
-      'Nagô',
-      'Reisado',
-      'Renda irlandesa',
-      'Samba de coco',
-      'Samba de pareia',
-      'São Gonçalo',
-      'Taieiras',
+      { nome: 'Batalhão', url: 'batalhao' },
+      { nome: 'Cacumbi', url: 'cacumbi' },
+      { nome: 'Guerreiro', url: 'guerreiro' },
+      { nome: 'Lambe-sujo', url: 'lambe-sujo' },
+      { nome: 'Nagô', url: 'nago' },
+      { nome: 'Reisado', url: 'reisado' },
+      { nome: 'Renda irlandesa', url: 'renda-irlandesa' },
+      { nome: 'Samba de coco', url: 'samba-de-coco' },
+      { nome: 'Samba de pareia', url: 'samba-de-pareia' },
+      { nome: 'São Gonçalo', url: 'sao-goncalo' },
+      { nome: 'Taieiras', url: 'taieiras' },
     ],
   },
   {
     nome: 'Macambira',
-    manifestacoes: ['Pífano'],
+    manifestacoes: [{ nome: 'Pífano', url: 'pifano' }],
   },
   {
     nome: 'Moita Bonita',
-    manifestacoes: ['Pífano', 'Reisado'],
+    manifestacoes: [
+      { nome: 'Pífano', url: 'pifano' },
+      { nome: 'Reisado', url: 'reisado' },
+    ],
   },
   {
     nome: 'Nossa Senhora do Socorro',
-    manifestacoes: ['Nagô'],
+    manifestacoes: [{ nome: 'Nagô', url: 'nago' }],
   },
   {
     nome: 'Pacatuba',
-    manifestacoes: ['Pífano'],
+    manifestacoes: [{ nome: 'Pífano', url: 'pifano' }],
   },
   {
     nome: 'Pedrinhas',
-    manifestacoes: ['Reisado'],
+    manifestacoes: [{ nome: 'Reisado', url: 'reisado' }],
   },
   {
     nome: 'Pinhão',
-    manifestacoes: ['São Gonçalo'],
+    manifestacoes: [{ nome: 'São Gonçalo', url: 'sao-goncalo' }],
   },
   {
     nome: 'Riachuelo',
-    manifestacoes: ['Batalhão'],
+    manifestacoes: [{ nome: 'Batalhão', url: 'batalhao' }],
   },
   {
     nome: 'Ribeirópolis',
-    manifestacoes: ['Pífano'],
+    manifestacoes: [{ nome: 'Pífano', url: 'pifano' }],
   },
   {
     nome: 'Rosário do Catete',
-    manifestacoes: ['Guerreiro'],
+    manifestacoes: [{ nome: 'Guerreiro', url: 'guerreiro' }],
   },
   {
     nome: 'Santo Amaro das Brotas',
-    manifestacoes: ['Batalhão', 'Lambe-sujo', 'Samba de coco'],
+    manifestacoes: [
+      { nome: 'Batalhão', url: 'batalhao' },
+      { nome: 'Lambe-sujo', url: 'lambe-sujo' },
+      { nome: 'Samba de coco', url: 'samba-de-coco' },
+    ],
   },
   {
     nome: 'Santana do São Francisco',
-    manifestacoes: ['Samba de coco'],
+    manifestacoes: [{ nome: 'Samba de coco', url: 'samba-de-coco' }],
   },
   {
     nome: 'São Cristóvão',
-    manifestacoes: ['Caceteira', 'Samba de coco', 'Samba de pareia'],
+    manifestacoes: [
+      { nome: 'Caceteira', url: 'caceteira' },
+      { nome: 'Samba de coco', url: 'samba-de-coco' },
+      { nome: 'Samba de pareia', url: 'samba-de-pareia' },
+    ],
   },
   {
     nome: 'São Domingos',
-    manifestacoes: ['Batalhão'],
+    manifestacoes: [{ nome: 'Batalhão', url: 'batalhao' }],
   },
   {
     nome: 'Tobias Barreto',
-    manifestacoes: ['Pífano'],
+    manifestacoes: [{ nome: 'Pífano', url: 'pifano' }],
   },
 ]
