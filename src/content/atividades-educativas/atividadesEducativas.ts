@@ -781,19 +781,7 @@ export const atividadesEducativas: AtividadesEducativasTypes = [
       },
       {
         name: 'Atividade 2',
-        src: '/atividades-educacionais/Samba-de-coco/Atividades/Atividade02.pdf',
-        tags: [
-          'Samba de Coco',
-          'Educação Infantil',
-          'Manifestação Cultural',
-          'Mosqueiro',
-          'Barra dos Coqueiros',
-          'Jogo',
-        ],
-      },
-      {
-        name: 'Atividade 3',
-        src: '/atividades-educacionais/Samba-de-coco/Atividades/SAMBADECOCO-Atividade03.pdf',
+        src: '/atividades-educacionais/Samba-de-coco/Atividades/SAMBADECOCO-Atividade02.pdf',
         tags: [
           'Samba de Coco',
           'Ensino Fundamental',
