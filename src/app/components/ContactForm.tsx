@@ -38,9 +38,9 @@ export function ContactForm() {
     emailjs
       .send(
         'service_pykwx5d',
-        'template_c0bi3di',
+        'template_d2rtbvn',
         templateParams,
-        'z15D1fmRGoZgLWTIj',
+        'uAnXfAN3StuvqE38y',
       )
       .then(
         (response) => {
