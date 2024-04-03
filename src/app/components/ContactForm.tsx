@@ -37,7 +37,7 @@ export function ContactForm() {
     }
     emailjs
       .send(
-        'service_jlnus8o',
+        'service_ksjp8mj',
         'template_c0bi3di',
         templateParams,
         'z15D1fmRGoZgLWTIj',
