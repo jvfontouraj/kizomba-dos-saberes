@@ -5,7 +5,6 @@ export const afropediaSergipana = {
     'Para reverter este quadro propomos construir a Afropédia Sergipana, que trará biografias e trajetórias de personalidades negras com relevante contribuição para a história e para a cultura sergipana.',
     'A  Afropédia Sergipana pretende apresentar as pessoas negras como protagonistas de processos históricos, evidenciar que os afrodescendentes atuaram para a construção do nosso estado e cultura, para além da mão-de-obra braçal. As trajetórias reunidas pela Afropédia Sergipana mostrarão as diversas estratégias de resistência e sobrevivência empreendidas pelos sujeitos negros para escapar da invisibilidade e enfrentar o mordaz sistema racista brasileiro.',
     'É fundamental que trajetórias de pessoas negras cheguem às escolas sergipanas pois geram exemplos positivos para os jovens, que passam a reconhecerem seus ancestrais como força motriz da história, que passam a reconhecerem a si mesmos como capazes de agir e transformar a realidade, que passam a entender os processos históricos que envolvem sua comunidade para além da lógica de dominação.',
-    'Um texto para exemplificar',
   ],
   objetivos: {
     titulo: 'Objetivos  da Afropédia Sergipana:',
