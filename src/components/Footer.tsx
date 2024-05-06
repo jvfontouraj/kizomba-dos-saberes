@@ -3,6 +3,7 @@ import UFS from '@/assets/ufs.png'
 import ANANSE from '@/assets/ananse.png'
 import DHI from '@/assets/dhi.png'
 import FAPITEC from '@/assets/fapitec.png'
+import SEDUC from '@/assets/seduc.png'
 
 export function Footer() {
   return (
@@ -16,6 +17,7 @@ export function Footer() {
       <div className="flex items-center gap-5">
         <h3 className="text-sm font-semibold uppercase">Apoio</h3>
         <Image src={FAPITEC} alt="" className="h-10 w-auto md:h-auto" />
+        <Image src={SEDUC} alt="" className="h-10 w-auto md:h-14" />
       </div>
     </footer>
   )
