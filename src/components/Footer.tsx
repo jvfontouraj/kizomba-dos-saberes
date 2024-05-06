@@ -17,7 +17,7 @@ export function Footer() {
       <div className="flex items-center gap-5">
         <h3 className="text-sm font-semibold uppercase">Apoio</h3>
         <Image src={FAPITEC} alt="" className="h-10 w-auto md:h-auto" />
-        <Image src={SEDUC} alt="" className="h-10 w-auto md:h-14" />
+        <Image src={SEDUC} alt="" className="h-9 w-auto md:h-12" />
       </div>
     </footer>
   )
